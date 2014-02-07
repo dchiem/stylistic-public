@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/hci-friends.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
@@ -53,14 +52,20 @@
                 <h4>GENDER</h4>
             </div>
         </div>
-        <div class="container gender">
+        <div class="container gender browse">
             <div class="row">
                 <div class="col-xs-2"></div>
-                <div class="col-xs-4"> {{male.name}} <br>
+                <div class="col-xs-4">
                     <a href="/browse"><img src={{male.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male.name}} </h6>
+                    </div>
                 </div>
-                <div class="col-xs-4">{{female.name}} <br>
+                <div class="col-xs-4">
                     <a href="/browse"><img src={{female.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{female.name}} </h6>
+                    </div>
                 </div>
                 <div class="col-xs-2"></div>
             </div>
@@ -70,38 +75,65 @@
                 <h4>TAGS</h4>
             </div>
         </div>
-        <div class="container tags">
+        <div class="container tags browse">
             <div class="row">
-                <div class="col-xs-4">{{male_tags.0.name}} <br>
+                <div class="col-xs-4">
                     <a href="/list"><img src={{male_tags.0.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male_tags.0.name}} </h6>
+                    </div>
                 </div>
-                <div class="col-xs-4">{{male_tags.1.name}} <br>
+                <div class="col-xs-4">
                     <a href="/list"><img src={{male_tags.1.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male_tags.1.name}} </h6>
+                    </div>
                 </div>
-                <div class="col-xs-4">{{male_tags.2.name}} <br>
+                <div class="col-xs-4">
                     <a href="/list"><img src={{male_tags.2.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male_tags.2.name}} </h6>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-4">{{male_tags.3.name}} <br>
+                <div class="col-xs-4">
                     <a href="/list"><img src={{male_tags.3.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male_tags.3.name}} </h6>
+                    </div>
                 </div>
-                <div class="col-xs-4">{{male_tags.4.name}} <br>
+                <div class="col-xs-4">
                     <a href="/list"><img src={{male_tags.4.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male_tags.4.name}} </h6>
+                    </div>
                 </div>
-                <div class="col-xs-4">{{male_tags.5.name}} <br>
+                <div class="col-xs-4">
                     <a href="/list"><img src={{male_tags.5.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male_tags.5.name}} </h6>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-4">{{male_tags.6.name}} <br>
+                <div class="col-xs-4">
                     <a href="/list"><img src={{male_tags.6.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male_tags.6.name}} </h6>
+                    </div>
                 </div>
-                <div class="col-xs-4">{{male_tags.7.name}} <br>
+                <div class="col-xs-4">
                     <a href="/list"><img src={{male_tags.7.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male_tags.7.name}} </h6>
+                    </div>
                 </div>
-                <div class="col-xs-4">{{male_tags.8.name}} <br>
+                <div class="col-xs-4">
                     <a href="/list"><img src={{male_tags.8.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{male_tags.8.name}} </h6>
+                    </div>
                 </div>
             </div>
         </div>

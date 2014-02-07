@@ -1,86 +1,87 @@
 {
     "male": {
         "name": "MALE",
-        "imageURL": "images/fashion.jpg"
+        "imageURL": "images/man.jpg"
     },
     "female": {
         "name": "FEMALE",
-        "imageURL": "images/fashion.jpg"
+        "imageURL": "images/woman.jpg"
     },
 	"male_tags": [
 		{
-			"name": "MTAG1",
-			"imageURL": "images/fashion.jpg"
+			"name": "CLASSY",
+			"imageURL": "images/browsepictures/Classy2.png"
+
 		},
 		{
-			"name": "MTAG2",
-			"imageURL": "images/fashion.jpg"
+			"name": "DENIM",
+			"imageURL": "images/browsepictures/Denim.png"
 		},
 		{
-			"name": "MTAG3",
-			"imageURL": "images/fashion.jpg"
+			"name": "GOTHIC",
+			"imageURL": "images/browsepictures/Gothic.png"
 		},
 		{
-			"name": "MTAG4",
-			"imageURL": "images/fashion.jpg"
+			"name": "HIPSTER",
+			"imageURL": "images/browsepictures/Hipster1.png"
 		},
 		{
-			"name": "MTAG5",
-			"imageURL": "images/fashion.jpg"
+			"name": "PREPPY",
+			"imageURL": "images/browsepictures/Preppy.png"
 		},
 		{
-			"name": "MTAG6",
-			"imageURL": "images/fashion.jpg"
+			"name": "ROCKER",
+			"imageURL": "images/browsepictures/Rocker3.jpg"
 		},
 		{
-			"name": "MTAG7",
-			"imageURL": "images/fashion.jpg"
+			"name": "SPORTY",
+			"imageURL": "images/browsepictures/Sporty.png"
 		},
 		{
-			"name": "MTAG8",
-			"imageURL": "images/fashion.jpg"
+			"name": "SPRING",
+			"imageURL": "images/browsepictures/Spring1.png"
 		},
 		{
-			"name": "MTAG9",
-			"imageURL": "images/fashion.jpg"
+			"name": "WESTERN",
+			"imageURL": "images/browsepictures/Western3.png"
 		}
     ],
 	"female_tags": [
 		{
 			"name": "FTAG1",
-			"imageURL": "images/fashion.jpg"
+			"imageURL": "images/browsepictures/fashion.png"
 		},
 		{
 			"name": "FTAG2",
-			"imageURL": "images/fashion.jpg"
+			"imageURL": "images/browsepictures/fashion.png"
 		},
 		{
 			"name": "FTAG3",
-			"imageURL": "images/fashion.jpg"
+			"imageURL": "images/browsepictures/fashion.png"
 		},
 		{
 			"name": "FTAG4",
-			"imageURL": "images/fashion.jpg"
+			"imageURL": "images/browsepictures/fashion.png"
 		},
 		{
 			"name": "FTAG5",
-			"imageURL": "images/fashion.jpg"
+			"imageURL": "images/browsepictures/fashion.png"
 		},
 		{
 			"name": "FTAG6",
-			"imageURL": "images/fashion.jpg"
+			"imageURL": "images/browsepictures/fashion.png"
 		},
 		{
 			"name": "FTAG7",
-			"imageURL": "images/fashion.jpg"
+			"imageURL": "images/browsepictures/fashion.png"
 		},
 		{
 			"name": "FTAG8",
-			"imageURL": "images/fashion.jpg"
+			"imageURL": "images/browsepictures/fashion.png"
 		},
 		{
 			"name": "FTAG9",
-			"imageURL": "images/fashion.jpg"
+			"imageURL": "images/browsepictures/fashion.png"
 		}
     ]
 }
