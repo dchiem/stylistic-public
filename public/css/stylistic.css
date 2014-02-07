@@ -131,12 +131,20 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-family: "Avenir Book", "Avenir", sans-serif;
 }
 
-.gender, .tags {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.gender, .tags{
     font-family: "Avenir Book", "Avenir", sans-serif;
     text-align: center;
     font-size: 8pt;
+}
+
+.gender {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.tags {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .tags .row {
