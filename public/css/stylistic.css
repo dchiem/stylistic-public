@@ -88,7 +88,7 @@
     width:140px;
 }
 
-#getStartedBtn, #loginBtn {
+#getStartedBtn, #loginBtn, #signupBtn{
     background-image:url('../images/stylisticbutton.jpg');
     border-radius(0);
     -webkit-border-radius: 0;
@@ -112,6 +112,11 @@
 
 .step p {
     color: gray;
+}
+
+.signup p {
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
 .main-title .container{
@@ -156,11 +161,16 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-top:75px;
 }
 
-.forgot {
+.signup {
+    text-align: center;
+    margin-top:25px;
+}
+
+.forgot, .remember {
     margin-top:15px;
 }
 
-.signup {
+.sign-up {
     margin-top:10px;
 }
 
@@ -175,6 +185,11 @@ h1, h2, h3, h4, h5, h6, p, a {
     border-radius: 4px;
 }
 
+.browse .row .col-xs-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .tagOverlay {
     color: white;
     position: absolute;
@@ -183,9 +198,24 @@ h1, h2, h3, h4, h5, h6, p, a {
     right: 5px;
     background-color: rgba(0,0,0,0.7);
     margin: 0 auto;
+    text-align: center;
 }
 
-.browse .row .col-xs-4 {
+.recommended img {
+    border-radius(4);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.recommended .row .col-xs-4 {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+.form-birthday {
+    position: relative;
+    height: 40px;
+}
+
+

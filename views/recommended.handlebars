@@ -31,7 +31,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">s t y l i s t i c</a>
+                    <a class="navbar-brand" href="/browse">s t y l i s t i c</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
@@ -42,7 +42,43 @@
                 </div><!--/.nav-collapse -->
             </div>
         </div>
-        <div class="container browse">
-            <h1>Recommended <a href="/list">Lists</a> will be here.</h1>
+        <div class="title main-title">
+            <div class="container recommended">
+                <h4>RECOMMENDED</h4>
+            </div>
+        </div>
+        <div class="container recommended">
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-4">
+                    <a href="/recommended"><img src={{recommended.0.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{recommended.0.name}} </h6>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <a href="/recommended"><img src={{recommended.1.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{recommended.1.name}} </h6>
+                    </div>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-4">
+                    <a href="/recommended"><img src={{recommended.2.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{recommended.2.name}} </h6>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <a href="/recommended"><img src={{recommended.3.imageURL}} class="img-responsive"></a>
+                    <div class=tagOverlay>
+                        <h6>{{recommended.3.name}} </h6>
+                    </div>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
         </div>
     </html>

@@ -83,5 +83,23 @@
 			"name": "FTAG9",
 			"imageURL": "images/browsepictures/fashion.png"
 		}
+    ],
+    "recommended": [
+    	{
+    		"name": "FEATURED",
+    		"imageURL": "images/recommendedpictures/featured.png"
+    	},
+    	{
+    		"name": "TRENDING",
+    		"imageURL": "images/recommendedpictures/trending.png"
+    	},
+    	{
+    		"name": "POPULAR",
+    		"imageURL": "images/recommendedpictures/popular.png"
+    	},
+    	{
+    		"name": "NEW RELEASES",
+    		"imageURL": "images/recommendedpictures/newreleases.png"
+    	}
     ]
 }
