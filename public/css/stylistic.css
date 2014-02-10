@@ -88,7 +88,7 @@
     width:140px;
 }
 
-#getStartedBtn, #loginBtn, #signupBtn{
+#getStartedBtn, #loginBtn, #signupBtn, #sendBtn {
     background-image:url('../images/stylisticbutton.jpg');
     border-radius(0);
     -webkit-border-radius: 0;
@@ -136,6 +136,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-family: "Avenir Book", "Avenir", sans-serif;
 }
 
+.getStarted h4 {
+    font-size: 150%;
+}
+
 .gender, .tags{
     font-family: "Avenir Book", "Avenir", sans-serif;
     text-align: center;
@@ -161,7 +165,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-top:75px;
 }
 
-.signup {
+.signup, .forgot {
     text-align: center;
     margin-top:25px;
 }
@@ -170,7 +174,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-top:15px;
 }
 
-.sign-up {
+.sign-up, .forgot{
     margin-top:10px;
 }
 
