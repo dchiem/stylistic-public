@@ -101,5 +101,49 @@
     		"name": "NEW RELEASES",
     		"imageURL": "images/recommendedpictures/newreleases.png"
     	}
+    ],
+    "list": [
+	    {
+	    	"box": "Box1",
+	    	"imageURL": "/images/BoxPlaceholder.png",
+	    	"user": "User1"
+	    },
+	    {
+	    	"box": "Box2",
+	    	"imageURL": "/images/BoxPlaceholder.png",
+	    	"user": "User2"
+	    },
+	    {
+	    	"box": "Box3",
+	    	"imageURL": "/images/BoxPlaceholder.png",
+	    	"user": "User3"
+	    },
+	    {
+	    	"box": "Box4",
+	    	"imageURL": "/images/BoxPlaceholder.png",
+	    	"user": "User4"
+	    }
+    ],
+    "items": [
+    	{
+    		"name": "Hat",
+    		"imageURL": "/images/items/hat/hat.png",
+    		"link": "/images/items/Hat/Hat_link.webloc"
+    	},
+    	{
+    		"name": "Shirt",
+    		"imageURL": "/images/items/shirt/shirt.png",
+    		"link": "/images/items/shirt/shirt.webloc"
+    	},
+    	{
+    		"name": "Pants",
+    		"imageURL": "images/items/pants/pants.png",
+    		"link": "/images/items/pants/pants_link.webloc"
+    	},
+    	{
+    		"name": "Shoes",
+    		"imageURL": "images/items/shoes/shoes.png",
+    		"link": "/images/items/shoes/shoes_link.webloc"
+    	}
     ]
 }
