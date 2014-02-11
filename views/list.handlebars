@@ -42,7 +42,51 @@
                 </div><!--/.nav-collapse -->
             </div>
         </div>
+        <div class="title main-title">
+            <div class="container list">
+                <h4>[SELECTED TAG] BOXES</h4>
+            </div>
+        </div>
         <div class="container list">
-            <h1>List of <a href="/box">Boxes</a></h1>
+            <div class="row" id="list_row">
+                <div class="col-xs-4">
+                    <a href="/box"><img src={{list.0.imageURL}} class="img-responsive">
+                </div>
+                <div class="col-xs-8">
+                    <h5>{{list.0.box}}</h5>
+                    <p>Created by: {{list.0.user}}</p>
+                    <p>[Tags]</p>
+                </div>
+            </div>
+            <div class="row" id="list_row">
+                <div class="col-xs-4">
+                    <a href="/box"><img src={{list.1.imageURL}} class="img-responsive">
+                </div>
+                <div class="col-xs-8">
+                    <h5>{{list.1.box}}</h5>
+                    <p>Created by: {{list.1.user}}</p>
+                    <p>[Tags]</p>
+                </div>
+            </div>
+            <div class="row" id="list_row">
+                <div class="col-xs-4">
+                    <a href="/box"><img src={{list.2.imageURL}} class="img-responsive">
+                </div>
+                <div class="col-xs-8">
+                    <h5>{{list.2.box}}</h5>
+                    <p>Created by: {{list.2.user}}</p>
+                    <p>[Tags]</p>
+                </div>
+            </div>
+            <div class="row" id="list_row">
+                <div class="col-xs-4">
+                    <a href="/box"><img src={{list.3.imageURL}} class="img-responsive">
+                </div>
+                <div class="col-xs-8">
+                    <h5>{{list.3.box}}</h5>
+                    <p>Created by: {{list.3.user}}</p>
+                    <p>[Tags]</p>
+                </div>
+            </div>
         </div>
     </html>

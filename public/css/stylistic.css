@@ -212,14 +212,31 @@ h1, h2, h3, h4, h5, h6, p, a {
     border-radius: 4px;
 }
 
-.recommended .row .col-xs-4 {
-    padding-left: 5px;
-    padding-right: 5px;
+.months option {
+    height: 80px;
 }
 
-.form-birthday {
-    position: relative;
-    height: 40px;
+.recommended .row {
+    padding-top: 10px;
 }
+
+.recommended .tagOverlay {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    right: 15px;
+    background-color: rgba(0,0,0,0.7);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#list_row {
+    background-color: #E9E7E7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
 
 
