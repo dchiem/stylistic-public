@@ -87,19 +87,19 @@
     "recommended": [
     	{
     		"name": "FEATURED",
-    		"imageURL": "/images/recommendedpictures/featured.png"
+    		"imageURL": "public/images/recommendedpictures/featured.png"
     	},
     	{
     		"name": "TRENDING",
-    		"imageURL": "/images/recommendedpictures/trending.png"
+    		"imageURL": "public/images/recommendedpictures/trending.png"
     	},
     	{
     		"name": "POPULAR",
-    		"imageURL": "/images/recommendedpictures/popular.png"
+    		"imageURL": "public/images/recommendedpictures/popular.png"
     	},
     	{
     		"name": "NEW RELEASES",
-    		"imageURL": "/images/recommendedpictures/newreleases.png"
+    		"imageURL": "public/images/recommendedpictures/newreleases.png"
     	}
     ],
     "list": [
