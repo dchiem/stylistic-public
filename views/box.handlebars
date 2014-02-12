@@ -64,8 +64,8 @@
             </div>
         </div>
 
-        <div class="container box items">
-            {{#each items}}
+        <div class="container box_items">
+            <!--{{#each items}}
                 {{#addRow @index}}
                 <div class="row">
                 {{/addRow}}
@@ -75,7 +75,14 @@
                 {{#endRow @index}}
                 </div>
                 {{/endRow}}
+            {{/each}} -->
+
+            {{#each items}}
+                    <div class="col-xs-6">
+                       <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
+                    </div>
             {{/each}}
+
         </div>
     </body>
 
