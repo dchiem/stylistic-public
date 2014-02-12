@@ -9,11 +9,18 @@
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/lightbox-2.6.min.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/hci-friends.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
         <link href="css/lightbox.css" rel="stylesheet" />
+        <script>
+            $(document).ready(function(){
+                $("p").hide();
+                $("h2 > img").click(function(){
+                    $("p").toggle(200);
+                });
+            });
+        </script>
 
         <style type="text/css">
             body {
@@ -60,10 +67,10 @@
 
         <div class="transparent_box">
             <div class="box_title">
-                <h2>[NAME OF THIS BOX]</h2>
+                <h2>[NAME OF THIS BOX]<img src="images/info-icon.png" height="30px"></h2>
+                <p>Created by: [USER]<br>Tags: [TAGS]</p>
             </div>
         </div>
-
         <div class="container box_items">
             <!--{{#each items}}
                 {{#addRow @index}}
@@ -76,6 +83,7 @@
                 </div>
                 {{/endRow}}
             {{/each}} -->
+
 
             {{#each items}}
                     <div class="col-xs-6">
