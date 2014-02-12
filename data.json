@@ -181,25 +181,25 @@
 	    	"box": "Box1",
 	    	"imageURL": "/images/BoxPlaceholder.png",
 	    	"user": "James",
-	    	"tags" : ["CLASSY", "PREPPY", "HIPSTER", "POPULAR"]
+	    	"tags" : [" CLASSY", " PREPPY", " HIPSTER", " POPULAR"]
 	    },
 	    {
 	    	"box": "Box2",
 	    	"imageURL": "/images/BoxPlaceholder.png",
 	    	"user": "Alex",
-	    	"tags" : ["SPORTY", "TRENDING"]
+	    	"tags" : [" SPORTY", " TRENDING"]
 	    },
 	    {
 	    	"box": "Box3",
 	    	"imageURL": "/images/BoxPlaceholder.png",
 	    	"user": "Sam",
-	    	"tags" : ["ROCKER", "GOTHIC", "NEW RELEASES"]
+	    	"tags" : [" ROCKER", " GOTHIC", " NEW RELEASES"]
 	    },
 	    {
 	    	"box": "Box4",
 	    	"imageURL": "/images/BoxPlaceholder.png",
 	    	"user": "Tobias",
-	    	"tags" : ["DENIM", "WESTERN", "HIPSTER", "FEATURED"]
+	    	"tags" : [" DENIM", " WESTERN", " HIPSTER", " FEATURED"]
 	    }
     ],
     "items": [
