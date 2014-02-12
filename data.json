@@ -205,23 +205,23 @@
     "items": [
     	{
     		"name": "Hat",
-    		"imageURL": "/images/items/hat/hat.png",
+    		"imageURL": "/images/items/Hat/Hat.png",
     		"link": "/images/items/Hat/Hat_link.webloc"
     	},
     	{
     		"name": "Shirt",
-    		"imageURL": "/images/items/shirt/shirt.png",
-    		"link": "/images/items/shirt/shirt.webloc"
+    		"imageURL": "/images/items/Shirt/Shirt.png",
+    		"link": "/images/items/Shirt/Shirt.webloc"
     	},
     	{
     		"name": "Pants",
-    		"imageURL": "images/items/pants/pants.png",
-    		"link": "/images/items/pants/pants_link.webloc"
+    		"imageURL": "images/items/Pants/Pants.png",
+    		"link": "/images/items/Pants/Pants_link.webloc"
     	},
     	{
     		"name": "Shoes",
-    		"imageURL": "images/items/shoes/shoes.png",
-    		"link": "/images/items/shoes/shoes_link.webloc"
+    		"imageURL": "images/items/Shoes/Shoes.png",
+    		"link": "/images/items/Shoes/Shoes_link.webloc"
     	}
     ]
 }
