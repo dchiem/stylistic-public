@@ -180,22 +180,26 @@
 	    {
 	    	"box": "Box1",
 	    	"imageURL": "/images/BoxPlaceholder.png",
-	    	"user": "User1"
+	    	"user": "James",
+	    	"tags" : ["CLASSY", "PREPPY", "HIPSTER", "POPULAR"]
 	    },
 	    {
 	    	"box": "Box2",
 	    	"imageURL": "/images/BoxPlaceholder.png",
-	    	"user": "User2"
+	    	"user": "Alex",
+	    	"tags" : ["SPORTY", "TRENDING"]
 	    },
 	    {
 	    	"box": "Box3",
 	    	"imageURL": "/images/BoxPlaceholder.png",
-	    	"user": "User3"
+	    	"user": "Sam",
+	    	"tags" : ["ROCKER", "GOTHIC", "NEW RELEASES"]
 	    },
 	    {
 	    	"box": "Box4",
 	    	"imageURL": "/images/BoxPlaceholder.png",
-	    	"user": "User4"
+	    	"user": "Tobias",
+	    	"tags" : ["DENIM", "WESTERN", "HIPSTER", "FEATURED"]
 	    }
     ],
     "items": [

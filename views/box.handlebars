@@ -6,11 +6,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/lightbox-2.6.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/hci-friends.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
+        <link href="css/lightbox.css" rel="stylesheet" />
 
         <style type="text/css">
             body {
@@ -48,16 +51,31 @@
                 </div><!--/.nav-collapse -->
             </div>
         </div>
-        <div class="title main-title">
+
+        <!-- <div class="title main-title">
             <div class="container list">
                 <h4>[NAME OF THIS BOX]</h4>
             </div>
+        </div> -->
+
+        <div class="transparent_box">
+            <div class="box_title">
+                <h2>[NAME OF THIS BOX]</h2>
+            </div>
         </div>
-        <div class="container box">
-            <!--<img src="images/InsideBox.png" id="box_background"></img>
-            <<div>
-                <img src="{{items.0.imageURL}}">
-            </div>-->
+
+        <div class="container box items">
+            {{#each items}}
+                {{#addRow @index}}
+                <div class="row">
+                {{/addRow}}
+                    <div class="col-xs-6">
+                       <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
+                    </div>
+                {{#endRow @index}}
+                </div>
+                {{/endRow}}
+            {{/each}}
         </div>
     </body>
 
