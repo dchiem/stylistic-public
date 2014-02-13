@@ -178,50 +178,116 @@
     ],
     "list": [
 	    {
-	    	"box": "Box1",
-	    	"imageURL": "/images/BoxPlaceholder.png",
+	    	"box": "Valentines Date Night",
+	    	"imageURL": "/images/Box1/box1cover.png",
 	    	"user": "James",
 	    	"tags" : [" CLASSY", " PREPPY", " HIPSTER", " POPULAR"]
 	    },
 	    {
-	    	"box": "Box2",
-	    	"imageURL": "/images/BoxPlaceholder.png",
+	    	"box": "Early Morning Run",
+	    	"imageURL": "/images/Box2/box2cover.png",
 	    	"user": "Alex",
 	    	"tags" : [" SPORTY", " TRENDING"]
 	    },
 	    {
-	    	"box": "Box3",
-	    	"imageURL": "/images/BoxPlaceholder.png",
+	    	"box": "Rock 'n Roll",
+	    	"imageURL": "/images/Box3/box3cover.png",
 	    	"user": "Sam",
 	    	"tags" : [" ROCKER", " GOTHIC", " NEW RELEASES"]
 	    },
 	    {
-	    	"box": "Box4",
-	    	"imageURL": "/images/BoxPlaceholder.png",
+	    	"box": "Strolling Through The City",
+	    	"imageURL": "/images/Box4/box4cover.png",
 	    	"user": "Tobias",
 	    	"tags" : [" DENIM", " WESTERN", " HIPSTER", " FEATURED"]
 	    }
     ],
-    "items": [
+    "box1_items": [
     	{
-    		"name": "Hat",
-    		"imageURL": "/images/items/Hat/Hat.png",
-    		"link": "/images/items/Hat/Hat_link.webloc"
+    		"name": "Black Tie",
+    		"imageURL": "/images/Box1/blacktie.png",
+    		"link": "/images/Box1/blacktie.webloc"
     	},
     	{
-    		"name": "Shirt",
-    		"imageURL": "/images/items/Shirt/Shirt.png",
-    		"link": "/images/items/Shirt/Shirt.webloc"
+    		"name": "Grey Pants",
+    		"imageURL": "/images/Box1/greypants.png",
+    		"link": "/images/Box1/greypants.webloc"
     	},
     	{
-    		"name": "Pants",
-    		"imageURL": "images/items/Pants/Pants.png",
-    		"link": "/images/items/Pants/Pants_link.webloc"
+    		"name": "Grey Blazer",
+    		"imageURL": "/images/Box1/greyblazer.png",
+    		"link": "/images/Box1/greyblazer.webloc"
+    	},
+    	{
+    		"name": "Dress Shoes",
+    		"imageURL": "/images/Box1/dressshoes.png",
+    		"link": "/images/Box1/dressshoes.webloc"
+    	}
+    ],
+    "box2_items": [
+    	{
+    		"name": "Nike Hoodie",
+    		"imageURL": "/images/Box2/hoodie.png",
+    		"link": "/images/Box2/hoodie.webloc"
+    	},
+    	{
+    		"name": "Nike Long-Sleeve",
+    		"imageURL": "/images/Box2/nikelongsleeve.png",
+    		"link": "/images/Box2/nikelongsleeve.webloc"
+    	},
+    	{
+    		"name": "Nike Running Shoes",
+    		"imageURL": "/images/Box2/nikeshoes.png",
+    		"link": "/images/Box2/nikeshoes.webloc"
+    	},
+    	{
+    		"name": "Nike Running Shorts",
+    		"imageURL": "/images/Box2/runningshorts.png",
+    		"link": "/images/Box2/runningshorts.webloc"
+    	}
+    ],
+    "box3_items": [
+    	{
+    		"name": "Black Boots",
+    		"imageURL": "/images/Box3/blackboots.png",
+    		"link": "/images/Box3/blackboots.webloc"
+    	},
+    	{
+    		"name": "Black Short Sleeve",
+    		"imageURL": "/images/Box3/blackshortsleeve.png",
+    		"link": "/images/Box3/blackshortsleeve.webloc"
+    	},
+    	{
+    		"name": "Leather Jacket",
+    		"imageURL": "/images/Box3/leatherjacket.png",
+    		"link": "/images/Box3/leatherjacket.webloc"
     	},
     	{
     		"name": "Shoes",
-    		"imageURL": "images/items/Shoes/Shoes.png",
-    		"link": "/images/items/Shoes/Shoes_link.webloc"
+    		"imageURL": "/images/Box3/lionpendant.png",
+    		"link": "/images/Box3/lionpendant.webloc"
+    	}
+    ],
+    "box4_items": [
+    	{
+    		"name": "Black Leather Hat",
+    		"imageURL": "/images/Box4/items/Hat/Hat.png",
+    		"link": "/images/Box4/items/Hat/Hat_link.webloc"
+    	},
+    	{
+    		"name": "Floral Shirt",
+    		"imageURL": "/images/Box4/items/Shirt/Shirt.png",
+    		"link": "/images/Box4/items/Shirt/Shirt.webloc"
+    	},
+    	{
+    		"name": "Blue Jeans",
+    		"imageURL": "images/Box4/items/Pants/Pants.png",
+    		"link": "/images/Box4/items/Pants/Pants_link.webloc"
+    	},
+    	{
+    		"name": "White Shoes",
+    		"imageURL": "images/Box4/items/Shoes/Shoes.png",
+    		"link": "/images/Box4/items/Shoes/Shoes_link.webloc"
     	}
     ]
 }

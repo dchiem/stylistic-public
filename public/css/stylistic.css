@@ -232,10 +232,14 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 #list_row {
-    background-color: #E9E7E7;
+    background-color: rgba(0, 0, 0, 0.8);
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 5px;
+}
+
+#list_row p {
+    color: #fff;
 }
 
 .items img {
