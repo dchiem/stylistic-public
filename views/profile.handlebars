@@ -42,7 +42,41 @@
                 </div><!--/.nav-collapse -->
             </div>
         </div>
-        <div class="container browse">
-            <h1>Profile. This will have links to <a href="/box">Boxes</a></h1>
+        <div class="container users">
+            <h1>Hi, {{users.0.username}}!</h1>
         </div>
-    </html>
+        <div class="container users">
+            <div class="row" id="list_row">
+                <div class="col-xs-4">
+                    <a href="/profile"><img src={{imageURL}} class="img-responsive">
+                </div>
+                <div class="col-xs-8">
+                    <h5 class = "name">{{users.0.name}}</h5></a>
+                    <p class = "motto">{{users.0.motto}}</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="title main-title">
+            <div class="container users">
+                <h4>YOUR BOXES</h4>
+            </div>
+        </div>
+
+        <div>
+            {{#each list}}
+            <div class="row" id="list_row">
+                <div class="col-xs-4">
+                    <a href="/box"><img src={{imageURL}} class="img-responsive">
+                </div>
+                <div class="col-xs-8">
+                    <h5>{{box}}</h5></a>
+                    <p>Created by: <a href="profile">{{user}}</a></p>
+                    <p>Tags: {{tags}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </body>
+</html>

@@ -352,5 +352,16 @@ h1, h2, h3, h4, h5, h6, p, a {
     visibility:hidden;
 }
 
+.motto {
+    font-family: "Avenir Book", "Avenir", sans-serif;
+    font-style: italic;
+}
+
+.name {
+    font-family: "Avenir Book", "Avenir", sans-serif;
+    font-weight: light;
+    font-size: 25px;
+}
+
 
 
