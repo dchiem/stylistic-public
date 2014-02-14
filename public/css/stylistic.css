@@ -41,8 +41,64 @@
     box-shadow:none;
 }
 
-#stepsBackground {
+#stepsBackground, .makeprofile {
     background-color: #f6f6f6;
+    height:100%;
+}
+
+.profile {
+    background-color:white;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.profile-card {
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    color:#4f4f4f;
+}
+
+.profile-card h4 {
+    padding-top:10px;
+    text-align:left;
+}
+
+.tagline {
+    padding-top:5px;
+    padding-bottom:10px;
+    text-align:center;
+}
+
+.tagline input {
+    text-align:center;
+}
+
+#skipBtn, #contBtn {
+    float:right;
+    margin-right:3px;
+    margin-bottom:10px;
+}
+
+#skipBtn {
+    border-radius(0);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-shadow: none;
+    color:white;
+    background-color:black;
+    background-image:none;
+}
+
+.tagline input {
+    border-style:none;
+    font-style:italic;
+}
+
+.buttons {
+    margin-bottom:10px;
 }
 
 .getStarted{
@@ -88,7 +144,7 @@
     width:140px;
 }
 
-#getStartedBtn, #loginBtn, #signupBtn, #sendBtn {
+#getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn {
     background-image:url('../images/stylisticbutton.jpg');
     border-radius(0);
     -webkit-border-radius: 0;
@@ -194,6 +250,19 @@ h1, h2, h3, h4, h5, h6, p, a {
     padding-right: 5px;
 }
 
+.checkedOverlay {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 5px;
+    right: 5px;
+    background-color: rgba(102,153,255,0.7);
+    margin: 0 auto;
+    text-align: center;
+    visibility: hidden;
+}
+
 .tagOverlay {
     color: white;
     position: absolute;
@@ -279,6 +348,9 @@ h1, h2, h3, h4, h5, h6, p, a {
     float: right;
 }
 
+.tag-stuff {
+    visibility:hidden;
+}
 
 
 
