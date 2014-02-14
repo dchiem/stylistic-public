@@ -11,7 +11,6 @@
 	    {
 			"name": "CLASSY",
 			"imageURL": "images/browsepictures/Classy2.png"
-
 		},
 		{
 			"name": "DENIM",
@@ -178,6 +177,30 @@
     ],
     "list": [
 	    {
+	    	"box": "Valentines Date Night",
+	    	"imageURL": "/images/Box1/box1cover.png",
+	    	"user": "James",
+	    	"tags" : [" CLASSY", " PREPPY", " HIPSTER", " POPULAR"]
+	    },
+	    {
+	    	"box": "Early Morning Run",
+	    	"imageURL": "/images/Box2/box2cover.png",
+	    	"user": "Alex",
+	    	"tags" : [" SPORTY", " TRENDING"]
+	    },
+	    {
+	    	"box": "Rock 'n Roll",
+	    	"imageURL": "/images/Box3/box3cover.png",
+	    	"user": "Sam",
+	    	"tags" : [" ROCKER", " GOTHIC", " NEW RELEASES"]
+	    },
+	    {
+	    	"box": "Strolling Through The City",
+	    	"imageURL": "/images/Box4/box4cover.png",
+	    	"user": "Tobias",
+	    	"tags" : [" DENIM", " WESTERN", " HIPSTER", " FEATURED"]
+	    },
+        {
 	    	"box": "Valentines Date Night",
 	    	"imageURL": "/images/Box1/box1cover.png",
 	    	"user": "James",
