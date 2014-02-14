@@ -2,7 +2,6 @@
 
 var male = false;
 var female = false;
-var data = require(data.json)
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -20,6 +19,11 @@ function initializePage() {
         male = !male;
         updateGenderForm();
         toggleVisibility("male checkedOverlay");
+        if (!male & !female) {
+            setVisibility("tag-stuff", "hidden");
+        } else {
+            setVisibility("tag-stuff", "visible");
+        }
         console.log(genderTag());
     });
     $(".female a").click(function(e) {
@@ -28,6 +32,11 @@ function initializePage() {
         female = !female;
         updateGenderForm();
         toggleVisibility("female checkedOverlay");
+        if (!male & !female) {
+            setVisibility("tag-stuff", "hidden");
+        } else {
+            setVisibility("tag-stuff", "visible");
+        }
         console.log(genderTag());
     });
 }
@@ -36,6 +45,10 @@ function toggleVisibility(className) {
     var visible = document.getElementsByClassName(className)[0].style.visibility;
     if (visible == "visible") visible = "hidden";
     else visible = "visible";
+    setVisibility(className, visible)
+}
+
+function setVisibility(className, visible) {
     document.getElementsByClassName(className)[0].style.visibility = visible;
 }
 

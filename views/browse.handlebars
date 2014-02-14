@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/stylistic.js"></script>
+        <script src="js/browse.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
@@ -55,7 +55,7 @@
         </div>
         <div class="container gender browse">
             <div class="row">
-                <div class="col-xs-1"></div>
+                <div class="col-xs-2"></div>
                 <div class="col-xs-4 male">
                     <a href="/browse"><img src={{male.imageURL}}  class="img-responsive">
                         <div class="tagOverlay">
@@ -66,7 +66,6 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-2"></div>
                 <div class="col-xs-4 female">
                     <a href="/browse"><img src={{female.imageURL}} class="img-responsive">
                         <div class="tagOverlay">
@@ -80,6 +79,7 @@
                 <div class="col-xs-1"></div>
             </div>
         </div>
+        <div class="tag-stuff">
         <div class="title sub-title">
             <div class="container browse">
                 <h4>TAGS</h4>
@@ -112,4 +112,5 @@
             {{/endRow}}
             {{/each}}
         </div>
+    </div>
     </html>
