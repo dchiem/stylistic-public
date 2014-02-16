@@ -49,11 +49,25 @@
         <div class="container list">
             {{#each list}}
             <div class="row" id="list_row">
+
+                <!--
                 <div class="col-xs-4">
                     <a href="/box"><img src={{imageURL}} class="img-responsive">
                 </div>
+                -->
+
+                <div class="col-xs-4">
+                <form id="tagForm" role="form" method="get" action="/box">
+                    <input type="hidden" value={{box}} name="boxname"/>
+                    <input type="hidden" value={{user}} name="user"/>
+                    <input type="hidden" value={{tags}} name="tag"/>
+                    <input type="hidden" value={{boxitems}} name="boxitems"/>
+                    <input type="image" src={{imageURL}} class="img-responsive"/>
+                 </form>
+                 </div>
+
                 <div class="col-xs-8">
-                    <h5>{{box}}</h5></a>
+                    <h5>{{box}}</h5>
                     <p>Created by: <a href="profile">{{user}}</a></p>
                     <p>Tags: {{tags}}</p>
                 </div>

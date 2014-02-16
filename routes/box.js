@@ -2,24 +2,14 @@
 var data = require('../data.json');
 
 exports.view = function(req, res){
-	data['helpers'] =
-        {
-            addRow: function(index, options) {
-                        if ((index)%2 == 0) {
-                            return options.fn(this);
-                        }
-                        else {
-                            return options.inverse(this);
-                        }
-                    },
-            endRow: function(index, options) {
-                        if ((index)%2 == 1) {
-                            return options.fn(this);
-                        }
-                        else {
-                            return options.inverse(this);
-                        }
-                    }
-        };
+    console.log("boxname:" + req.query.boxname);
+    console.log("user:" + req.query.user);
+    console.log("tag:" + req.query.tag);
+    console.log("boxitems:" + req.query.boxitems)
+    data["boxname"] = req.query.boxname;
+    data["user"] = req.query.user;
+    data["tag"] = req.query.tag;
+    data["boxitems"] = req.query.boxitems;
+    
 	res.render('box', data);
 };
