@@ -9,6 +9,7 @@
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/lightbox-2.6.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/box.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
@@ -67,8 +68,8 @@
 
         <div class="transparent_box">
             <div class="box_title">
-                <h2>[NAME OF THIS BOX]<img src="images/info-icon.png" height="30px"></h2>
-                <p>Created by: [USER]<br>Tags: [TAGS]</p>
+                <h2>{{boxname}}<img src="images/info-icon.png" height="30px"></h2>
+                <p>Created by: <a href="profile">{{user}}</a><br>Tags: {{tag}}</p>
             </div>
         </div>
         <div class="container box_items">
@@ -85,7 +86,7 @@
             {{/each}} -->
 
 
-            {{#each box4_items}}
+            {{#each box1_items}}
                     <div class="col-xs-6">
                        <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
                     </div>

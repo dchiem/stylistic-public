@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/hci-friends.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
@@ -31,7 +30,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">s t y l i s t i c</a>
+                    <a class="navbar-brand" href="/">s t y l i s t i c</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
@@ -48,7 +47,7 @@
         <div class="container users">
             <div class="row" id="list_row">
                 <div class="col-xs-4">
-                    <a href="/profile"><img src={{imageURL}} class="img-responsive">
+                    <a href="/profile"><img src={{users.0.imageURL}} class="img-responsive">
                 </div>
                 <div class="col-xs-8">
                     <h5 class = "name">{{users.0.name}}</h5></a>
