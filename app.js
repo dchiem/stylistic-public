@@ -20,6 +20,7 @@ var signup = require('./routes/signup');
 var forgot = require('./routes/forgot');
 var profile = require('./routes/profile');
 var makeprofile = require('./routes/makeprofile');
+var home = require('./routes/home');
 // Example route
 // var user = require('./routes/user');
 
@@ -58,6 +59,7 @@ app.get('/signup', signup.view);
 app.get('/forgot', forgot.view);
 app.get('/profile', profile.view);
 app.get('/makeprofile', makeprofile.view);
+app.get('/home', home.view);
 // app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

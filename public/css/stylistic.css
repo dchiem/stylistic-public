@@ -14,8 +14,7 @@
 }
 
 .navbar-toggle {
-    float: left;
-    margin-left: 15px;
+    float: right;
     border: none;
 }
 
@@ -28,8 +27,9 @@
     color: black;
     font-family: "Futura", sans-serif;
     font-size: 26px;
-    padding-left: 20px;
     border-width:0;
+    padding-right: 35px;
+    float: right;
 }
 
 .navbar {
@@ -39,6 +39,14 @@
 .container, .navbar-default{
     background-color: white;
     box-shadow:none;
+}
+
+.back-button {
+    position:relative;
+    float: left;
+    padding-right: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 #stepsBackground, .makeprofile {
@@ -144,7 +152,12 @@
     width:140px;
 }
 
-#getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn {
+.home-buttons {
+    padding-top: 80px;
+    text-align: center;
+}
+
+#getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn {
     background-image:url('../images/stylisticbutton.jpg');
     border-radius(0);
     -webkit-border-radius: 0;
@@ -152,6 +165,11 @@
     border-radius: 0;
     text-shadow: none;
     color:white;
+}
+
+#homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn {
+    width: 200px;
+    margin-top: 20px;
 }
 
 .form-control {

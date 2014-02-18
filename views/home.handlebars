@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/hci-friends.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
@@ -43,21 +42,19 @@
                 </div><!--/.nav-collapse -->
             </div>
         </div>
-        <div class="container login">
-            <div class="row">
-                <div class="col-lg-4">
-                    <form action="/browse" method="get">
-                        <input type="text" class="form-control" placeholder="Username"><br>
-                        <input type="password" class="form-control" placeholder="Password"><br>
-                        <button type="submit" class="btn btn-default btn-md form-control" id="loginBtn">Log In</button>
-                    </form>
-                </div>
-                <div class="col-lg-4 forgot">
-                    <a href="/forgot">Forgot your password?</a><br>
-                </div>
-                <div class="col-lg-4 sign-up">
-                    Don't have an account? <a href="/signup">Sign Up</a>
-                </div>
+        <div class="title main-title">
+            <div class="container recommended">
+                <h4>HOME</h4>
             </div>
         </div>
-    </html>
+        <div class="home-buttons">
+            <form method="get" action="/browse">
+                <button type="submit" class="btn btn-default btn-md" id="homeBrowseBtn">Browse Boxes</button>
+            </form>
+            <form method="get" action="/profile">
+                <button type="submit" class="btn btn-default btn-md" id="homeMyBoxBtn">My Boxes</button>
+            </form>
+            <form method="get" action="/login">
+                <button type="submit" class="btn btn-default btn-md" id="homeLoginBtn">Log In</button>
+            </form>
+        </div>
