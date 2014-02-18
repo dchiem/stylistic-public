@@ -47,37 +47,26 @@
             </div>
         </div>
         <div class="container recommended">
+            {{#each recommended}}
+            {{#addRow @index}}
             <div class="row">
                 <div class="col-xs-1"></div>
+                {{/addRow}}
                 <div class="col-xs-5">
-                    <a href="/browse"><img src={{recommended.0.imageURL}} class="img-responsive">
+                    <form id="tagForm" role="form" method="get" action="/list">
+                        <input type="hidden" value={{name}} name="tag"/>
+                        <input type="hidden" class="gender-form" value="MF" name="gender"/>
+                        <input type="image" src={{imageURL}} class="img-responsive"/>
                         <div class=tagOverlay>
-                            <h6>{{recommended.0.name}}</h6>
+                            <h6>{{name}} </h6>
                         </div>
+                    </form>
                 </div>
-                <div class="col-xs-5">
-                    <a href="/browse"><img src={{recommended.1.imageURL}} class="img-responsive">
-                        <div class=tagOverlay>
-                            <h6>{{recommended.1.name}}</h6>
-                        </div>
-                </div>
+                {{#endRow @index}}
                 <div class="col-xs-1"></div>
             </div>
-            <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-5">
-                    <a href="/browse"><img src={{recommended.2.imageURL}} class="img-responsive">
-                        <div class=tagOverlay>
-                            <h6>{{recommended.2.name}}</h6>
-                        </div>
-                </div>
-                <div class="col-xs-5">
-                    <a href="/browse"><img src={{recommended.3.imageURL}} class="img-responsive">
-                        <div class=tagOverlay>
-                            <h6>{{recommended.3.name}}</h6>
-                        </div>
-                </div>
-                <div class="col-xs-1"></div>
+            {{/endRow}}
+            {{/each}}
             </div>
         </div>
     </html>
