@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/hci-friends.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
@@ -48,14 +47,27 @@
             </div>
         </div>
         <div class="container recommended">
+            {{#each recommended}}
+            {{#addRow @index}}
             <div class="row">
                 <div class="col-xs-1"></div>
+                {{/addRow}}
                 <div class="col-xs-5">
-                    <a href="/list"><img src={{recommended.0.imageURL}} class="img-responsive">
+                    <form id="tagForm" role="form" method="get" action="/list">
+                        <input type="hidden" value={{name}} name="tag"/>
+                        <input type="hidden" class="gender-form" value="MF" name="gender"/>
+                        <input type="image" src={{imageURL}} class="img-responsive"/>
                         <div class=tagOverlay>
-                            <h6>{{recommended.0.name}}</h6>
+                            <h6>{{name}} </h6>
                         </div>
+                    </form>
                 </div>
+                {{#endRow @index}}
+                <div class="col-xs-1"></div>
+            </div>
+            {{/endRow}}
+            {{/each}}
+            <!--
                 <div class="col-xs-5">
                     <a href="/list"><img src={{recommended.1.imageURL}} class="img-responsive">
                         <div class=tagOverlay>
@@ -79,6 +91,7 @@
                         </div>
                 </div>
                 <div class="col-xs-1"></div>
+                -->
             </div>
         </div>
     </html>

@@ -49,8 +49,10 @@
         <div class="container list">
             {{#each list}}
             <div class="row" id="list_row">
+                <form id="boxForm" role="form" method="get" action="/box">
                 <div class="col-xs-4">
-                    <a href="/box"><img src={{imageURL}} class="img-responsive">
+                    <input type="image" src={{imageURL}} class="img-responsive">
+                    <input type="hidden" value={{name}} name="tag"/>
                 </div>
                 <div class="col-xs-8">
                     <h5>{{box}}</h5></a>
