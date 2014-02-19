@@ -164,7 +164,8 @@
     background-color: rgba(255,255,255, 0.3);
 }
 
-#getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn {
+#getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn,
+ #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn {
     background-image:url('../images/stylisticbutton.jpg');
     border-radius(0);
     -webkit-border-radius: 0;
@@ -174,7 +175,7 @@
     color:white;
 }
 
-#homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn {
+#homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn {
     width: 200px;
     margin-top: 20px;
 }
@@ -297,13 +298,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-color: rgba(0,0,0,0.7);
     margin: 0 auto;
     text-align: center;
-}
-
-.recommended {
-    border-radius(4);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
 }
 
 .months option {
