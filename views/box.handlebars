@@ -63,7 +63,11 @@
         <div class="transparent_box">
             <div class="box_title">
                 <h2>{{thebox.box}}<img src="images/info-icon.png" height="30px"></h2>
-                <p>Created by: <a href="profile">{{thebox.user}}</a><br>Tags: {{thebox.tags}}</p>
+                <p>Created by: <a href="profile">{{thebox.user}}</a><br>Tags: 
+                {{#each thebox.tags}}
+                    {{this}}
+                {{/each}}
+                </p>
             </div>
         </div>
         <div class="container box_items">
