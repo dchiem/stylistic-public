@@ -1,3 +1,10 @@
+.makeprofile-body {
+    height: 100%;
+}
+
+.username h4 {
+}
+
 .navbar-fixed-top {
     position:relative;
 }

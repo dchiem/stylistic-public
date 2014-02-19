@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html>
+<html class="makeprofile-body">
     <head>
         <title>Stylistic</title>	
         <meta charset="utf-8">
@@ -21,7 +21,7 @@
         <![endif]-->        
     </head>
 
-    <body>
+    <body class="makeprofile-body">
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -50,33 +50,34 @@
         </div>
         <div class="container makeprofile">
             <form id="make-profile-form" role="form" method="get" action="/browse">
-            <div class="profile">
-                <div class="row profile-card">
-                    <div class="col-xs-6">
-                        <div class="photo">
-                            <a href="#"><img src="images/default.png" class="img-responsive"/></a>
+                <div class="profile">
+                    <div class="row profile-card">
+                        <div class="col-xs-5">
+                            <div class="photo">
+                                <a href="#"><img src="images/default.png" class="img-responsive"/></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-6">
-                        <div class="info">
-                            <div class="username">
-                                <h4>user123</h4>
+                        <div class="col-xs-7">
+                            <div class="info">
+                                <div class="username">
+                                    <h4>Bob Smith</h4>
+                                    <h4>@user123</h4>
+                                    <div class="tagline">
+                                        <input type="text" onclick="if (this.value == 'Add a tagline here') {this.value='';}"
+                                        onblur="if (this.value == '') {this.value='Add a tagline here';}" onkeypress=
+                                        "if(event.keyCode==13) {event.preventDefault();}" class="tagline-text" value='Add a tagline here'>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tagline">
-                    <input type="text" onclick="if (this.value == 'Add your profile here') {this.value='';}"
-                    onblur="if (this.value == '') {this.value='Add your profile here';}" onkeypress=
-                    "if(event.keyCode==13) {event.preventDefault();}" class="tagline-text" value='Add your profile here'>
+                <div class="buttons">
+                    <button type="submit" class="btn btn-default btn-md" id="skipBtn">Skip</button>
+                    <button type="submit" class="btn btn-default btn-md" id="contBtn">Continue</button>
                 </div>
             </div>
-            <div class="buttons">
-                <button type="submit" class="btn btn-default btn-md" id="skipBtn">Skip</button>
-                <button type="submit" class="btn btn-default btn-md" id="contBtn">Continue</button>
-            </div>
         </div>
-    </div>
-</html>
+    </html>
 
 
