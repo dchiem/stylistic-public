@@ -49,21 +49,25 @@
         </div>
         <div class="container list">
             {{#each boxes}}
-            <div class="row" id="list_row">
-                <div class="col-xs-4">
-                    <form id="tagForm" role="form" method="get" action="/box">
+            <form name="tagForm" id="tagForm" role="form" method="get" action="/box">
+                <div class="row" id="list_row" onClick="document.forms.tagForm.submit()">
+                    <div class="col-xs-4">
                         <input type="hidden" value={{box}} name="boxname"/>
                         <input type="hidden" value={{user}} name="user"/>
                         <input type="hidden" value={{_id}} name="id"/>
                         <input type="image" src={{imageURL}} class="img-responsive"/>
-                     </form>
-                 </div>
-                <div class="col-xs-8">
-                    <h5>{{box}}</h5>
-                    <p>Created by: {{user}}</a></p>
-                    <p>Tags: {{tags}}</p>
+                    </div>
+                    <div class="col-xs-8">
+                        <h5>{{box}}</h5>
+                        <p>Created by: {{user}}</p>
+                        <p>Tags: 
+                        {{#each tags}}
+                            {{this}}
+                        {{/each}}
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </form>
             {{/each}}
         </div>
     </html>

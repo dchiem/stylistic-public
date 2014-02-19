@@ -229,8 +229,13 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .gender {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.gender .glyphicon {
+    padding-top:30px;
+    font-size:3em;
 }
 
 .tags {
