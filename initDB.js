@@ -25,10 +25,10 @@ mongoose.connect(database_uri);
 // Do the initialization here
 
 // Step 1: load the JSON data
-var tags_json = require('./tags.json');
-var recommended_json = require('./recommended.json');
-var boxes_json = require('./boxes.json');
-var users_json = require('./users.json');
+var tags_json = require('./data/tags.json');
+var recommended_json = require('./data/recommended.json');
+var boxes_json = require('./data/boxes.json');
+var users_json = require('./data/users.json');
 
 // Step 2: Remove all existing documents
 models.Tags
