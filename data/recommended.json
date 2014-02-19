@@ -1,0 +1,18 @@
+[
+    {
+        "name": "FEATURED",
+        "imageURL": "images/recommendedpictures/Featured.png"
+    },
+    {
+        "name": "TRENDING",
+        "imageURL": "images/recommendedpictures/Trending.png"
+    },
+    {
+        "name": "POPULAR",
+        "imageURL": "images/recommendedpictures/Popular.png"
+    },
+    {
+        "name": "NEW RELEASES",
+        "imageURL": "images/recommendedpictures/NewReleases.png"
+    }
+]

@@ -58,9 +58,9 @@
             <div class="row">
                 <div class="col-xs-2"></div>
                 <div class="col-xs-4 male">
-                    <a href="/browse"><img src={{male.imageURL}}  class="img-responsive">
+                    <a href="/browse"><img src="images/man.jpg"  class="img-responsive">
                         <div class="tagOverlay">
-                            <h6>{{male.name}} </h6>
+                            <h6>MALE</h6>
                         </div>
                         <div class="male checkedOverlay">
                             <h5>Checked</h5>
@@ -68,9 +68,9 @@
                     </a>
                 </div>
                 <div class="col-xs-4 female">
-                    <a href="/browse"><img src={{female.imageURL}} class="img-responsive">
+                    <a href="/browse"><img src="images/woman.jpg" class="img-responsive">
                         <div class="tagOverlay">
-                            <h6>{{female.name}} </h6>
+                            <h6>FEMALE</h6>
                         </div>
                         <div class="female checkedOverlay">
                             <h5>Checked</h5>
@@ -87,18 +87,11 @@
             </div>
         </div>
         <div class="container tags browse">
-            {{#each male_tags}}
+            {{#each tags}}
             {{#addRow @index}}
             <div class="row">
                 {{/addRow}}
                 <div class="col-xs-4">
-                    <!--
-                    <a href="" class="tag-link"><img src={{imageURL}} class="img-responsive">
-                        <div class=tagOverlay>
-                            <h6>{{name}}</h6>
-                        </div>
-                    </a>
-                    -->
                     <form id="tagForm" role="form" method="get" action="/list">
                         <input type="hidden" value={{name}} name="tag"/>
                         <div class="gender-form"></div>

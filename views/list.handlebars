@@ -44,18 +44,17 @@
         </div>
         <div class="title main-title">
             <div class="container list">
-                <h4>{{gender}} {{tag}} BOXES</h4>
+                <h4>{{tag}} BOXES</h4>
             </div>
         </div>
         <div class="container list">
-            {{#each list}}
+            {{#each boxes}}
             <div class="row" id="list_row">
                 <div class="col-xs-4">
                     <form id="tagForm" role="form" method="get" action="/box">
                         <input type="hidden" value={{box}} name="boxname"/>
                         <input type="hidden" value={{user}} name="user"/>
-                        <input type="hidden" value={{tags}} name="tag"/>
-                        <input type="hidden" value={{boxitems}} name="boxitems"/>
+                        <input type="hidden" value={{_id}} name="id"/>
                         <input type="image" src={{imageURL}} class="img-responsive"/>
                      </form>
                  </div>

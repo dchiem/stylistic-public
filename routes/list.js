@@ -1,10 +1,23 @@
-// Get all of our friend data
-var data = require('../data.json');
+var models = require('../models');
 
 exports.view = function(req, res){
-    console.log("tag:" + req.query.tag);
-    console.log("gender:" + req.query.gender);
-    data["tag"] = req.query.tag;
-    data["gender"] = req.query.gender;
-	res.render('list', data);
+    var tag = req.query.tag;
+    var gender = req.query.gender;
+    console.log("tag:" + tag);
+    console.log("gender:" + gender);
+
+    // Get all boxes if both genders selected. Otherwise look for gender in gender tags
+    if (gender == "MF") {
+        models.Boxes
+            .find({tags: tag})
+            .exec(renderBoxes);
+    } else {
+	    models.Boxes
+		    .find({tags: tag, genders: gender})
+		    .exec(renderBoxes);
+    }
+
+    function renderBoxes(err, boxes) {
+	    res.render('list', {"boxes": boxes, "tag":tag});
+    }
 };

@@ -1,8 +1,12 @@
-// Get all of our friend data
-var data = require('../data.json');
+var models = require('../models');
 
 exports.view = function(req, res){
-    data['helpers'] =
+
+	models.Tags
+		.find()
+		.exec(renderTags);
+
+    var helpers =
         {
             addRow: function(index, options) {
                         if ((index)%3 == 0) {
@@ -21,5 +25,8 @@ exports.view = function(req, res){
                         }
                     }
         };
-    res.render('browse', data);
+
+    function renderTags(err, tags) {
+        res.render('browse', {'tags': tags, 'helpers':helpers});
+    }
 };

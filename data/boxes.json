@@ -1,0 +1,118 @@
+[
+{
+    "box": "Valentines Date Night",
+        "imageURL": "/images/Box1/box1cover.png",
+        "user": "James",
+        "genders": ["M", "F"],
+        "tags": ["CLASSY", "PREPPY", "HIPSTER", "POPULAR"],
+        "boxitems": [
+        {
+            "name": "Black Tie",
+            "imageURL": "/images/Box1/blacktie.png",
+            "link": "/images/Box1/blacktie.webloc"
+        },
+        {
+            "name": "Grey Pants",
+            "imageURL": "/images/Box1/greypants.png",
+            "link": "/images/Box1/greypants.webloc"
+        },
+        {
+            "name": "Grey Blazer",
+            "imageURL": "/images/Box1/greyblazer.png",
+            "link": "/images/Box1/greyblazer.webloc"
+        },
+        {
+            "name": "Dress Shoes",
+            "imageURL": "/images/Box1/dressshoes.png",
+            "link": "/images/Box1/dressshoes.webloc"
+        }
+    ]
+},
+{
+    "box": "Early Morning Run",
+    "imageURL": "/images/Box2/box2cover.png",
+    "user": "Alex",
+    "genders": ["M", "F"],
+    "tags": ["SPORTY", "TRENDING"],
+    "boxitems": [
+    {
+        "name": "Nike Hoodie",
+        "imageURL": "/images/Box2/hoodie.png",
+        "link": "/images/Box2/hoodie.webloc"
+    },
+    {
+        "name": "Nike Long-Sleeve",
+        "imageURL": "/images/Box2/nikelongsleeve.png",
+        "link": "/images/Box2/nikelongsleeve.webloc"
+    },
+    {
+        "name": "Nike Running Shoes",
+        "imageURL": "/images/Box2/nikeshoes.png",
+        "link": "/images/Box2/nikeshoes.webloc"
+    },
+    {
+        "name": "Nike Running Shorts",
+        "imageURL": "/images/Box2/runningshorts.png",
+        "link": "/images/Box2/runningshorts.webloc"
+    }
+    ]
+},
+{
+    "box": "Rock 'n Roll",
+    "imageURL": "/images/Box3/box3cover.png",
+    "user": "Sam",
+    "genders": ["M"],
+    "tags": ["ROCKER", "GOTHIC", "NEW RELEASES"],
+    "boxitems": [
+    {
+        "name": "Black Boots",
+        "imageURL": "/images/Box3/blackboots.png",
+        "link": "/images/Box3/blackboots.webloc"
+    },
+    {
+        "name": "Black Short Sleeve",
+        "imageURL": "/images/Box3/blackshortsleeve.png",
+        "link": "/images/Box3/blackshortsleeve.webloc"
+    },
+    {
+        "name": "Leather Jacket",
+        "imageURL": "/images/Box3/leatherjacket.png",
+        "link": "/images/Box3/leatherjacket.webloc"
+    },
+    {
+        "name": "Shoes",
+        "imageURL": "/images/Box3/lionpendant.png",
+        "link": "/images/Box3/lionpendant.webloc"
+    }
+    ]
+},
+{
+    "box": "Strolling Through The City",
+    "genders": ["F"],
+    "imageURL": "/images/Box4/box4cover.png",
+    "user": "Tobias",
+    "tags": ["DENIM", "WESTERN", "HIPSTER", "FEATURED"],
+    "boxitems": [
+    {
+        "name": "Black Leather Hat",
+        "imageURL": "/images/Box4/items/Hat/Hat.png",
+        "link": "/images/Box4/items/Hat/Hat_link.webloc"
+    },
+    {
+        "name": "Floral Shirt",
+        "imageURL": "/images/Box4/items/Shirt/Shirt.png",
+        "link": "/images/Box4/items/Shirt/Shirt.webloc"
+    },
+    {
+        "name": "Blue Jeans",
+        "imageURL": "images/Box4/items/Pants/Pants.png",
+        "link": "/images/Box4/items/Pants/Pants_link.webloc"
+    },
+    {
+        "name": "White Shoes",
+        "imageURL": "images/Box4/items/Shoes/Shoes.png",
+        "link": "/images/Box4/items/Shoes/Shoes_link.webloc"
+    }
+    ]
+}
+]

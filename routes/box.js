@@ -1,15 +1,18 @@
-// Get all of our friend data
-var data = require('../data.json');
+var models = require('../models');
 
 exports.view = function(req, res){
     console.log("boxname:" + req.query.boxname);
     console.log("user:" + req.query.user);
-    console.log("tag:" + req.query.tag);
-    console.log("boxitems:" + req.query.boxitems)
-    data["boxname"] = req.query.boxname;
-    data["user"] = req.query.user;
-    data["tag"] = req.query.tag;
-    data["boxitems"] = req.query.boxitems;
-    
-	res.render('box', data);
+    var boxname = req.query.boxname;
+    var user = req.query.user;
+    var id = req.query.id;
+    models.Boxes
+        .find({"_id": id})
+        .exec(renderBox);
+
+    function renderBox(err, box) {
+        console.log("thebox:" + box[0]);
+        res.render('box', {"thebox":box[0]});
+
+    }
 };

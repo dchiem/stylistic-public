@@ -9,7 +9,6 @@
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/lightbox-2.6.min.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/box.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
@@ -61,33 +60,14 @@
             </div>
         </div>
 
-        <!-- <div class="title main-title">
-            <div class="container list">
-                <h4>[NAME OF THIS BOX]</h4>
-            </div>
-        </div> -->
-
         <div class="transparent_box">
             <div class="box_title">
-                <h2>{{boxname}}<img src="images/info-icon.png" height="30px"></h2>
-                <p>Created by: <a href="profile">{{user}}</a><br>Tags: {{tag}}</p>
+                <h2>{{thebox.box}}<img src="images/info-icon.png" height="30px"></h2>
+                <p>Created by: <a href="profile">{{thebox.user}}</a><br>Tags: {{thebox.tags}}</p>
             </div>
         </div>
         <div class="container box_items">
-            <!--{{#each items}}
-                {{#addRow @index}}
-                <div class="row">
-                {{/addRow}}
-                    <div class="col-xs-6">
-                       <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
-                    </div>
-                {{#endRow @index}}
-                </div>
-                {{/endRow}}
-            {{/each}} -->
-
-
-            {{#each box1_items}}
+            {{#each thebox.boxitems}}
                     <div class="col-xs-6">
                        <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
                     </div>

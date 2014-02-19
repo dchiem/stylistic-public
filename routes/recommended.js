@@ -1,8 +1,8 @@
 // Get all of our friend data
-var data = require('../data.json');
+var models = require('../models');
 
 exports.view = function(req, res){
-    data['helpers'] =
+    var helpers =
         {
             addRow: function(index, options) {
                         if ((index)%2 == 0) {
@@ -21,5 +21,12 @@ exports.view = function(req, res){
                         }
                     }
         };
-	res.render('recommended', data);
+   	
+    models.Recommended
+		.find()
+		.exec(renderRecommended);
+
+    function renderRecommended(err, recommended) {
+	    res.render('recommended', {"recommended": recommended, "helpers":helpers});
+    }
 };
