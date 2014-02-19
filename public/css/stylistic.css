@@ -2,7 +2,20 @@
     height: 100%;
 }
 
-.username h4 {
+.photo {
+    outline: 3px dashed #4f4f4f;
+    border-radius(10);
+    width:100px;
+    height:100px;
+    color:#4f4f4f;
+}
+
+.photo .glyphicon-plus {
+    font-size:3em;
+    color:black;
+    padding-left:30px;
+    padding-top:27px;
+    color:#4f4f4f;
 }
 
 .navbar-fixed-top {
@@ -88,6 +101,7 @@
 
 .tagline input {
     text-align:center;
+    width:100%;
 }
 
 #skipBtn, #contBtn {
