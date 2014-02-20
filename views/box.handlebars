@@ -9,18 +9,20 @@
         <script src="js/jquery-1.10.2.min.js"></script>
         <script src="js/lightbox-2.6.min.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/box.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
         <link href="css/lightbox.css" rel="stylesheet" />
-        <script>
+
+        <!--<script>
             $(document).ready(function(){
                 $("p").hide();
                 $("h2 > img").click(function(){
                     $("p").toggle(200);
                 });
             });
-        </script>
+        </script>-->
 
         <style type="text/css">
             body {
@@ -70,6 +72,24 @@
                 </p>
             </div>
         </div>
+
+        <div class="like">
+            <img class="star" id="grey" src="images/greystar.png" height="30px">
+            <img class="star" id="yellow" src="images/yellowstar.png" style="display:none" height="30px">
+        </div>
+
+        <div class="add">
+            <img id="plus" src="images/plus.png" height="30px">
+            <img id="plus" src="images/greenplus.png" style="display:none" height="30px">
+        </div>
+
+        <div class="dropdown">
+            <div><p>Box1</p></div>
+            <div><p>Box2</p></div>
+            <div><p>Box3</p></div>
+            <div><p>Box4</p></div>
+        </div>
+
         <div class="container box_items">
             {{#each thebox.boxitems}}
                     <div class="col-xs-6">

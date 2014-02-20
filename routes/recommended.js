@@ -21,8 +21,7 @@ exports.view = function(req, res){
                         }
                     }
         };
-   	
-    models.Recommended
+   	models.Recommended
 		.find()
 		.exec(renderRecommended);
 
