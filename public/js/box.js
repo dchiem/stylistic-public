@@ -4,8 +4,13 @@ $(document).ready(function() {
 
 
 function initializePage() {
-	$(".like").click(function(){
-        $(this).find('img').toggle();
+	$(".star").click(function(){
+        if ($(this).attr("class") == "star") {
+          this.src = this.src.replace("greystar.png","yellowstar.png");
+        } else {
+          this.src = this.src.replace("yellowstar.png","greystar.png");
+        }
+        $(this).toggleClass("on");
 	});
 
 	$(".add").click(function(){
@@ -13,7 +18,7 @@ function initializePage() {
 	});
 
 	$(".box_title > p").hide();
-    $("h2 > img").click(function(){
+    $(".info").click(function(){
         	$(".box_title > p").toggle(200);
     });
 

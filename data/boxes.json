@@ -3,13 +3,13 @@
     "box": "Valentines Date Night",
         "imageURL": "/images/Box1/box1cover.png",
         "user": "James",
-        "genders": ["M", "F"],
+        "genders": ["M"],
         "tags": ["CLASSY", "PREPPY", "HIPSTER", "POPULAR"],
         "boxitems": [
         {
             "name": "Black Tie",
             "imageURL": "/images/Box1/blacktie.png",
-            "link": "/images/Box1/blacktie.webloc"
+            "link": "/images/boxes/Box1/blacktie.webloc"
         },
         {
             "name": "Grey Pants",
@@ -32,7 +32,7 @@
     "box": "Early Morning Run",
     "imageURL": "/images/Box2/box2cover.png",
     "user": "Alex",
-    "genders": ["M", "F"],
+    "genders": ["M"],
     "tags": ["SPORTY", "TRENDING"],
     "boxitems": [
     {
@@ -88,10 +88,10 @@
 },
 {
     "box": "Strolling Through The City",
-    "genders": ["F"],
+    "genders": ["M", "F"],
     "imageURL": "/images/Box4/box4cover.png",
     "user": "Tobias",
-    "tags": ["DENIM", "WESTERN", "HIPSTER", "FEATURED"],
+    "tags": ["DENIM", "WESTERN", "HIPSTER", "FEATURED", "SPRING"],
     "boxitems": [
     {
         "name": "Black Leather Hat",
@@ -112,6 +112,122 @@
         "name": "White Shoes",
         "imageURL": "images/Box4/items/Shoes/Shoes.png",
         "link": "/images/Box4/items/Shoes/Shoes_link.webloc"
+    }
+    ]
+},
+{
+    "box": "The Best Basics",
+    "genders": ["F"],
+    "imageURL": "/images/Box5/box5cover.jpg",
+    "user": "Emma",
+    "tags": ["DENIM", "ROCKER", "HIPSTER", "POPULAR"],
+    "boxitems": [
+    {
+        "name": "Green Beanie",
+        "imageURL": "/images/Box5/greenbeanie.jpg",
+        "link": "/images/Box5/greenbeanie.webloc"
+    },
+    {
+        "name": "Oui Shirt",
+        "imageURL": "/images/Box5/ouishirt.jpg",
+        "link": "/images/Box5/ouishirt.webloc"
+    },
+    {
+        "name": "Skinny Black Jeans",
+        "imageURL": "/images/Box5/skinnyjeans.jpg",
+        "link": "/images/Box5/skinnyjeans.webloc"
+    },
+    {
+        "name": "Black Heels",
+        "imageURL": "/images/Box5/skinnyheels.jpg",
+        "link": "/images/Box5/skinnyheels.webloc"
+    }
+    ]
+},
+{
+    "box": "1950's Housewife",
+    "genders": ["F"],
+    "imageURL": "/images/Box6/box6cover.jpg",
+    "user": "Jenny",
+    "tags": ["CLASSY", "SPRING", "HIPSTER", "TRENDING"],
+    "boxitems": [
+    {
+        "name": "Brown Hat",
+        "imageURL": "/images/Box6/brownhat.jpg",
+        "link": "/images/Box6/brownhat.webloc"
+    },
+    {
+        "name": "Blue Floral Top",
+        "imageURL": "/images/Box6/bluefloraltop.jpg",
+        "link": "/images/Box6/bluefloraltop.webloc"
+    },
+    {
+        "name": "Pink Skirt",
+        "imageURL": "/images/Box6/pinkskirt.jpg",
+        "link": "/images/Box6/pinkskirt.webloc"
+    },
+    {
+        "name": "White Heels",
+        "imageURL": "/images/Box6/whiteheels.jpg",
+        "link": "/images/Box6/whiteheels.webloc"
+    }
+    ]
+},
+{
+    "box": "Bring Black Back",
+    "genders": ["F"],
+    "imageURL": "/images/Box7/box7cover.jpg",
+    "user": "Delilah",
+    "tags": ["GOTHIC", "ROCKER", "NEW RELEASES"],
+    "boxitems": [
+    {
+        "name": "Round Sunglasses",
+        "imageURL": "/images/Box7/roundsunglasses.jpg",
+        "link": "/images/Box7/roundsunglasses.webloc"
+    },
+    {
+        "name": "Black Tee",
+        "imageURL": "/images/Box7/blacktee.jpg",
+        "link": "/images/Box7/blacktee.webloc"
+    },
+    {
+        "name": "Navy Leggings",
+        "imageURL": "/images/Box7/navyleggings.jpg",
+        "link": "/images/Box7/navyleggings.webloc"
+    },
+    {
+        "name": "Lace Boots",
+        "imageURL": "/images/Box7/laceboots.jpg",
+        "link": "/images/Box7/laceboots.webloc"
+    }
+    ]
+},
+{
+    "box": "Get In Shape",
+    "genders": ["F"],
+    "imageURL": "/images/Box8/box8cover.jpg",
+    "user": "Jane",
+    "tags": ["SPORTY", "FEATURED"],
+    "boxitems": [
+    {
+        "name": "Nike Running Shoes",
+        "imageURL": "/images/Box8/nikeshoes.jpg",
+        "link": "/images/Box8/nikeshoes.webloc"
+    },
+    {
+        "name": "Grey Fleece Hoodie",
+        "imageURL": "/images/Box8/fleecehoodie.jpg",
+        "link": "/images/Box8/fleecehoodie.webloc"
+    },
+    {
+        "name": "Black Sportsbra",
+        "imageURL": "/images/Box8/sportsbra.jpg",
+        "link": "/images/Box8/sportsbra.webloc"
+    },
+    {
+        "name": "Black Jogging Tights",
+        "imageURL": "/images/Box8/tights.jpg",
+        "link": "/images/Box8/tights.webloc"
     }
     ]
 }

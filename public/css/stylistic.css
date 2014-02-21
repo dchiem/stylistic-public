@@ -414,11 +414,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: 25px;
 }
 
-.like, .add {
-    margin-left: 20px;
-    padding-top: 10px;
-}
-
 .dropdown {
     width: 100px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -426,7 +421,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     border-radius: 10px;
 }
 
-.dropdown p {
+.dropdown a {
     text-align: center;
     color: white;
     font-family: "Avenir Book", "Avenir", sans-serif;
@@ -440,4 +435,14 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .dropdown div:hover {
     background-color: black;
+}
+
+.info {
+    padding-left: 10px;
+}
+
+.add {
+    float: right;
+    margin-left: 20px;
+    padding-top: 11px;
 }

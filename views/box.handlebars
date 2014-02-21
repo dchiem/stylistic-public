@@ -14,16 +14,6 @@
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
         <link href="css/lightbox.css" rel="stylesheet" />
-
-        <!--<script>
-            $(document).ready(function(){
-                $("p").hide();
-                $("h2 > img").click(function(){
-                    $("p").toggle(200);
-                });
-            });
-        </script>-->
-
         <style type="text/css">
             body {
                 background-image:url('/images/InsideBox.png');
@@ -64,7 +54,10 @@
 
         <div class="transparent_box">
             <div class="box_title">
-                <h2>{{thebox.box}}<img src="images/info-icon.png" height="30px"></h2>
+                <h2>{{thebox.box}}
+                    <img class="info" src="images/info-icon.png" height="30px">
+                    <img class="star" src="images/greystar.png" height="30px">
+                </h2>
                 <p>Created by: <a href="profile">{{thebox.user}}</a><br>Tags: 
                 {{#each thebox.tags}}
                     {{this}}
@@ -73,21 +66,16 @@
             </div>
         </div>
 
-        <div class="like">
-            <img class="star" id="grey" src="images/greystar.png" height="30px">
-            <img class="star" id="yellow" src="images/yellowstar.png" style="display:none" height="30px">
-        </div>
-
-        <div class="add">
+        <!--<div class="add">
             <img id="plus" src="images/plus.png" height="30px">
             <img id="plus" src="images/greenplus.png" style="display:none" height="30px">
-        </div>
+        </div> -->
 
         <div class="dropdown">
-            <div><p>Box1</p></div>
-            <div><p>Box2</p></div>
-            <div><p>Box3</p></div>
-            <div><p>Box4</p></div>
+            <a href="/"><div>Box1</div></a>
+            <a href="/"><div>Box2</div></a>
+            <a href="/"><div>Box3</div></a>
+            <a href="/"><div>Box4</div></a>
         </div>
 
         <div class="container box_items">
