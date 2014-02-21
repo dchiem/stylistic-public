@@ -30,10 +30,12 @@ exports.view = function(req, res){
         models.Boxes
             .find({"box": { $in: user.likes}})
             .exec(renderLikes);
-        console.log("boxes = " + boxes);
     }
 
     function renderLikes(err, likes) {
+        console.log("boxes = " + boxes);
+        console.log("============");
+        console.log("likes = " + likes);
 	    res.render('profile', {'user': user, 'boxes': boxes, 'likes': likes, 'myBoxes': myboxes});
     }
 };

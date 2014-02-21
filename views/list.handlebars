@@ -49,8 +49,8 @@
         </div>
         <div class="container list">
             {{#each boxes}}
-            <form name="tagForm" id="tagForm" role="form" method="get" action="/box">
-                <div class="row" id="list_row" onClick="document.forms.tagForm.submit()">
+            <form name="tagForm" id="tagForm{{_id}}" role="form" method="get" action="/box">
+                <div class="row" id="list_row" onClick="document.forms.tagForm{{_id}}.submit()">
                     <div class="col-xs-4">
                         <input type="hidden" value={{box}} name="boxname"/>
                         <input type="hidden" value={{user}} name="user"/>

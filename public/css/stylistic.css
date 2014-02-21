@@ -10,6 +10,12 @@
     color:#4f4f4f;
 }
 
+.glyphicon-pencil {
+    color: white;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
 .photo .glyphicon-plus {
     font-size:3em;
     color:black;
@@ -69,9 +75,14 @@
     margin-top: 15px;
 }
 
+
 #stepsBackground, .makeprofile {
     background-color: #f6f6f6;
     height:100%;
+}
+
+.profile-back {
+    background-color: #f6f6f6;
 }
 
 .profile {
@@ -362,7 +373,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 #list_row h5 {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
 }
 
