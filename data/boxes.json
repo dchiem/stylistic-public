@@ -31,7 +31,7 @@
     ]
 },
 {
-    "box": "Early Morning Run",
+    "box": "Early Morning Exercise",
     "imageURL": "/images/Box2/box2cover.png",
     "user": "Alex",
     "genders": ["M"],
@@ -63,7 +63,7 @@
     "box": "Rock 'n Roll",
     "imageURL": "/images/Box3/box3cover.png",
     "user": "james_the_man",
-    "genders": ["M"],
+    "genders": ["M" , "F"],
     "tags": ["ROCKER", "GOTHIC", "NEW RELEASES"],
     "boxitems": [
     {
@@ -147,7 +147,7 @@
     ]
 },
 {
-    "box": "1950's Housewife",
+    "box": "50's Housewife",
     "genders": ["F"],
     "imageURL": "/images/Box6/box6cover.jpg",
     "user": "Jenny",
