@@ -1,12 +1,13 @@
 <!doctype html>
 
-<html>
+<html class="makeprofile-body">
     <head>
         <title>Stylistic</title>	
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/profile.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
@@ -20,7 +21,7 @@
         <![endif]-->        
     </head>
 
-    <body>
+    <body class="makeprofile-body">
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -42,41 +43,89 @@
                 </div><!--/.nav-collapse -->
             </div>
         </div>
-        <div class="container users">
-            <h1>Hi, {{users.0.username}}!</h1>
+        <div class="container profile-back">
+            <div class="profile">
+                <div class="row profile-card">
+                    <div class="col-xs-5">
+                        <a href="/profile"><img src="{{user.imageURL}}" class="img-responsive"></a>
+                    </a>
+                </div>
+                <div class="col-xs-7">
+                    <div class="info">
+                        <div class="username">
+                            <h4>{{user.name}}</h4>
+                            <div class="tagline">
+                                <textarea class="tagline-text-profile2" style="resize:none; width:100%">"{{user.motto}}"</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container users">
-            <div class="row" id="list_row">
+    </div>
+</div>
+
+<div class=row>
+    <div class="col-xs-6 tile half-title boxes-title" >
+        <div class="container main-half-title">
+            <h4>YOUR BOXES</h4>
+        </div>
+    </div>
+    <div class="col-xs-6 title half-title liked-title">
+        <div class="container sub-half-title">
+            <h4>LIKED BOXES</h4>
+        </div>
+    </div>
+</div>
+<div class="container makeprofile">
+    <div class="your-boxes">
+        {{#each boxes}}
+        <div class="row" id="list_row">
+            <form name="tagForm" id="tagForm{{_id}}" role="form" method="get" action="/box">
+                <div class="col-xs-3" onClick="document.forms.tagForm{{_id}}.submit()">
+                    <input type="hidden" value={{box}} name="boxname"/>
+                    <input type="hidden" value={{user}} name="user"/>
+                    <input type="hidden" value={{_id}} name="id"/>
+                    <input type="image" src={{imageURL}} class="img-responsive"/>
+                </div>
+                <div class="col-xs-7" onClick="document.forms.tagForm{{_id}}.submit()">
+                    <h5>{{box}}</h5>
+                    <p>Tags: 
+                    {{#each tags}}
+                    {{this}}
+                    {{/each}}
+                    </p>
+                </div>
+            </form>
+            <div class="col-xs-2">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="liked-boxes" style="display:none;">
+        {{#each likes}}
+        <form name="tagForm" id="tagForm" class="liked-boxes" role="form" method="get" action="/box">
+            <div class="row" id="list_row" onClick="document.forms.tagForm.submit()">
                 <div class="col-xs-4">
-                    <a href="/profile"><img src={{users.0.imageURL}} class="img-responsive">
+                    <input type="hidden" value={{box}} name="boxname"/>
+                    <input type="hidden" value={{user}} name="user"/>
+                    <input type="hidden" value={{_id}} name="id"/>
+                    <input type="image" src={{imageURL}} class="img-responsive"/>
                 </div>
                 <div class="col-xs-8">
-                    <h5 class = "name">{{users.0.name}}</h5></a>
-                    <p class = "motto">{{users.0.motto}}</p>
+                    <h5>{{box}}</h5>
+                    <p>Created by: {{user}}</p>
+                    <p>Tags: 
+                    {{#each tags}}
+                    {{this}}
+                    {{/each}}
+                    </p>
                 </div>
             </div>
-        </div>
-
-
-        <div class="title main-title">
-            <div class="container users">
-                <h4>YOUR BOXES</h4>
-            </div>
-        </div>
-
-        <div>
-            {{#each list}}
-            <div class="row" id="list_row">
-                <div class="col-xs-4">
-                    <a href="/box"><img src={{imageURL}} class="img-responsive">
-                </div>
-                <div class="col-xs-8">
-                    <h5>{{box}}</h5></a>
-                    <p>Created by: <a href="profile">{{user}}</a></p>
-                    <p>Tags: {{tags}}</p>
-                </div>
-            </div>
-            {{/each}}
-        </div>
-    </body>
+        </form>
+        {{/each}}
+    </div>
+</div>
+</body>
 </html>

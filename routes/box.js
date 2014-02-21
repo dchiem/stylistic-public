@@ -13,6 +13,5 @@ exports.view = function(req, res){
     function renderBox(err, box) {
         console.log("thebox:" + box[0]);
         res.render('box', {"thebox":box[0]});
-
     }
 };

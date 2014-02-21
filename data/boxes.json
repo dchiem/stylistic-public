@@ -4,6 +4,8 @@
         "imageURL": "/images/Box1/box1cover.png",
         "user": "James",
         "genders": ["M"],
+        "user": "james_the_man",
+        "genders": ["M", "F"],
         "tags": ["CLASSY", "PREPPY", "HIPSTER", "POPULAR"],
         "boxitems": [
         {
@@ -60,7 +62,7 @@
 {
     "box": "Rock 'n Roll",
     "imageURL": "/images/Box3/box3cover.png",
-    "user": "Sam",
+    "user": "james_the_man",
     "genders": ["M"],
     "tags": ["ROCKER", "GOTHIC", "NEW RELEASES"],
     "boxitems": [
