@@ -11,16 +11,6 @@
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
 
-        <style type="text/css">
-            body {
-                background-image:url('/images/stylistichome2.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                margin-bottom: 75%;
-            }
-        </style>
-
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -54,38 +44,8 @@
         </div>
         <div class="title main-title">
             <div class="container browse">
-                <h4>HOME</h4>
+                <h4>STARRED BOXES</h4>
             </div>
         </div>
-        <div class="home-buttons">
-            <form method="get" action="/browse">
-                <button type="submit" class="btn btn-default btn-md" id="homeBrowseBtn">Browse Boxes</button>
-            </form>
-            <form method="get" action="/recommended">
-                <button type="submit" class="btn btn-default btn-md" id="homeRecBtn">Recommended Boxes</button>
-            </form>
-
-            <form method="get" action="/starred">
-                <button type="submit" class="btn btn-default btn-md" id="homeRecBtn">Starred Boxes</button>
-            </form>
-
-            {{#if userName}}
-            <form method="get" action="/profile">
-            {{else}}
-            <form method="get" action="/login">
-            {{/if}}
-
-            <form>
-                <button type="submit" class="btn btn-default btn-md" id="homeMyBoxBtn">My Boxes</button>
-            </form>
-
-            {{#if userName}}
-            <form method="get" action="/login">
-                <button type="submit" class="btn btn-default btn-md" id="homeLoginBtn">Log Out</button>
-            </form>
-            {{else}}
-            <form method="get" action="/login">
-                <button type="submit" class="btn btn-default btn-md" id="homeLoginBtn">Log In</button>
-            </form>
-            {{/if}}
-        </div>
+    </body>
+</html>
