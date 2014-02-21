@@ -55,13 +55,25 @@
 
         <div class="transparent_box">
             <div class="box_title">
-                <h2>{{thebox.box}}
-                    <img class="info" src="images/info-icon.png" height="30px">
-                    <img class="star" src="images/greystar.png" height="30px">
-                </h2>
-                <p>Created by: <a href="profile">{{thebox.user}}</a><br>Tags: 
+                <div class="row">
+                    <div class="col-xs-10">
+                        <h2>{{thebox.box}}</h2>
+                        <div class="boxid" id="{{thebox._id}}" style="display:none"></div>
+                    </div>
+                    <div class="col-xs-2">
+                        {{#if sessionUser}}
+                            {{#if isLiked}}
+                                <img class="star on" id="{{sessionUser}}" src="images/yellowstar.png" height="30px">
+                            {{else}}
+                                <img class="star" id="{{sessionUser}}" src="images/greystar.png" height="30px">
+                            {{/if}}
+                        {{/if}}
+                        <img class="info" src="images/info-icon.png" height="30px">
+                    </div>
+                </div>
+                <p>Created by: <a href="profile?userName={{thebox.user}}">{{thebox.user}}</a><br>Tags: 
                 {{#each thebox.tags}}
-                    {{this}}
+                {{this}}
                 {{/each}}
                 </p>
             </div>
@@ -81,9 +93,9 @@
 
         <div class="container box_items">
             {{#each thebox.boxitems}}
-                    <div class="col-xs-6">
-                       <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
-                    </div>
+            <div class="col-xs-6">
+                <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
+            </div>
             {{/each}}
 
         </div>

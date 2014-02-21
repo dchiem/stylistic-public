@@ -27,7 +27,6 @@ var UsersSchema = new Mongoose.Schema({
     "motto":String,
     "imageURL":String,
     "likes": [String],
-    "boxes": [String]
 });
 
 exports.Tags = Mongoose.model('Tags', TagsSchema);

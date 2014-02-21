@@ -2,7 +2,6 @@
 {
     "box": "Valentines Date Night",
         "imageURL": "/images/Box1/box1cover.png",
-        "user": "James",
         "genders": ["M"],
         "user": "james_the_man",
         "genders": ["M", "F"],
@@ -33,7 +32,7 @@
 {
     "box": "Early Morning Exercise",
     "imageURL": "/images/Box2/box2cover.png",
-    "user": "Alex",
+    "user": "XxAlexX",
     "genders": ["M"],
     "tags": ["SPORTY", "TRENDING"],
     "boxitems": [
@@ -92,7 +91,7 @@
     "box": "Strolling Through The City",
     "genders": ["M", "F"],
     "imageURL": "/images/Box4/box4cover.png",
-    "user": "Tobias",
+    "user": "emmazing",
     "tags": ["DENIM", "WESTERN", "HIPSTER", "FEATURED", "SPRING"],
     "boxitems": [
     {
@@ -121,7 +120,7 @@
     "box": "The Best Basics",
     "genders": ["F"],
     "imageURL": "/images/Box5/box5cover.jpg",
-    "user": "Emma",
+    "user": "emmazing",
     "tags": ["DENIM", "ROCKER", "HIPSTER", "POPULAR"],
     "boxitems": [
     {
@@ -150,7 +149,7 @@
     "box": "50's Housewife",
     "genders": ["F"],
     "imageURL": "/images/Box6/box6cover.jpg",
-    "user": "Jenny",
+    "user": "emmazing",
     "tags": ["CLASSY", "SPRING", "HIPSTER", "TRENDING"],
     "boxitems": [
     {
@@ -179,7 +178,7 @@
     "box": "Bring Black Back",
     "genders": ["F"],
     "imageURL": "/images/Box7/box7cover.jpg",
-    "user": "Delilah",
+    "user": "XxAlexX",
     "tags": ["GOTHIC", "ROCKER", "NEW RELEASES"],
     "boxitems": [
     {
@@ -208,7 +207,7 @@
     "box": "Get In Shape",
     "genders": ["F"],
     "imageURL": "/images/Box8/box8cover.jpg",
-    "user": "Jane",
+    "user": "emmazing",
     "tags": ["SPORTY", "FEATURED"],
     "boxitems": [
     {

@@ -1,11 +1,22 @@
 [
 {
+    "name": "Emma Lastname",
+    "username": "emmazing",
+    "motto": "I look good in clothes.",
+    "imageURL": "/images/profile-pic.jpg",
+    "likes": [
+        "Bring Black Back",
+        "Valentines Date Night"
+    ]
+},
+{
     "name": "Alex Madison",
     "username": "XxAlexX",
     "motto": "Work hard.  Frat harder.",
     "imageURL": "/images/profile-pic.jpg",
-    "likes": [],
-    "boxes": []
+    "likes": [
+        "Strolling Through The City"
+    ]
 },
 {
     "name": "James Jamison",
@@ -15,7 +26,6 @@
     "likes": [
             "Early Morning Run",
             "Strolling Through The City"
-        ],
-    "boxes": []
+        ]
 }
 ]
