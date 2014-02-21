@@ -1,13 +1,21 @@
 [
 {
     "name": "Alex Madison",
-        "username": "XxAlexX",
-        "motto": "Work hard.  Frat harder.",
-        "imageURL": "/images/profile-pic.jpg"
+    "username": "XxAlexX",
+    "motto": "Work hard.  Frat harder.",
+    "imageURL": "/images/profile-pic.jpg",
+    "likes": [],
+    "boxes": []
 },
 {
     "name": "James Jamison",
     "username": "james_the_man",
-    "motto": "I woke up like this.  Flawless."
+    "motto": "I woke up like this.  Flawless.",
+    "imageURL": "/images/james.jpg",
+    "likes": [
+            "Early Morning Run",
+            "Strolling Through The City"
+        ],
+    "boxes": []
 }
 ]

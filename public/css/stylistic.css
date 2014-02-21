@@ -356,6 +356,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: #fff;
 }
 
+#list_row h3 {
+    text-align: left;
+}
+
 #list_row h5 {
     color: #fff;
     font-size: 20px;
@@ -403,9 +407,45 @@ h1, h2, h3, h4, h5, h6, p, a {
     visibility:hidden;
 }
 
+.half-title {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.main-half-title {
+    box-shadow: 0 0 15px gray;
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+}
+
+.sub-half-title {
+    background-color: #f6f6f6;
+}
+
 .motto {
     font-family: "Avenir Book", "Avenir", sans-serif;
     font-style: italic;
+}
+
+.tagline-text-profile {
+    font-family: "Avenir Book", "Avenir", sans-serif;
+    font-style: italic;
+    color: white;
+    background: none;
+    border:none;
+}
+
+.tagline-text-profile2 {
+    font-family: "Avenir Book", "Avenir", sans-serif;
+    font-style: italic;
+    color: black;
+    background: none;
+    border:none;
+    text-align:left;
+}
+
+.users h2, h3 {
+    text-align: left;
 }
 
 .name {
