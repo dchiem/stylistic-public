@@ -13,11 +13,6 @@
             "link": "/images/boxes/Box1/blacktie.webloc"
         },
         {
-            "name": "Grey Pants",
-            "imageURL": "/images/Box1/greypants.png",
-            "link": "/images/Box1/greypants.webloc"
-        },
-        {
             "name": "Grey Blazer",
             "imageURL": "/images/Box1/greyblazer.png",
             "link": "/images/Box1/greyblazer.webloc"
@@ -26,6 +21,11 @@
             "name": "Dress Shoes",
             "imageURL": "/images/Box1/dressshoes.png",
             "link": "/images/Box1/dressshoes.webloc"
+        },
+        {
+            "name": "Grey Pants",
+            "imageURL": "/images/Box1/greypants.png",
+            "link": "/images/Box1/greypants.webloc"
         }
     ]
 },

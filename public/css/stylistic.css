@@ -405,6 +405,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .box_title {
     font-family: "Avenir Book", sans-serif;
+    font-style: italic;
     color: #FFF;
     margin: 10px;
 }
@@ -490,6 +491,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .info {
     padding-left: 10px;
+}
+
+.list .star {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 .add {
