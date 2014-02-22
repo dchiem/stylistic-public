@@ -490,13 +490,20 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .info {
-    padding-left: 10px;
+    background-color: #999;
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
 }
 
-.list .star {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
+.star {
+    background-color: #999;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    border-radius: 3px;
 }
 
 .add {
