@@ -489,19 +489,19 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-color: black;
 }
 
-.info {
-    background-color: #999;
+.info-icon {
+    background-color: black;
     border-radius: 6px;
     padding-left: 5px;
     padding-right: 5px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .star {
-    background-color: #999;
+    background-color: black;
     margin-top: 10px;
     margin-left: 10px;
-    margin-bottom: 10px;
     padding: 3px;
     border-radius: 3px;
 }

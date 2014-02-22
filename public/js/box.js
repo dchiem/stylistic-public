@@ -31,7 +31,7 @@ function initializePage() {
     });
 
     $(".box_title > p").hide();
-    $(".info").click(function(){
+    $(".info-icon").click(function(){
         $(".box_title > p").toggle(200);
     });
 
