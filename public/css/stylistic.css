@@ -394,13 +394,28 @@ h1, h2, h3, h4, h5, h6, p, a {
     border-radius: 5px;
 }
 
-.box_items .col-xs-6 img {
+.box_items a img {
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box_items .col-xs-6 {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px;
 
+}
+
+.add {
+    float: left;
+    background-color: black;
+    padding: 3px;
+
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white white;
 }
 
 .box_title {
@@ -467,26 +482,31 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .dropdown {
-    width: 100px;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid #000000;
     border-radius: 10px;
 }
 
-.dropdown a {
+.dropdown ul {
+    list-style-type: none;
     text-align: center;
-    color: white;
+    margin: 0;
+    padding: 0;
     font-family: "Avenir Book", "Avenir", sans-serif;
 }
 
-.dropdown div {
-    margin-bottom: 3px;
-    margin-top: 3px;
+.dropdown li {
+    margin-bottom: 5px;
+    margin-top: 5px;
     padding-left: 6px;
 }
 
-.dropdown div:hover {
-    background-color: black;
+.dropdown a {
+    color: white;
+}
+
+.dropdown li:hover {
+    background-color: green;
 }
 
 .info-icon {
@@ -512,12 +532,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     border-style: solid;
     border-width: 2px;
     border-color: white white;
-}
-
-.add {
-    float: right;
-    margin-left: 20px;
-    padding-top: 11px;
 }
 
 .create {
@@ -563,5 +577,5 @@ h1, h2, h3, h4, h5, h6, p, a {
     background-color: rgba(0, 0, 0, 0.6);
     border-style: dashed;
     border-width: 3px;
-    border-color: white;
+    border-color: #71A6D5;
 }

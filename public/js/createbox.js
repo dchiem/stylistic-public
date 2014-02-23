@@ -4,6 +4,8 @@ $(document).ready(function() {
 
 function initializePage() {
 
+	
+
 	/*$("#chick").click(function() {
 	   $(this).animate({
 	   		top: '-=' + $(this).height() / 1.5,

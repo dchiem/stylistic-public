@@ -79,26 +79,25 @@
             </div>
         </div>
 
-        <!-- <div class="add">
-            <img id="plus" src="images/plus.png" height="30px">
-            <img id="plus" src="images/greenplus.png" style="display:none" height="30px">
-        </div> 
-
-        <div class="dropdown">
-            <a href="/"><div>Box1</div></a>
-            <a href="/"><div>Box2</div></a>
-            <a href="/"><div>Box3</div></a>
-            <a href="/"><div>Box4</div></a>
-        </div>-->
-
         <div class="container box_items">
             {{#each thebox.boxitems}}
             <div class="col-xs-6">
                 <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
+                <div class="add">
+                    <img id="plus" src="images/icons/whiteplus.png" height="30px">
+                    <img id="plus" src="images/icons/greenplus.png" style="display:none" height="30px">
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="/">Box1</a></li>
+                            <li><a href="/">Box2</a></li>
+                            <li><a href="/">Box3</a></li>
+                            <li><a href="/createbox" style="color: #D6D271;">CREATE BOX</a></li>
+                        </ul>
+                    </div>
+                </div> 
             </div>
             {{/each}}
-
         </div>
-    </body>
 
+    </body>
 </html>
