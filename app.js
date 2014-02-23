@@ -23,7 +23,7 @@ var profile = require('./routes/profile');
 var makeprofile = require('./routes/makeprofile');
 var home = require('./routes/home');
 var like = require('./routes/like');
-var starred = require('./routes/starred');
+var createbox = require('./routes/createbox');
 // Example route
 // var user = require('./routes/user');
 var local_database_name = 'stylisticdb';
@@ -70,7 +70,7 @@ app.get('/makeprofile', makeprofile.view);
 app.get('/home', home.view);
 app.get('/like', like.like);
 app.get('/dislike', like.dislike);
-app.get('/starred', starred.view)
+app.get('/createbox', createbox.view)
 // app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

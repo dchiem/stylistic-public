@@ -7,9 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/bootstrap.js"></script>
+
+        <script src="js/createbox.js"></script>
+
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
+        <style type="text/css">
+            body {
+                background-image:url('/images/InsideBox.png');
+            }
+        </style>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,10 +50,28 @@
                 </div><!--/.nav-collapse -->
             </div>
         </div>
-        <div class="title main-title">
-            <div class="container browse">
-                <h4>STARRED BOXES</h4>
-            </div>
+
+        <div class="transparent_box">
+            <form class="enter-title">
+                <textarea placeholder="<Enter title of box>"class="create-title" 
+                    rows="1" cols="20" style="border:none; resize:none; width:100%"></textarea>
+            </form>
         </div>
+
+        <div class="transparent_box">
+            <form class="enter-title">
+                <textarea placeholder="<Enter related tags> e.g., HIPSTER, SIMPLE, ..."class="create-tags" 
+                     style="border:none; resize:none; width:100%"></textarea>
+            </form>
+        </div>
+
+        <div class="import">
+            <img id="import-item" src="images/icons/blueplus.png" width="100px">
+        </div>
+
+        <!-- <div class="testing">
+            <img id="chick" src="/images/woman.jpg" width="200px" >
+        </div> -->
+
     </body>
 </html>

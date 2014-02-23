@@ -382,13 +382,13 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .transparent_box {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 10px;
     border-radius: 5px;
 }
 
 .box_items {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     margin-right: 10px auto;
     margin-left: 10px auto;
     border-radius: 5px;
@@ -496,6 +496,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     padding-right: 5px;
     margin-bottom: 10px;
     margin-top: 10px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: white white;
 }
 
 .star {
@@ -503,11 +507,61 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-top: 10px;
     margin-left: 10px;
     padding: 3px;
-    border-radius: 3px;
+    border-radius: 6px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: white white;
 }
 
 .add {
     float: right;
     margin-left: 20px;
     padding-top: 11px;
+}
+
+.create {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    border-style: dashed;
+    border-color: #B3FF00;
+    border-width: 3px;
+}
+
+.create a {
+    color: #B3FF00;
+}
+
+.create-title {
+    font-size: 20px;
+    font-family: "Avenir Book", "Avenir", sans-serif;
+    font-style: italic;
+    background: transparent;
+    color: white;
+}
+
+.create-tags {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    font-family: "Avenir Book", "Avenir", sans-serif;
+    font-style: italic;
+    background: transparent;
+    color: white;
+}
+
+#import-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-style: dashed;
+    border-width: 3px;
+    border-color: white;
 }
