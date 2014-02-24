@@ -196,8 +196,30 @@
     background-color: rgba(255,255,255, 0.3);
 }
 
+.add-box {
+    text-align: center;
+}
+
+.male img , .female img {
+    box-shadow: 0px 0px 5px #000;
+}
+
+.browse .img-responsive, .recommended .img-responsive {
+    box-shadow: 0px 0px 5px #000;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.list .img-responsive {
+    box-shadow: 0px 0px 20px #FFF;
+}
+
+.list span, .liked-boxes span {
+    font-size: 12px;
+}
+
 #getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn,
- #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn {
+ #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn{
     background-image:url('../images/stylisticbutton.jpg');
     border-radius(0);
     -webkit-border-radius: 0;
@@ -396,7 +418,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .box_items a img {
     border-radius: 10px;
-    text-align: center;
 }
 
 .box_items .col-xs-6 {
@@ -572,6 +593,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     padding: 10px;
     border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.6);

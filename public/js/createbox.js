@@ -4,7 +4,16 @@ $(document).ready(function() {
 
 function initializePage() {
 
-	
+	/*$(function(){
+		$(":submit").click(function(e){
+			$("textarea").each(function() {
+				if($(this).val() === ""){
+					alert("Please enter a title and related tags.");
+					return false;
+				}
+			});
+		});
+	});*/
 
 	/*$("#chick").click(function() {
 	   $(this).animate({

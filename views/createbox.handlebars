@@ -53,14 +53,14 @@
 
         <div class="transparent_box">
             <form class="enter-title">
-                <textarea placeholder="<Enter title of box>"class="create-title" 
+                <textarea type="text" placeholder="<Enter title of box>" class="create-title" name="title" id="title"
                     rows="1" cols="20" style="border:none; resize:none; width:100%"></textarea>
             </form>
         </div>
 
         <div class="transparent_box">
             <form class="enter-title">
-                <textarea placeholder="<Enter related tags> e.g., HIPSTER, WESTERN, ..."class="create-tags" 
+                <textarea type="text" placeholder="<Enter related tags> e.g., HIPSTER, WESTERN, ..."class="create-tags" name="tags" id="tags"
                      style="border:none; resize:none; width:100%"></textarea>
             </form>
         </div>
@@ -68,6 +68,10 @@
         <div class="import">
             <img id="import-item" src="images/icons/blueplus.png" width="100px">
         </div> 
+
+        <form class="add-box" method="get" action="/profile">
+                <button type="submit" class="btn btn-default btn-md" id="confirmAddBtn">Add to your boxes</button>
+        </form>
 
         <!-- <form action="upload_file.php" method="post" enctype="multipart/form-data">
             <label for="file">Filename:</label>
