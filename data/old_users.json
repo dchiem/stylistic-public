@@ -1,4 +1,33 @@
 [
+{
+    "name": "Emma Lastname",
+    "username": "emmazing",
+    "motto": "I look good in clothes.",
+    "imageURL": "/images/profile-pic.jpg",
+    "likes": [
+        "Bring Black Back",
+        "Valentines Date Night"
+    ]
+},
+{
+    "name": "Alex Madison",
+    "username": "XxAlexX",
+    "motto": "Work hard.  Frat harder.",
+    "imageURL": "/images/profile-pic.jpg",
+    "likes": [
+        "Strolling Through The City"
+    ]
+},
+{
+    "name": "James Jamison",
+    "username": "james_the_man",
+    "motto": "I woke up like this.  Flawless.",
+    "imageURL": "/images/james.jpg",
+    "likes": [
+            "Early Morning Exercise",
+            "Strolling Through The City"
+        ]
+},
 { 
     "salt" : "e4a33b3ac9dc8fd0a34e84f379b4eb936632ac78e564fb414021fea97490af99",
     "hash" : "0f157f2b485e2e838ccdb342dc34484ea00ad36b26122e3fd9d8fe8b6fd7918c3cbfe2644a6f5a2063b6829a1a2ca2df8d6e75b0ee8366bbc2b3838855b44c4fe2f67dec8f032f3fda171e0b8125d6da37242451cbd483c7bdedb61f614fdbbcd74152315b484faded06cfdb5a38feb05859f5dd7eca4872249246aea00de4fc2889a08b476c2bcad55429f0eb9e4bb5d72a3f679b08e37da3f38110cea6336bf6bcb7c3e5a6aea90380f967674cbc796ec704b61a75037e5dfc1d8a008be3f9b74655e3611b25b3f8bc83eb3ee48779dbe373e48b9167fb78f10690d360cff4b7ffc6ebcfee2a2c08f95ac39c14686c5470b911d47b1919d33045d035992d493677040fb29e5f8546692b296d51b6307a7e8941880a1a974246fa8a06d127d25f25ed9644586abb771ddd9798ab05899bfcaad55fa6720a2a20d24917cd540cb8bc3cb914f566455c968e8cfc5a464610ab2aecb2427bb69a7d8dd0c169c50f31e1ab5487831ef32df964ccb5318dab6c0a31db9a65976bea0a5af20cc497a445b15fc332e358c2be82cdd76d2b3104dd496bad69b0607ea067c56965f9c9df7bf552676207de642994e95ad5d523425ecc2db4553cc1a3dd222309de0671d0885dd6ee027c65712ba386d4b23cc0c967709acba5b71dae71ecf99b5c89c11e93786b24c8d0fdc658eb4f29df9924c81ee7a0de4c64fd7027d0fa623df569bd", 

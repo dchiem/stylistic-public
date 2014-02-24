@@ -112,7 +112,12 @@
             </form>
             <div class="col-xs-2">
                 {{#if ../myProfile}}
-                    <i class="glyphicon glyphicon-pencil"></i>
+                    <form name="edit-box" action="editbox" method="post">
+                        <input type="hidden" name="id" value={{_id}}>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="glyphicon glyphicon-pencil"></i>
+                        </button>
+                    </form>
                 {{/if}}
             </div>
         </div>
