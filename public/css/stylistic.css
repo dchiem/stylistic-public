@@ -218,20 +218,24 @@
     font-size: 12px;
 }
 
-#getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn,
+#getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #newItemBtn,
  #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn{
-    background-image:url('../images/stylisticbutton.jpg');
-    border-radius(0);
+    background-image: url('../images/stylisticbutton.jpg');
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-    border-radius: 0;
+    border-radius: 5px;
     text-shadow: none;
-    color:white;
+    box-shadow: 0px 0px 10px #000;
+    color: white;
 }
 
 #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn {
     width: 200px;
     margin-top: 20px;
+}
+
+#newItemBtn {
+    width: 150px;  
 }
 
 .form-control {
@@ -600,4 +604,39 @@ h1, h2, h3, h4, h5, h6, p, a {
     border-style: dashed;
     border-width: 3px;
     border-color: #71A6D5;
+}
+
+
+#import-item:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.import-form {
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.92);
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 10;
+    text-align: center;
+}
+
+.import-form h4{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dotted {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: dashed;
+    border-color: #000;
+    border-width: 2px;
+    margin-bottom: 15px;
 }
