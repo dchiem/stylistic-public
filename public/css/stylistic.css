@@ -196,8 +196,30 @@
     background-color: rgba(255,255,255, 0.3);
 }
 
+.add-box {
+    text-align: center;
+}
+
+.male img , .female img {
+    box-shadow: 0px 0px 5px #000;
+}
+
+.browse .img-responsive, .recommended .img-responsive {
+    box-shadow: 0px 0px 5px #000;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.list .img-responsive {
+    box-shadow: 0px 0px 20px #FFF;
+}
+
+.list span, .liked-boxes span {
+    font-size: 12px;
+}
+
 #getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn,
- #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn {
+ #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn{
     background-image:url('../images/stylisticbutton.jpg');
     border-radius(0);
     -webkit-border-radius: 0;
@@ -382,25 +404,39 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .transparent_box {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 10px;
     border-radius: 5px;
 }
 
 .box_items {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     margin-right: 10px auto;
     margin-left: 10px auto;
     border-radius: 5px;
 }
 
-.box_items .col-xs-6 img {
+.box_items a img {
+    border-radius: 10px;
+}
+
+.box_items .col-xs-6 {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 15px;
 
+}
+
+.add {
+    float: left;
+    background-color: black;
+    padding: 3px;
+
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white white;
 }
 
 .box_title {
@@ -467,40 +503,101 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .dropdown {
-    width: 100px;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid #000000;
     border-radius: 10px;
 }
 
-.dropdown a {
+.dropdown ul {
+    list-style-type: none;
     text-align: center;
-    color: white;
+    margin: 0;
+    padding: 0;
     font-family: "Avenir Book", "Avenir", sans-serif;
 }
 
-.dropdown div {
-    margin-bottom: 3px;
-    margin-top: 3px;
+.dropdown li {
+    margin-bottom: 5px;
+    margin-top: 5px;
     padding-left: 6px;
 }
 
-.dropdown div:hover {
+.dropdown a {
+    color: white;
+}
+
+.dropdown li:hover {
+    background-color: green;
+}
+
+.info-icon {
     background-color: black;
+    border-radius: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: white white;
 }
 
-.info {
-    padding-left: 10px;
+.star {
+    background-color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 6px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: white white;
 }
 
-.list .star {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.create {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
+
+    border-style: dashed;
+    border-color: #B3FF00;
+    border-width: 3px;
 }
 
-.add {
-    float: right;
-    margin-left: 20px;
-    padding-top: 11px;
+.create a {
+    color: #B3FF00;
+}
+
+.create-title {
+    font-size: 20px;
+    font-family: "Avenir Book", "Avenir", sans-serif;
+    font-style: italic;
+    background: transparent;
+    color: white;
+}
+
+.create-tags {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 15px;
+    font-family: "Avenir Book", "Avenir", sans-serif;
+    font-style: italic;
+    background: transparent;
+    color: white;
+}
+
+#import-item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #71A6D5;
 }

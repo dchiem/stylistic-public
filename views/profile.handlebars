@@ -117,6 +117,11 @@
             </div>
         </div>
         {{/each}}
+
+        <div class="create">
+            <a href="/createbox">CREATE BOX</a>
+        </div>
+
     </div>
     <div class="liked-boxes" style="display:none;">
         {{#each likes}}
@@ -129,8 +134,7 @@
                     <input type="image" src={{imageURL}} class="img-responsive"/>
                 </div>
                 <div class="col-xs-8">
-                    <h5>{{box}}</h5>
-                    <p>Created by: {{user}}</p>
+                    <h5>{{box}}<span> by: {{user}}</span></h5>
                     <p>Tags: 
                     {{#each tags}}
                     {{this}}
