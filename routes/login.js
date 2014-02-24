@@ -4,6 +4,12 @@ exports.view = function(req, res){
 	res.render('login');
 };
 
+exports.logout = function(req, res){
+    req.logout();
+    res.redirect('home');
+}
+
+/*
 exports.attempt = function(req, res) {
     models.Users
         .find({ $and: [{"username": req.username}, {"password": req.password}]})
@@ -19,6 +25,7 @@ exports.attempt = function(req, res) {
         }
     }
 }
+*/
 
 /*
 exports.post = function(req, res) {

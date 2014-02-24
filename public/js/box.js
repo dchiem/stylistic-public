@@ -5,9 +5,8 @@ $(document).ready(function() {
 function initializePage() {
     console.log("Javascript connected!");
     $(".star").click(function(){
-        var boxName = $(".box_title h2").text();
-        var userName = $(".star").attr("id");
-        var likeData = { 'box': boxName, 'userName': userName };
+        var id = $(".star").attr("id");
+        var likeData = { 'id': id};
         if ($(this).attr("class") == "star") {
             this.src = this.src.replace("greystar.png","yellowstar.png");
             $.ajax({

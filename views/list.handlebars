@@ -54,8 +54,6 @@
             <form name="tagForm" id="tagForm{{_id}}" role="form" method="get" action="/box">
                 <div class="row" id="list_row" onClick="document.forms.tagForm{{_id}}.submit()">
                     <div class="col-xs-4">
-                        <input type="hidden" value={{box}} name="boxname"/>
-                        <input type="hidden" value={{user}} name="user"/>
                         <input type="hidden" value={{_id}} name="id"/>
                         <input type="image" src={{imageURL}} class="img-responsive"/>
                     </div>

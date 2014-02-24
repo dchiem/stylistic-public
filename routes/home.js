@@ -1,5 +1,5 @@
 exports.view = function(req, res){
-    var userName = req.session.name;
-    console.log("userName = " + userName);
-	res.render('home', {"userName": userName});
+    var loggedIn = req.user;
+    console.log("logged in: " + loggedIn);
+	res.render('home', {"loggedIn": loggedIn});
 };

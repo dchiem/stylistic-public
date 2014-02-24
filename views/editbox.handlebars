@@ -7,17 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/createbox.js"></script>
+        <script src="js/box.js"></script>
+
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
-
         <style type="text/css">
             body {
-                background-image:url('/images/stylistichome2.png');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                margin-bottom: 75%;
+                background-image:url('/images/InsideBox.png');
             }
         </style>
 
@@ -52,34 +50,55 @@
                 </div><!--/.nav-collapse -->
             </div>
         </div>
-        <div class="title main-title">
-            <div class="container browse">
-                <h4>HOME</h4>
+
+
+        <div class="transparent_box">
+            <form class="enter-title">
+                <textarea type="text" class="create-title" name="title" id="title"
+                    rows="1" cols="20" style="border:none; resize:none; width:100%">
+                    {{box.box}}
+                </textarea>
+            </form>
+        </div>
+
+        <div class="transparent_box">
+            <form class="enter-title">
+                <textarea type="text" class="create-tags" name="tags" id="tags"
+                    style="border:none; resize:none; width:100%">
+                    {{box.tags}}
+                    {{#each box.tags}}
+                        {{this}}
+                    {{/each}}
+                </textarea>
+            </form>
+        </div>
+
+        <div class="container box_items">
+            {{#each box.boxitems}}
+            <div class="col-xs-6">
+                <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
             </div>
+            {{/each}}
         </div>
-        <div class="home-buttons">
-            <form method="get" action="/browse">
-                <button type="submit" class="btn btn-default btn-md" id="homeBrowseBtn">Browse Boxes</button>
-            </form>
-            <form method="get" action="/recommended">
-                <button type="submit" class="btn btn-default btn-md" id="homeRecBtn">Recommended Boxes</button>
-            </form>
 
-            {{#if loggedIn}}
-            <form method="get" action="/myprofile">
-            {{else}}
-            <form method="get" action="/login">
-            {{/if}}
-                <button type="submit" class="btn btn-default btn-md" id="homeMyBoxBtn">My Boxes</button>
-            </form>
+        <div class="import">
+            <img id="import-item" src="images/icons/blueplus.png" width="100px">
+        </div> 
 
-            {{#if loggedIn}}
-            <form method="get" action="/logout">
-                <button type="submit" class="btn btn-default btn-md" id="homeLoginBtn">Log Out</button>
-            </form>
-            {{else}}
-            <form method="get" action="/login">
-                <button type="submit" class="btn btn-default btn-md" id="homeLoginBtn">Log In</button>
-            </form>
-            {{/if}}
-        </div>
+        <form class="add-box" method="get" action="/profile">
+            <button type="submit" class="btn btn-default btn-md" id="confirmAddBtn">Add to your boxes</button>
+        </form>
+
+        <!-- <form action="upload_file.php" method="post" enctype="multipart/form-data">
+            <label for="file">Filename:</label>
+            <input type="file" name="file" id="file"><br>
+            <input type="submit" name="submit" value="Submit">
+        </form> 
+
+        <div class="testing">
+            <img id="chick" src="/images/woman.jpg" width="200px">
+            <img id="greenplus" src="/images/greenplus.png" width="20px">
+        </div>-->
+
+    </body>
+</html>

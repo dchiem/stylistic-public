@@ -58,20 +58,19 @@
                 <div class="row">
                     <div class="col-xs-10">
                         <h2>{{thebox.box}}</h2>
-                        <div class="boxid" id="{{thebox._id}}" style="display:none"></div>
                     </div>
                     <div class="col-xs-2">
                         {{#if sessionUser}}
                             {{#if isLiked}}
-                                <img class="star on" id="{{sessionUser}}" src="images/yellowstar.png" height="30px">
+                                <img class="star on" id="{{thebox._id}}" src="images/yellowstar.png" height="30px">
                             {{else}}
-                                <img class="star" id="{{sessionUser}}" src="images/greystar.png" height="30px">
+                                <img class="star" id="{{thebox._id}}" src="images/greystar.png" height="30px">
                             {{/if}}
                         {{/if}}
                         <img class="info-icon" src="images/info-icon.png" height="30px">
                     </div>
                 </div>
-                <p>Created by: <a href="profile?userName={{thebox.user}}">{{thebox.user}}</a><br>Tags: 
+                <p>Created by: <a href="profile?username={{thebox.user}}">{{thebox.user}}</a><br>Tags: 
                 {{#each thebox.tags}}
                 {{this}}
                 {{/each}}
