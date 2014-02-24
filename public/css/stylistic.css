@@ -633,10 +633,16 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .dotted {
+    padding: 10px;
     margin-left: 20px;
     margin-right: 20px;
     border-style: dashed;
     border-color: #000;
     border-width: 2px;
     margin-bottom: 15px;
+}
+
+#form-close {
+    float: right;
+
 }

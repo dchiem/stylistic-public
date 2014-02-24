@@ -82,6 +82,12 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.configure(function () {
+    app.use(express.json());
+    app.use(express.urlencoded());
+    app.use(express.multipart())
+});
+
 // Add routes here
 app.get('/', index.view);
 app.get('/browse', browse.view);
@@ -101,6 +107,10 @@ app.get('/home', home.view);
 app.get('/like', like.like);
 app.get('/dislike', like.dislike);
 app.get('/createbox', createbox.view)
+app.get('/', function (req, res){
+    res.writeHead(200, {'Content-Type': 'text/html' });
+});
+
 // app.get('/users', user.list);
 // passport
 app.post('/login',
@@ -109,6 +119,37 @@ app.post('/login',
     
 );
 app.post('/signup', signup.post);
+
+/// Include the node file module
+var fs = require('fs');
+/// Post files
+app.post('/upload', function(req, res) {
+
+    fs.readFile(req.files.image.path, function (err, data) {
+
+        var imageName = req.files.image.name
+
+        /// If there's an error
+        if(!imageName){
+
+            console.log("There was an error")
+            res.redirect("/");
+            res.end();
+
+        } else {
+
+          var newPath = __dirname + "/uploads/fullsize/" + imageName;
+
+          /// write file to uploads/fullsize folder
+          fs.writeFile(newPath, data, function (err) {
+
+            /// let's see it
+            res.redirect("/createbox");
+          });
+        }
+    });
+});
+
 /*
 function(req, res) {
     models.Users.register(new models.Users({ username : req.body.username }), req.body.password, function(err, user) {
