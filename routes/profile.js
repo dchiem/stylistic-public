@@ -21,7 +21,6 @@ exports.view = function(req, res){
         myProfile = true;
     }
     models.Users
-
         .find({"username": name})
         .exec(renderUser);
 

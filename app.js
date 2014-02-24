@@ -8,6 +8,9 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 var mongoose = require('mongoose');
+var passport = require('passport')
+    , LocalStrategy = require('passport-local').Strategy;
+var models = require('./models');
 
 var index = require('./routes/index');
 var browse = require('./routes/browse');
@@ -45,8 +48,34 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(express.cookieParser("SylisticSecret"));
 app.use(express.session());
+app.use(express.bodyParser());
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+
+// passport configuration
+passport.use(new LocalStrategy(models.Users.authenticate()));
+passport.serializeUser(models.Users.serializeUser());
+passport.deserializeUser(models.Users.deserializeUser());
+
+/*
+// passport configuration
+passport.use(new LocalStrategy(
+    function(username, password, done) {
+        models.Users.findOne({ username: username}, function(err, user) {
+            if(err) {return done(err); }
+            if (!user) {
+                return done(null, fasle, { message: 'Incorrect username.' });
+            }
+            if (user.validPassword(password)) {
+                return done(null, false, { message: 'Incorrect password.' });
+            }
+            return done(null, user);
+        });
+    }
+));
+*/
 
 // development only
 if ('development' == app.get('env')) {
@@ -58,6 +87,7 @@ app.get('/', index.view);
 app.get('/browse', browse.view);
 app.get('/recommended', recommended.view);
 app.get('/login', login.view);
+app.get('/attemptLogin', login.attempt);
 app.get('/list', list.view);
 app.get('/box', box.view);
 app.get('/item', item.view);
@@ -72,6 +102,27 @@ app.get('/like', like.like);
 app.get('/dislike', like.dislike);
 app.get('/starred', starred.view)
 // app.get('/users', user.list);
+// passport
+app.post('/login',
+    passport.authenticate('local', {successRedirect: '/',
+                                    failureRedirect: '/login'}) //, failureFlash: true })
+    
+);
+app.post('/signup', signup.post);
+/*
+function(req, res) {
+    models.Users.register(new models.Users({ username : req.body.username }), req.body.password, function(err, user) {
+        if (err) {
+            console.log("err = " + err);
+            return res.render('signup', { user : user });
+        }
+
+        passport.authenticate('local')(req, res, function() {
+            res.redirect('/');
+        });
+    });
+});
+*/
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
