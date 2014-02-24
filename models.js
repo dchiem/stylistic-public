@@ -1,5 +1,5 @@
-
 var Mongoose = require('mongoose');
+var passportLocalMongoose = require('passport-local-mongoose');
 
 
 var RecommendedSchema = new Mongoose.Schema({
@@ -22,12 +22,15 @@ var BoxesSchema = new Mongoose.Schema({
 });
 
 var UsersSchema = new Mongoose.Schema({
-    "name":String,
     "username":String,
+    "email":String,
+    "birthday":Date,
     "motto":String,
     "imageURL":String,
     "likes": [String],
 });
+
+UsersSchema.plugin(passportLocalMongoose);
 
 exports.Tags = Mongoose.model('Tags', TagsSchema);
 exports.Recommended = Mongoose.model('Recommended', RecommendedSchema);
