@@ -91,17 +91,17 @@
             {{#each tags}}
             {{#addRow @index}}
             <div class="row">
-                {{/addRow}}
+                {{/addRow}}<form id="tagForm" role="form" method="get" action="/list">
                 <div class="col-xs-4">
-                    <form id="tagForm" role="form" method="get" action="/list">
+                    
                         <input type="hidden" value={{name}} name="tag"/>
                         <div class="gender-form"></div>
                         <input type="image" src={{imageURL}} class="img-responsive"/>
-                        <div class=tagOverlay>
+                        <div class="tagOverlay">
                             <h6>{{name}} </h6>
                         </div>
-                    </form>
-                </div>
+                    
+                </div></form>
                 {{#endRow @index}}
             </div>
             {{/endRow}}

@@ -55,7 +55,6 @@
     font-size: 26px;
     border-width:0;
     padding-right: 35px;
-    float: right;
 }
 
 .navbar {
@@ -236,6 +235,8 @@
 
 #newItemBtn {
     width: 150px;  
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .form-control {
@@ -619,7 +620,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 
     background-color: rgba(255, 255, 255, 0.92);
     width: 80%;
-    height: 80%;
     position: absolute;
     top: 10%;
     left: 10%;
@@ -642,7 +642,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-bottom: 15px;
 }
 
+#thisImage {
+    margin-top: 10px;
+}
+
 #form-close {
     float: right;
-
 }

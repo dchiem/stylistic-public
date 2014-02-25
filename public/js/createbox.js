@@ -11,7 +11,8 @@ function initializePage() {
 
 	var imageLoader = document.getElementById('imageLoader');
     imageLoader.addEventListener('change', handleImage, false);
-	var canvas = document.getElementById('imageCanvas');
+
+	/*var canvas = document.getElementById('imageCanvas');
 	var ctx = canvas.getContext('2d');
 
 	function handleImage(e){
@@ -19,10 +20,9 @@ function initializePage() {
 	    reader.onload = function(event){
 	        var img = new Image();
 	        img.onload = function(){
-	        	img.width /= 2;
 	            canvas.width = img.width;
 	            canvas.height = img.height;
-	            ctx.drawImage(img,0,0);
+	            ctx.drawImage(img,0,0, 30, 30);
 
 	            if (canvas.height > 0) {
 					$("#thisImage").hide();
@@ -30,28 +30,37 @@ function initializePage() {
 
 	        }
 	        img.src = event.target.result;
-
 	    }
 	    reader.readAsDataURL(e.target.files[0]);     
+	}*/
+
+	function handleImage(e){
+		var reader = new FileReader();
+		reader.onload = function(event) {
+			var img = new Image();
+			img.src = event.target.result;
+			img.onload = function() {
+            	$("#thisImage").attr("src", img.src);
+			}
+		}
+		reader.readAsDataURL(e.target.files[0]);  
 	}
 
 	$("#form-close").click(function(){
 		$(".import-form").slideUp(200);
 		document.getElementById("import-form").reset();
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
-		canvas.height = 0;
-		$("#thisImage").show();
+		$("#thisImage").attr("src", "/images/icons/import.png")
 	})
 
-	/*$(function(){
+	$(function(){
 		$(":submit").click(function(e){
 			$("textarea").each(function() {
 				if($(this).val() === ""){
 					alert("Please enter a title and related tags.");
-					return false;
+					e.preventDefault();
 				}
 			});
 		});
-	});*/
+	});
 
 }
