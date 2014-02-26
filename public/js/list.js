@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 
 function initializePage() {
+
 	$(".star").click(function(){
         if ($(this).attr("class") == "star") {
           this.src = this.src.replace("greystar.png","yellowstar.png");

@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-xs-2"></div>
                 <div class="col-xs-4 male">
-                    <a href="/browse"><img src="images/icons/gendermale.png"  class="img-responsive">
+                    <a href="/browse"><img src="images/icons/gendermale.png" class="img-responsive" onload="fadeIn(this)">
                         <div class="tagOverlay">
                             <h6>MALE</h6>
                         </div>
@@ -97,7 +97,7 @@
                         <input type="hidden" value={{name}} name="tag"/>
                         <div class="gender-form"></div>
                         <input type="image" src={{imageURL}} class="img-responsive"/>
-                        <div class=tagOverlay>
+                        <div class="tagOverlay">
                             <h6>{{name}} </h6>
                         </div>
                     </form>

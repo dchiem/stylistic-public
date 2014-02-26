@@ -51,6 +51,8 @@
             </div>
         </div>
 
+
+        <!-- Title of the new box -->
         <div class="transparent_box">
             <form class="enter-title">
                 <textarea type="text" placeholder="<Enter title of box>" class="create-title" name="title" id="title"
@@ -58,34 +60,39 @@
             </form>
         </div>
 
+
+        <!-- Tags of the new box -->
         <div class="transparent_box">
             <form class="enter-title">
                 <textarea type="text" placeholder="<Enter related tags> e.g., HIPSTER, WESTERN, ..."class="create-tags" name="tags" id="tags"
                      style="border:none; resize:none; width:100%"></textarea>
             </form>
-        </div>
+        </div>-
 
-        <!--<div class="import">
-            <input type="file" id="imageLoader" name="imageLoader"/>
-            <canvas id="imageCanvas"></canvas>
-        </div>-->
 
+        <!-- Click to bring up form -->
         <div class="import">
             <img id="import-item" src="images/icons/blueplus.png" width="100px">
         </div>
 
-        <form class="import-form">
+
+        <!-- Form for adding a new item: includes image and name of iamge -->
+        <form class="import-form" id="import-form" method="post" action="/upload" enctype="multipart/form-data">
+
+            <img src="/images/icons/close.png" id="form-close" height="30px"></img>
             <h4>Add an item to your box</h4>
-            <input type="text" name="newItem" class="form-control" placeholder="Enter name of item"><br>
+            <input type="text" id="name" name="newItem" class="form-control" placeholder="Enter item name (e.g., Black Shirt)"><br>
             <div class="dotted">
-                <input type="file" id="imageLoader" name="imageLoader"/>
-                <canvas id="imageCanvas" height="20px"></canvas>
+                <input type="file" id="imageLoader" name="image"/>
+                <img id="thisImage" src="/images/icons/import.png" width="150px"/>
             </div>
+
             <input type="submit" class="btn btn-default btn-md form-control" id="newItemBtn" value="Put in box">
         </form>
 
+        <!-- Publish your box -->
         <form class="add-box" method="get" action="/profile">
-                <button type="submit" class="btn btn-default btn-md" id="confirmAddBtn">Add to your boxes</button>
+                <button type="submit" class="btn btn-default btn-md" id="confirmAddBtn">Publish Box</button>
         </form>
 
     </body>
