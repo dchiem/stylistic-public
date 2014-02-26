@@ -74,24 +74,6 @@ passport.deserializeUser(function(id, done) {
         }
     });
 });
-/*
-// passport configuration
-passport.use(new LocalStrategy(
-function(username, password, done) {
-models.Users.findOne({ username: username}, function(err, user) {
-if(err) {return done(err); }
-if (!user) {
-return done(null, fasle, { message: 'Incorrect username.' });
-}
-if (user.validPassword(password)) {
-return done(null, false, { message: 'Incorrect password.' });
-}
-return done(null, user);
-});
-}
-));
-*/
-
 // development only
 if ('development' == app.get('env')) {
     app.use(express.errorHandler());
@@ -117,28 +99,14 @@ app.get('/like', like.like);
 app.get('/dislike', like.dislike);
 app.get('/createbox', createbox.view)
 app.post('/editbox', createbox.editbox)
-// app.get('/users', user.list);
 // passport
 app.post('/login',
-        passport.authenticate('local', {successRedirect: '/myprofile',
+        passport.authenticate('local', {
+            successRedirect: '/myprofile',
             failureRedirect: '/login'}) //, failureFlash: true })
 
 );
 app.post('/signup', signup.post);
-/*
-   function(req, res) {
-   models.Users.register(new models.Users({ username : req.body.username }), req.body.password, function(err, user) {
-   if (err) {
-   console.log("err = " + err);
-   return res.render('signup', { user : user });
-   }
-
-   passport.authenticate('local')(req, res, function() {
-   res.redirect('/');
-   });
-   });
-   });
-   */
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log('Express server listening on port ' + app.get('port'));

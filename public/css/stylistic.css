@@ -218,6 +218,10 @@
     font-size: 12px;
 }
 
+#signupBtn {
+    margin-top: 15px;
+}
+
 #getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #newItemBtn,
  #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn{
     background-image: url('../images/stylisticbutton.jpg');
