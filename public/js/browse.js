@@ -48,7 +48,7 @@ function changeGender(gender) {
         female = !female;
         $("." + gender + " .checkedOverlay").attr("id", female);
     }
-    updateGenderForm();
+    //updateGenderForm();
     //updateSession();
     toggleVisibility(gender + " checkedOverlay");
     if (!male & !female) {
@@ -78,8 +78,6 @@ function getTags() {
 }
 
 function renderTags(data) {
-    console.log("rendering tags");
-    console.log("data: " + data);
     data = JSON.parse(data);
     var html ="";
     html += "<div class=\"title sub-title\">\n";
@@ -92,16 +90,13 @@ function renderTags(data) {
     html += "<div class=\"container tags browse\">\n";
     for (var i=0; i<data.length; i++) {
         var tag = data[i];
-        console.log("tag: " + tag);
-        console.log("tag name: " + tag.name);
-        console.log("tag url: " + tag.imageURL);
         if (i % 3 == 0) {
             html += "<div class=\"row\">\n";
         }
         html += "<div class=\"col-xs-4\">\n";
         html += "    <form id=\"tagForm\" role=\"form\" method=\"get\" action=\"/list\">\n";
         html += "        <input type=\"hidden\" value=" + tag.name + " name=\"tag\"/>\n";
-        html += "        <div class=\"gender-form\"></div>\n";
+        html += "        <input type=\"hidden\" class=\"gender-tag\" value=\"" + genderTag() + "\" name=\"gender\"/>\n";
         html += "        <input type=\"image\" src=/" + tag.imageURL + " class=\"img-responsive\"/>\n";
         html += "        <div class=\"tagOverlay\">\n";
         html += "            <h6>" + tag.name + "</h6>\n";
