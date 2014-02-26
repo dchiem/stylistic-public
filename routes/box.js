@@ -11,6 +11,7 @@ exports.view = function(req, res){
             isLiked = true;
         }
     }
+    
     models.Boxes
         .find({_id: id})
         .exec(renderBox);

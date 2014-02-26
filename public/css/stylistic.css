@@ -719,3 +719,18 @@ h1, h2, h3, h4, h5, h6, p, a {
     padding-left: 2px;
     padding-right: 2px;
 }
+
+.remove-item .dropdown {
+    text-align: center;
+}
+
+.dropdown button {
+    border-radius: 5px;
+    width: 80px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+#delete {
+    color: red;
+}
