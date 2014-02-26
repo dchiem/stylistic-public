@@ -20,3 +20,17 @@ exports.post = function(req, res) {
         });
     });
 }
+
+exports.alreadyExists = function(req, res) {
+    username = req.query.username;
+    console.log('checking if ' + username + ' exists');
+    models.Users
+        .find({username: username})
+        .exec(exists);
+
+    function exists(err, users) {
+        var exists = "false";
+        if (users.length > 0) exists = "true";
+        res.end(exists);
+    }
+}

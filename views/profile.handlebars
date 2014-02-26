@@ -38,10 +38,10 @@
                     <ul class="nav navbar-nav">
                         <li><a href="/home">Home</a></li>
                         {{#if sessionUser}}
-                            <li><a href="/myprofile">My Profile</a></li>
-                            <li><a href="/logout">Logout</a></li>
+                        <li><a href="/myprofile">My Profile</a></li>
+                        <li><a href="/logout">Logout</a></li>
                         {{else}}
-                            <li><a href="/login">Login</a></li>
+                        <li><a href="/login">Login</a></li>
                         {{/if}}
                     </ul>
                 </div><!--/.nav-collapse -->
@@ -50,13 +50,22 @@
         <div class="container profile-back">
             <div class="profile">
                 <div class="row profile-card">
+                    <form class="import-form" id="import-form" method="post" action="/uploadPhoto" enctype="multipart/form-data">
+                        <img src="/images/icons/close.png" id="form-close" height="30px"></img>
+                        <h4> Upload a profile picture</h4>
+                        <div class="dotted">
+                            <input type="file" id="imageLoader" name="image"/>
+                            <img id="thisImage" src="/images/icons/import.png" width="150px"/>
+                        </div>
+                        <input type="submit" class="btn btn-default btn-md form-control" id="newItemBtn" value="Use as profile picture">
+                    </form>
                     <div class="col-xs-5">
                         {{#if myProfile}}
                         <a href="/profile"><img src="{{user.imageURL}}" class="img-responsive"></a>
                         <button type="submit" class="photo-edit btn btn-xs btn-default">
                             <i class="glyphicon glyphicon-pencil "></i>
                         </button>
-                        {{else}}
+                                                {{else}}
                         <img src="{{user.imageURL}}" class="img-responsive">
                         {{/if}}
                     </a>
@@ -67,18 +76,15 @@
                             <h4>{{user.username}}</h4>
                             <div class="tagline">
                                 {{#if myProfile}}
-                                    {{#if user.motto}}
-                                        <textarea class="tagline-text-profile2" style="resize:none; width:100%">"{{user.motto}}"</textarea>
-                                    {{else}}
-                                        <textarea class="tagline-text-profile2" style="resize:none; width:100%"
-                                        onclick="if (this.value == 'Add a tagline here') {this.value ='';}"
-                                        onblur="if (this.value == '') {this.value ='Add a tagline here';}" onkeypress=
-                                        "if(event.keyCode==13) {event.preventDefault();}" class="tagline-text">Add a tagline here</textarea>
-                                    {{/if}}
+                                {{#if user.motto}}
+                                <textarea class="tagline-text-profile" style="resize:none; width:100%">{{user.motto}}</textarea>
                                 {{else}}
-                                    {{#if user.motto}}
-                                        <p>"{{user.motto}}"</p>
-                                    {{/if}}
+                                <textarea class="tagline-text-profile" style="resize:none; width:100%">Add a tagline here</textarea>
+                                {{/if}}
+                                {{else}}
+                                {{#if user.motto}}
+                                <p>"{{user.motto}}"</p>
+                                {{/if}}
                                 {{/if}}
                             </div>
                         </div>
@@ -127,21 +133,21 @@
             </form>
             <div class="col-xs-2">
                 {{#if ../myProfile}}
-                    <form name="edit-box" action="editbox" method="post">
-                        <input type="hidden" name="id" value={{_id}}>
-                        <button type="submit" class="btn btn-sm btn-default">
-                            <i class="glyphicon glyphicon-pencil"></i>
-                        </button>
-                    </form>
+                <form name="edit-box" action="editbox" method="post">
+                    <input type="hidden" name="id" value={{_id}}>
+                    <button type="submit" class="btn btn-sm btn-default">
+                        <i class="glyphicon glyphicon-pencil"></i>
+                    </button>
+                </form>
                 {{/if}}
             </div>
         </div>
         {{/each}}
 
         {{#if myProfile}}
-        <div class="create">
-            <a href="/createbox">CREATE BOX</a>
-        </div>
+        <form method="get" action="/createbox">
+            <button type="submit" class="btn btn-default btn-md" id="createBoxBtn">CREATE A BOX</button>
+        </form>
         {{/if}}
 
     </div>
@@ -166,6 +172,11 @@
             </div>
         </form>
         {{/each}}
+        {{#if myProfile}}
+        <form method="get" action="/browse">
+            <button type="submit" class="btn btn-default btn-md" id="createBoxBtn">FIND MORE BOXES</button>
+        </form>
+        {{/if}}
     </div>
 </div>
 </body>

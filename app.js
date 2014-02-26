@@ -2,7 +2,7 @@
 /**
  * Module dependencies.
  */
-
+var flash = require('connect-flash');
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -27,6 +27,7 @@ var home = require('./routes/home');
 var like = require('./routes/like');
 var gender = require('./routes/gender');
 var tags = require('./routes/tags');
+var edit = require('./routes/edit');
 var createbox = require('./routes/createbox');
 // Example route
 // var user = require('./routes/user');
@@ -53,6 +54,7 @@ app.use(express.session());
 app.use(express.bodyParser());
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(flash());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -97,6 +99,7 @@ app.get('/list', list.view);
 app.get('/box', box.view);
 app.get('/item', item.view);
 app.get('/signup', signup.view);
+app.get('/alreadyExists', signup.alreadyExists);
 app.get('/forgot', forgot.view);
 app.get('/profile', profile.view);
 app.get('/myprofile', profile.myProfile);
@@ -110,6 +113,8 @@ app.get('/removeMale', gender.removeMale);
 app.get('/removeFemale', gender.removeFemale);
 app.get('/createbox', createbox.view)
 app.get('/tags', tags.getTags)
+app.get('/setTagline', edit.setTagline)
+app.post('/uploadPhoto', edit.uploadPhoto)
 app.get('/', function (req, res){
     res.writeHead(200, {'Content-Type': 'text/html' });
 });
@@ -119,7 +124,8 @@ app.post('/editbox', createbox.editbox)
 app.post('/login',
         passport.authenticate('local', {
             successRedirect: '/myprofile',
-            failureRedirect: '/login'}) //, failureFlash: true })
+            failureRedirect: '/login',
+            failureFlash: true })
 
 );
 app.post('/signup', signup.post);

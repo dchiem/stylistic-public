@@ -2,6 +2,14 @@
     height: 100%;
 }
 
+.errorMessage h5 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: red;
+    text-align: left;
+}
+
 .photo {
     outline: 3px dashed #4f4f4f;
     border-radius(10);
@@ -229,11 +237,12 @@
     font-size: 12px;
 }
 
-#signupBtn {
-    margin-top: 15px;
+#createBoxBtn {
+    display: block;
+    margin: 0 auto;
 }
 
-#getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #newItemBtn,
+#getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #newItemBtn, #createBoxBtn,
  #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn, #saveBtn{
     background-image: url('../images/stylisticbutton.jpg');
     -webkit-border-radius: 0;
@@ -244,7 +253,7 @@
     color: white;
 }
 
-#homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn {
+#homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn, #createBoxBtn {
     width: 200px;
     margin-top: 20px;
 }
@@ -514,14 +523,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .tagline-text-profile {
-    font-family: "Avenir Book", "Avenir", sans-serif;
-    font-style: italic;
-    color: white;
-    background: none;
-    border:none;
-}
-
-.tagline-text-profile2 {
     font-family: "Avenir Book", "Avenir", sans-serif;
     font-style: italic;
     color: black;

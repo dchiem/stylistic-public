@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-1.11.0.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/signup.js"></script>
         <link href="css/bootstrap.css" rel="stylesheet"></link>
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
@@ -48,16 +49,28 @@
             <div class="row">
                 <div class="col-lg-6">
                     <form action="/signup" method="post">
-                        <input type="text" name="username" class="form-control" placeholder="Username"><br>
-                        <input type="password" name="password" class="form-control" placeholder="Password"><br>
-                        <input type="text" name="email" class="form-control" placeholder="Email"><br>
-                        <input type="text" name="email-confirm" class="form-control" placeholder="Confirm Email"><br>
+                        <input id="userInput" type="text" name="username" class="form-control" placeholder="Username">
+                            <div class="errorMessage userError">
+                                <br>
+                            </div>
+                        <input id="passwordInput" type="password" name="password" class="form-control" placeholder="Password">
+                            <div class="errorMessage passwordError">
+                                <br>
+                            </div>
+                        <input id="emailInput" type="text" name="email" class="form-control" placeholder="Email">
+                            <div class="errorMessage emailError">
+                                <br>
+                            </div>
+                        <input id="confirmEmailInput" type="text" name="email-confirm" class="form-control" placeholder="Confirm Email">
+                            <div class="errorMessage confirmEmailError">
+                                <br>
+                            </div>
 
                         <label for="date" id="DOB">Date of Birth:</label>
                         <div class="row">
                             <div class="month col-xs-5">
                                 <!--<label for="birthday">Date of Birth</label> -->
-                                <select class="form-control" id="date" name="month">
+                                <select class="form-control" id="birth-month" name="month">
                                     <option value="#Month">Month</option>
                                     <option value="#January">January</option>
                                     <option value="#February">February</option>
@@ -74,7 +87,7 @@
                                 </select>
                             </div>
                             <div class="day col-xs-3">
-                                <select class="form-control" id="birthday" name="day">
+                                <select class="form-control" id="birth-day" name="day">
                                     <option value="Day">Day</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -110,7 +123,7 @@
                                 </select>
                             </div>
                             <div class="year col-xs-4">
-                                <select class="form-control" id="birthyear" name="year">
+                                <select class="form-control" id="birth-year" name="year">
                                     <option value="Year">Year</option>
                                     <option value="2014">2014</option>
                                     <option value="2013">2013</option>
@@ -229,7 +242,11 @@
                                     <option value="1900">1900</option>
                                 </select>
                             </div>
+                            <br><br>
+                        <div class="errorMessage birthdayError">
+                            <br>
                         </div>
+                            </div>
                         <button type="submit" class="btn btn-default btn-md form-control" id="signupBtn">Sign Up</button>
                     </form>
                 </div>

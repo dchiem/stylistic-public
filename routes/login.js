@@ -5,7 +5,9 @@ exports.view = function(req, res){
     if (req.user) {
         sessionUser = req.user.username;    
     }
-	res.render('login', {"sessionUser": sessionUser});
+    var em = req.flash('error');
+    console.log("flash() : " + em);
+	res.render('login', {"sessionUser": sessionUser, "errorMessage": em});
 };
 
 exports.logout = function(req, res){
