@@ -25,6 +25,8 @@ var profile = require('./routes/profile');
 var makeprofile = require('./routes/makeprofile');
 var home = require('./routes/home');
 var like = require('./routes/like');
+var gender = require('./routes/gender');
+var tags = require('./routes/tags');
 var createbox = require('./routes/createbox');
 // Example route
 // var user = require('./routes/user');
@@ -46,6 +48,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(express.cookieParser("SylisticSecret"));
+//app.use(express.cookieSession());
 app.use(express.session());
 app.use(express.bodyParser());
 app.use(passport.initialize());
@@ -101,7 +104,12 @@ app.get('/makeprofile', makeprofile.view);
 app.get('/home', home.view);
 app.get('/like', like.like);
 app.get('/dislike', like.dislike);
+app.get('/addMale', gender.addMale);
+app.get('/addFemale', gender.addFemale);
+app.get('/removeMale', gender.removeMale);
+app.get('/removeFemale', gender.removeFemale);
 app.get('/createbox', createbox.view)
+app.get('/tags', tags.getTags)
 app.get('/', function (req, res){
     res.writeHead(200, {'Content-Type': 'text/html' });
 });

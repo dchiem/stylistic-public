@@ -1,11 +1,15 @@
 var models = require('../models');
 
 exports.view = function(req, res){
+    console.log("session M: " + req.session.male + " F: " + req.session.female);
     var sessionUser;
     if (req.user) {
         sessionUser = req.user.username;    
     }
-
+    
+    var tags;
+    var maleTags;
+    var femaleTags;
 	models.Tags
 		.find()
 		.exec(renderTags);
@@ -31,6 +35,6 @@ exports.view = function(req, res){
         };
 
     function renderTags(err, tags) {
-        res.render('browse', {'tags': tags, 'sessionUser': sessionUser, 'helpers':helpers});
+        res.render('browse', {'tags': tags, 'male': req.session.male, 'female': req.session.female, 'sessionUser': sessionUser, 'helpers':helpers});
     }
 };

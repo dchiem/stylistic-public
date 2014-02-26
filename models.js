@@ -33,6 +33,8 @@ var UsersSchema = new Mongoose.Schema({
 UsersSchema.plugin(passportLocalMongoose);
 
 exports.Tags = Mongoose.model('Tags', TagsSchema);
+exports.MaleTags = Mongoose.model('MaleTags', TagsSchema);
+exports.FemaleTags = Mongoose.model('FemaleTags', TagsSchema);
 exports.Recommended = Mongoose.model('Recommended', RecommendedSchema);
 exports.Boxes = Mongoose.model('Boxes', BoxesSchema);
 exports.Users = Mongoose.model('Users', UsersSchema);

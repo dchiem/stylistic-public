@@ -66,7 +66,7 @@
                         <div class="tagOverlay">
                             <h6>MALE</h6>
                         </div>
-                        <div class="male checkedOverlay">
+                        <div class="male checkedOverlay" id="{{male}}">
                             <i class="glyphicon glyphicon-ok"></i>
                         </div>
                     </a>
@@ -76,7 +76,7 @@
                         <div class="tagOverlay">
                             <h6>FEMALE</h6>
                         </div>
-                        <div class="female checkedOverlay">
+                        <div class="female checkedOverlay" id="{{female}}">
                             <i class="glyphicon glyphicon-ok"></i>
                         </div>
                     </a>
@@ -85,30 +85,32 @@
             </div>
         </div>
         <div class="tag-stuff">
-        <div class="title sub-title">
-            <div class="container browse">
-                <h4>TAGS</h4>
-            </div>
-        </div>
-        <div class="container tags browse">
-            {{#each tags}}
-            {{#addRow @index}}
-            <div class="row">
-                {{/addRow}}
-                <div class="col-xs-4">
-                    <form id="tagForm" role="form" method="get" action="/list">
-                        <input type="hidden" value={{name}} name="tag"/>
-                        <div class="gender-form"></div>
-                        <input type="image" src={{imageURL}} class="img-responsive"/>
-                        <div class="tagOverlay">
-                            <h6>{{name}} </h6>
-                        </div>
-                    </form>
+            <!--
+            <div class="title sub-title">
+                <div class="container browse">
+                    <h4>TAGS</h4>
                 </div>
-                {{#endRow @index}}
             </div>
-            {{/endRow}}
-            {{/each}}
+            <div class="container tags browse">
+                {{#each tags}}
+                {{#addRow @index}}
+                <div class="row">
+                    {{/addRow}}
+                    <div class="col-xs-4">
+                        <form id="tagForm" role="form" method="get" action="/list">
+                            <input type="hidden" value={{name}} name="tag"/>
+                            <div class="gender-form"></div>
+                            <input type="image" src={{imageURL}} class="img-responsive"/>
+                            <div class="tagOverlay">
+                                <h6>{{name}} </h6>
+                            </div>
+                        </form>
+                    </div>
+                    {{#endRow @index}}
+                </div>
+                {{/endRow}}
+                {{/each}}
+            </div>
+            -->
         </div>
-    </div>
     </html>
