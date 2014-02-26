@@ -6,6 +6,7 @@ function initializePage() {
 
 	$(".import-form").hide();
 	$("#edit-import-item").click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 500);
 		$(".import-form").slideDown(200);
 	})
 
@@ -29,6 +30,13 @@ function initializePage() {
 		document.getElementById("import-form").reset();
 		$("#thisImage").attr("src", "/images/icons/import.png")
 	})
+
+	$(".dropdown").hide();
+    $(".remove-item").click(function(event) {
+        var itemID = event.target.id;
+        console.log("This is the item ID: " + itemID);
+        $(".dropdown").toggle();
+    });
 
 	$(function(){
 		$(".save-box :submit").click(function(e){

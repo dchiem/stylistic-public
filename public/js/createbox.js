@@ -6,6 +6,7 @@ function initializePage() {
 
 	$(".import-form").hide();
 	$("#import-item").click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 500);
 		$(".import-form").slideDown(200);
 	})
 
