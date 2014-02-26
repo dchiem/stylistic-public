@@ -37,9 +37,12 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/home">Home</a></li>
-                        <li><a href="/browse">Browse</a></li>
-                        <li><a href="/recommended">Recommended</a></li>
-                        <li><a href="/login">Login</a></li>
+                        {{#if sessionUser}}
+                            <li><a href="/myprofile">My Profile</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        {{else}}
+                            <li><a href="/login">Login</a></li>
+                        {{/if}}
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -50,6 +53,9 @@
                     <div class="col-xs-5">
                         {{#if myProfile}}
                         <a href="/profile"><img src="{{user.imageURL}}" class="img-responsive"></a>
+                        <button type="submit" class="photo-edit btn btn-xs btn-default">
+                            <i class="glyphicon glyphicon-pencil "></i>
+                        </button>
                         {{else}}
                         <img src="{{user.imageURL}}" class="img-responsive">
                         {{/if}}
@@ -58,12 +64,21 @@
                 <div class="col-xs-7">
                     <div class="info">
                         <div class="username">
-                            <h4>{{user.name}}</h4>
+                            <h4>{{user.username}}</h4>
                             <div class="tagline">
                                 {{#if myProfile}}
-                                <textarea class="tagline-text-profile2" style="resize:none; width:100%">"{{user.motto}}"</textarea>
+                                    {{#if user.motto}}
+                                        <textarea class="tagline-text-profile2" style="resize:none; width:100%">"{{user.motto}}"</textarea>
+                                    {{else}}
+                                        <textarea class="tagline-text-profile2" style="resize:none; width:100%"
+                                        onclick="if (this.value == 'Add a tagline here') {this.value ='';}"
+                                        onblur="if (this.value == '') {this.value ='Add a tagline here';}" onkeypress=
+                                        "if(event.keyCode==13) {event.preventDefault();}" class="tagline-text">Add a tagline here</textarea>
+                                    {{/if}}
                                 {{else}}
-                                <p>"{{user.motto}}</p>
+                                    {{#if user.motto}}
+                                        <p>"{{user.motto}}"</p>
+                                    {{/if}}
                                 {{/if}}
                             </div>
                         </div>
@@ -114,7 +129,7 @@
                 {{#if ../myProfile}}
                     <form name="edit-box" action="editbox" method="post">
                         <input type="hidden" name="id" value={{_id}}>
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-sm btn-default">
                             <i class="glyphicon glyphicon-pencil"></i>
                         </button>
                     </form>
@@ -123,9 +138,11 @@
         </div>
         {{/each}}
 
+        {{#if myProfile}}
         <div class="create">
             <a href="/createbox">CREATE BOX</a>
         </div>
+        {{/if}}
 
     </div>
     <div class="liked-boxes" style="display:none;">

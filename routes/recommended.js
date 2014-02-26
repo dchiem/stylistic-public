@@ -2,6 +2,10 @@
 var models = require('../models');
 
 exports.view = function(req, res){
+    var sessionUser;
+    if (req.user) {
+        sessionUser = req.user.username;    
+    }
     var helpers =
         {
             addRow: function(index, options) {
@@ -26,6 +30,6 @@ exports.view = function(req, res){
 		.exec(renderRecommended);
 
     function renderRecommended(err, recommended) {
-	    res.render('recommended', {"recommended": recommended, "helpers":helpers});
+	    res.render('recommended', {"recommended": recommended, "helpers":helpers, "sessionUser": sessionUser});
     }
 };

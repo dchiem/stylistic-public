@@ -1,6 +1,10 @@
 var models = require('../models');
 
 exports.view = function(req, res){
+    var sessionUser;
+    if (req.user) {
+        sessionUser = req.user.username;    
+    }
 
 	models.Tags
 		.find()
@@ -27,6 +31,6 @@ exports.view = function(req, res){
         };
 
     function renderTags(err, tags) {
-        res.render('browse', {'tags': tags, 'helpers':helpers});
+        res.render('browse', {'tags': tags, 'sessionUser': sessionUser, 'helpers':helpers});
     }
 };

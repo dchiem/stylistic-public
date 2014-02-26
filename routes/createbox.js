@@ -1,7 +1,7 @@
 var models = require('../models');
 
 exports.view = function(req, res){
-    res.render('createbox');
+    res.render('createbox', {'sessionUser': true});
 };
 
 exports.editbox = function(req, res){
@@ -17,7 +17,7 @@ exports.editbox = function(req, res){
         else if (!boxes) console.log("no boxes");
         else {
             console.log("box: " + boxes[0]);
-            res.render('editbox', {"box" : boxes[0]});
+            res.render('editbox', {"box" : boxes[0], 'sessionUser': true});
         }
     }
 }

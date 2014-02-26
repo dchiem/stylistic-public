@@ -23,16 +23,20 @@ exports.myProfile = function(req, res){
 
     function renderLikes(err, likedBoxes) {
         if (err) console.log(err);
-	    res.render('profile', {'user': user, 'boxes': boxes, 'likes': likedBoxes, 'myProfile': true});
+	    res.render('profile', {'user': user, 'boxes': boxes, 'likes': likedBoxes, 'myProfile': true, 'sessionUser': true});
     }
 };
 
 
 exports.view = function(req, res){
     var username = req.query.username;
-    if (req.user && req.user.username == username) {
-        res.redirect('myprofile');
-        return;
+    var sessionUser;
+    if (req.user) {
+        sessionUser = req.user.username;    
+        if (sessionUser == username) {
+            res.redirect('myprofile');
+            return;
+        }
     }
 
     var user;
@@ -61,6 +65,6 @@ exports.view = function(req, res){
     }
 
     function renderLikes(err, likedBoxes) {
-	    res.render('profile', {'user': user, 'boxes': boxes, 'likes': likedBoxes, 'myProfile': ""});
+	    res.render('profile', {'user': user, 'boxes': boxes, 'likes': likedBoxes, 'myProfile': "", 'sessionUser': sessionUser});
     }
 }

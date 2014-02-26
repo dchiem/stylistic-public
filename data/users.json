@@ -15,9 +15,19 @@
     "username" : "emmazing", 
     "email" : "emma@gmail.com", 
     "birthday" : "2000-01-01T08:00:00Z",
-    "motto" : "I'm Emma and I like clothes",
+    "motto" : "10 points for FASHION!",
     "imageURL": "http://www.ekantipur.com/uploads/ekantipur/news/2013/gallery_06_27/Emma-Watson-Harry-Potter-and-the-Order-of-the-Phoenix-2007-anichu90-17192672-1919-2560_20130627124233.jpg",
     "likes" : [] 
+},
+{ 
+    "salt" : "a2de353d8c0d48bc1d61354aa8afa2c4c76ae428b185b577d938475d759f7f74", 
+    "hash" : "f0248a23af0c2bbbdfc3828856f6657eda64bc3c086557d28e2c9fd01f95f3372a0ccf230893d1b129e8671fe851172f598a2754aeeeeea469a7b3541b8d8632b8a52ff3a74a89a64554147182d06cf5b828eef6621e2be03a4c107e201d8db353d2edc2e353da3b9b8028c272acde59d9b8ce475df22ce61eea32cf3b70851ca14fee48baab6f0b2936ce6038083be89d49df5cb646a69ee87afb58aae4b48628cd690f6b74ce9cc5562d6965a4ecfe038038ddbc8ba44c9a4e4927c5ffa6fd012642d067df95d3f4c0d779a99c919eb2e9e578c10a204a4d84a9c2a5c0c4ead5d300bcc0e9b7a04474cafe38df7568157846366b34d152a10ad48153d423c947cf2a05f3d8ad91f92b7a9b1de10a871f43365361a15087802727704ed84f3e6ec7184a88a173dbd11ab0a67c6c2f596ebbb8eeb5ab35701c5dcb48c1ec6efbc077e24d2a25137decea4adab4dcda23d725a357a39d3661edc5d11a8b5acb3027927388a924517f944fcf67e28db17c25f28a56daf214070d06cb149b9f703e9c7d50231ba92f5532a0f665bb8c73dd34c6c892dbdc5c3bb22b0b2debea72b1de819d454b088be9e7a89413b5eb62d5a29041fe9b2d45d5905305549977f55a928ec91028c65d6c78236f83da40971af98f73eba7b9433577e598ef62550f0ddedd90afadab4c93b824371b7fa38f5d5a88facf75fb25437b159b7340f86225", 
+    "username" : "XxAlexX", 
+    "email" : "alex@gmail.com", 
+    "birthday" : "1990-01-01T08:00:00Z", 
+    "motto" : "Most underrated player in the game",
+    "imageURL": "/images/alex.jpg",
+    "likes" : [ ]
 },
 { 
     "salt" : "e4a33b3ac9dc8fd0a34e84f379b4eb936632ac78e564fb414021fea97490af99",
@@ -25,7 +35,6 @@
     "username" : "a",
     "email" : "a@a.com",
     "birthday" : "2000-01-01T08:00:00Z",
-    "motto" : "I'm Emma and I like clothes",
     "motto": "aaaaaaaaaaa",
     "imageURL": "/images/default.png",
     "likes" : [] 

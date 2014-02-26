@@ -1,6 +1,10 @@
 var models = require('../models');
 
 exports.view = function(req, res){
+    var sessionUser;
+    if (req.user) {
+        sessionUser = req.user.username;    
+    }
     var tag = req.query.tag;
     var gender = req.query.gender;
     console.log("tag:" + tag);
@@ -18,6 +22,6 @@ exports.view = function(req, res){
     }
 
     function renderBoxes(err, boxes) {
-	    res.render('list', {"boxes": boxes, "tag":tag});
+	    res.render('list', {"boxes": boxes, "tag":tag, "sessionUser": sessionUser});
     }
 };

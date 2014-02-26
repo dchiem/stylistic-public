@@ -46,7 +46,7 @@
         <div class="container signup">
             <p>Sign up with your email address</p>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <form action="/signup" method="post">
                         <input type="text" name="username" class="form-control" placeholder="Username"><br>
                         <input type="password" name="password" class="form-control" placeholder="Password"><br>
@@ -55,7 +55,7 @@
 
                         <label for="date" id="DOB">Date of Birth:</label>
                         <div class="row">
-                            <div class="form-month col-xs-5">
+                            <div class="month col-xs-5">
                                 <!--<label for="birthday">Date of Birth</label> -->
                                 <select class="form-control" id="date" name="month">
                                     <option value="#Month">Month</option>
@@ -73,7 +73,7 @@
                                     <option value="#December">December</option>
                                 </select>
                             </div>
-                            <div class="col-xs-3">
+                            <div class="day col-xs-3">
                                 <select class="form-control" id="birthday" name="day">
                                     <option value="Day">Day</option>
                                     <option value="1">1</option>
@@ -109,7 +109,7 @@
                                     <option value="31">31</option>
                                 </select>
                             </div>
-                            <div class="col-xs-4">
+                            <div class="year col-xs-4">
                                 <select class="form-control" id="birthyear" name="year">
                                     <option value="Year">Year</option>
                                     <option value="2014">2014</option>
