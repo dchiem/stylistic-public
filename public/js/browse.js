@@ -12,6 +12,9 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+
+    $(".gender").hide(0).fadeIn(500);
+
     console.log("Javascript connected!");
     $(".male a").click(function(e) {
         console.log("male tag clicked");

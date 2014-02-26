@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-xs-2"></div>
                 <div class="col-xs-4 male">
-                    <a href="/browse"><img src="images/icons/gendermale.png"  class="img-responsive">
+                    <a href="/browse"><img src="images/icons/gendermale.png" class="img-responsive" onload="fadeIn(this)">
                         <div class="tagOverlay">
                             <h6>MALE</h6>
                         </div>
@@ -91,17 +91,17 @@
             {{#each tags}}
             {{#addRow @index}}
             <div class="row">
-                {{/addRow}}<form id="tagForm" role="form" method="get" action="/list">
+                {{/addRow}}
                 <div class="col-xs-4">
-                    
+                    <form id="tagForm" role="form" method="get" action="/list">
                         <input type="hidden" value={{name}} name="tag"/>
                         <div class="gender-form"></div>
                         <input type="image" src={{imageURL}} class="img-responsive"/>
                         <div class="tagOverlay">
                             <h6>{{name}} </h6>
                         </div>
-                    
-                </div></form>
+                    </form>
+                </div>
                 {{#endRow @index}}
             </div>
             {{/endRow}}

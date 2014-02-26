@@ -55,6 +55,7 @@
     font-size: 26px;
     border-width:0;
     padding-right: 35px;
+    float: right;
 }
 
 .navbar {
@@ -233,6 +234,12 @@
     margin-top: 20px;
 }
 
+#DOB {
+    float: left;
+    font-family: "Avenir Book", sans-serif;
+    color: #999;
+}
+
 #newItemBtn {
     width: 150px;  
     margin-top: 10px;
@@ -253,6 +260,14 @@
 
 .step p {
     color: gray;
+}
+
+.signup .row {
+    display: inline-block;
+}
+
+.signup select {
+    height: 35px;
 }
 
 .signup p {
