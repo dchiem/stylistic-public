@@ -207,7 +207,7 @@
     background-color: rgba(255,255,255, 0.3);
 }
 
-.add-box {
+.add-box, .save-box {
     text-align: center;
 }
 
@@ -234,7 +234,7 @@
 }
 
 #getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #newItemBtn,
- #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn{
+ #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn, #saveBtn{
     background-image: url('../images/stylisticbutton.jpg');
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -247,6 +247,10 @@
 #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn {
     width: 200px;
     margin-top: 20px;
+}
+
+#saveBtn {
+    margin-bottom: 20px;
 }
 
 #DOB {
@@ -481,7 +485,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin: 10px;
 }
 
-
 .box_title img {
     float: right;
 }
@@ -625,6 +628,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 #import-item {
+    margin-top: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -637,9 +641,27 @@ h1, h2, h3, h4, h5, h6, p, a {
     border-color: #71A6D5;
 }
 
+#edit-import-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 6px;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #71A6D5;
+}
+
 
 #import-item:hover {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+#edit-import-item:hover {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .import-form {
@@ -688,4 +710,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 .month{
     padding-left: 11px;
     padding-right: 11px;
+}
+
+#tag-buttons {
+    background-color: rgba(255,255,255,0.6);
+    color: black;
+    border-radius: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
 }

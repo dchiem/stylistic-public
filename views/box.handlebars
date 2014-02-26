@@ -75,7 +75,7 @@
                 </div>
                 <p>Created by: <a href="profile?username={{thebox.user}}">{{thebox.user}}</a><br>Tags: 
                 {{#each thebox.tags}}
-                {{this}}
+                <a id="tag-buttons" href="list?tag={{this}}&gender=MF">{{this}}</a>
                 {{/each}}
                 </p>
             </div>
@@ -85,7 +85,6 @@
             {{#each thebox.boxitems}}
             <div class="col-xs-6">
                 <a href="{{imageURL}}"data-lightbox="clothes" title="{{name}}"><img src={{imageURL}} class="img-responsive"></a>
-                {{#if sessionUser}}
                 <div class="add">
                     <img id="plus" src="images/icons/whiteplus.png" height="25px">
                     <img id="plus" src="images/icons/greenplus.png" style="display:none" height="25px">
@@ -98,7 +97,6 @@
                         </ul>
                     </div>
                 </div> 
-                {{/if}}
             </div>
             {{/each}}
         </div>
