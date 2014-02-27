@@ -2,6 +2,19 @@
     height: 100%;
 }
 
+.box-image {
+}
+
+.box-image img {
+    padding-left: 17px;
+    padding-top: 10px;
+    padding-right: 0px;
+}
+
+.box-titles {
+    padding-left: 0px;
+}
+
 .dropdown .green {
     color: #66FF33;
 }
@@ -247,7 +260,7 @@
 }
 
 #getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #newItemBtn, #createBoxBtn,
- #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn, #saveBtn{
+ #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn, #saveBtn, #newBoxBtn {
     background-image: url('../images/stylisticbutton.jpg');
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -272,7 +285,7 @@
     color: #999;
 }
 
-#newItemBtn {
+#newItemBtn, #newBoxBtn {
     width: 150px;  
     margin-top: 10px;
     margin-bottom: 30px;
@@ -458,6 +471,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .transparent_box {
     background-color: rgba(0, 0, 0, 0.7);
     margin: 10px;
+    margin-left: 0px;
     border-radius: 5px;
 }
 
@@ -621,11 +635,13 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-style: italic;
     background: transparent;
     color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .create-tags {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 15px;
     font-family: "Avenir Book", "Avenir", sans-serif;
     font-style: italic;
@@ -704,7 +720,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-top: 10px;
 }
 
-#form-close {
+#form-close, #box-form-close {
     float: right;
 }
 
