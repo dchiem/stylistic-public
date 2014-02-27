@@ -63,7 +63,7 @@
     "imageURL": "/images/boxes/Box3/box3cover.png",
     "user": "james_the_man",
     "genders": ["M" , "F"],
-    "tags": ["ROCKER", "GOTHIC", "NEW RELEASES"],
+    "tags": ["ROCKER", "GOTHIC", "NEW"],
     "boxitems": [
     {
         "name": "Black Boots",
@@ -179,7 +179,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box7/box7cover.jpg",
     "user": "XxAlexX",
-    "tags": ["GOTHIC", "ROCKER", "NEW RELEASES"],
+    "tags": ["GOTHIC", "ROCKER", "NEW"],
     "boxitems": [
     {
         "name": "Round Sunglasses",
@@ -229,6 +229,294 @@
         "name": "Black Jogging Tights",
         "imageURL": "/images/boxes/Box8/tights.jpg",
         "link": "/images/boxes/Box8/tights.webloc"
+    }
+    ]
+},
+{
+    "box": "Going Casual",
+    "genders": ["F"],
+    "imageURL": "/images/boxes/Box9/box9cover.png",
+    "user": "emmazing",
+    "tags": ["WESTERN", "SPRING", "DENIM", "POPULAR"],
+    "boxitems": [
+    {
+        "name": "Black Sunglasses",
+        "imageURL": "/images/boxes/Box9/blacksunglasses.jpg",
+        "link": "/images/boxes/Box9/blacksunglasses.webloc"
+    },
+    {
+        "name": "Red Plaid Shirt",
+        "imageURL": "/images/boxes/Box9/plaidshirt.jpg",
+        "link": "/images/boxes/Box9/plaidshirt.webloc"
+    },
+    {
+        "name": "Caged High-Heels",
+        "imageURL": "/images/boxes/Box9/cagedhighheels.jpg",
+        "link": "/images/boxes/Box9/cagedhighheels.webloc"
+    }
+    ]
+},
+{
+    "box": "Rainy Days",
+    "genders": ["F"],
+    "imageURL": "/images/boxes/Box10/box10cover.png",
+    "user": "emmazing",
+    "tags": ["GOTHIC", "SPRING", "FEATURED"],
+    "boxitems": [
+    {
+        "name": "Black Fedora",
+        "imageURL": "/images/boxes/Box10/blackfedora.jpg",
+        "link": "/images/boxes/Box10/blackfedora.webloc"
+    },
+    {
+        "name": "Black Woven Shirt",
+        "imageURL": "/images/boxes/Box10/blackwovenshirt.jpg",
+        "link": "/images/boxes/Box10/blackwovenshirt.webloc"
+    },
+    {
+        "name": "Floral Blazer",
+        "imageURL": "/images/boxes/Box10/floralblazer.jpg",
+        "link": "/images/boxes/Box10/floralblazer.webloc"
+    }
+    ]
+},
+{
+    "box": "One of Those Lazy Days",
+    "genders": ["F"],
+    "imageURL": "/images/boxes/Box11/box11cover.png",
+    "user": "emmazing",
+    "tags": ["DENIM", "HIPSTER", "TRENDING"],
+    "boxitems": [
+    {
+        "name": "Blue Plaid Shirt",
+        "imageURL": "/images/boxes/Box11/blueplaidshirt.jpg",
+        "link": "/images/boxes/Box11/blueplaidshirt.webloc"
+    },
+    {
+        "name": "Long Black Jacket",
+        "imageURL": "/images/boxes/Box11/longblackjacket.jpg",
+        "link": "/images/boxes/Box11/longblackjacket.webloc"
+    },
+    {
+        "name": "White Converse",
+        "imageURL": "/images/boxes/Box11/whiteconverse.jpg",
+        "link": "/images/boxes/Box11/whiteconverse.webloc"
+    }
+    ]
+},
+{
+    "box": "At the Pool Hall",
+    "genders": ["F"],
+    "imageURL": "/images/boxes/Box12/box12cover.png",
+    "user": "emmazing",
+    "tags": ["ROCKER", "GOTHIC", "NEW"],
+    "boxitems": [
+    {
+        "name": "Auburn Beanie",
+        "imageURL": "/images/boxes/Box12/auburnbeanie.jpg",
+        "link": "/images/boxes/Box12/auburnbeanie.webloc"
+    },
+    {
+        "name": "Studded Leather Jacket",
+        "imageURL": "/images/boxes/Box12/studleatherjacket.jpg",
+        "link": "/images/boxes/Box12/studleatherjacket.webloc"
+    },
+    {
+        "name": "Silver High-Heels",
+        "imageURL": "/images/boxes/Box12/silverheels.jpg",
+        "link": "/images/boxes/Box12/silverheels.webloc"
+    }
+    ]
+},
+{
+    "box": "It's A Beautiful Day",
+    "genders": ["F"],
+    "imageURL": "/images/boxes/Box13/box13cover.png",
+    "user": "emmazing",
+    "tags": ["HIPSTER", "SPRING", "CLASSY", "POPULAR"],
+    "boxitems": [
+    {
+        "name": "Sleeveless Blue Shirt",
+        "imageURL": "/images/boxes/Box13/bluetop.jpg",
+        "link": "/images/boxes/Box13/bluetop.webloc"
+    },
+    {
+        "name": "Long Blue Skirt",
+        "imageURL": "/images/boxes/Box13/longblueskirt.jpg",
+        "link": "/images/boxes/Box13/longblueskirt.webloc"
+    },
+    {
+        "name": "Leather Heels",
+        "imageURL": "/images/boxes/Box13/leatherheels.jpg",
+        "link": "/images/boxes/Box13/leatherheels.webloc"
+    }
+    ]
+},
+{
+    "box": "Looking Professional",
+    "genders": ["F"],
+    "imageURL": "/images/boxes/Box14/box14cover.png",
+    "user": "emmazing",
+    "tags": ["CLASSY", "PREPPY", "FEATURED"],
+    "boxitems": [
+    {
+        "name": "Black Blazer",
+        "imageURL": "/images/boxes/Box14/blackblazer.jpg",
+        "link": "/images/boxes/Box14/blackblazer.webloc"
+    },
+    {
+        "name": "Black Leather Pants",
+        "imageURL": "/images/boxes/Box14/blackleatherpants.jpg",
+        "link": "/images/boxes/Box14/blackleatherpants.webloc"
+    },
+    {
+        "name": "Black High Heels",
+        "imageURL": "/images/boxes/Box14/blackheels.jpg",
+        "link": "/images/boxes/Box14/blackheels.webloc"
+    }
+    ]
+},
+{
+    "box": "A Day In Nature",
+    "genders": ["M"],
+    "imageURL": "/images/boxes/Box15/box15cover.png",
+    "user": "james_the_man",
+    "tags": ["HIPSTER", "SPRING", "DENIM", "TRENDING"],
+    "boxitems": [
+    {
+        "name": "Fish Necklace",
+        "imageURL": "/images/boxes/Box15/fishnecklace.jpg",
+        "link": "/images/boxes/Box15/fishnecklace.webloc"
+    },
+    {
+        "name": "Red Shirt with Pocket Design",
+        "imageURL": "/images/boxes/Box15/redshirtpocket.jpg",
+        "link": "/images/boxes/Box15/redshirtpocket.webloc"
+    },
+    {
+        "name": "Ripped Jeans",
+        "imageURL": "/images/boxes/Box15/rippedjeans.jpg",
+        "link": "/images/boxes/Box15/rippedjeans.webloc"
+    }
+    ]
+},
+{
+    "box": "Let The Breeze In",
+    "genders": ["M"],
+    "imageURL": "/images/boxes/Box16/box16cover.png",
+    "user": "james_the_man",
+    "tags": ["HISPTER", "SPRING", "DENIM", "NEW"],
+    "boxitems": [
+    {
+        "name": "Paradise Tank",
+        "imageURL": "/images/boxes/Box16/paradisetank.jpg",
+        "link": "/images/boxes/Box16/paradisetank.webloc"
+    },
+    {
+        "name": "Blue Denim Shorts",
+        "imageURL": "/images/boxes/Box16/denimshorts.jpg",
+        "link": "/images/boxes/Box16/denimshorts.webloc"
+    },
+    {
+        "name": "Blue Sneakers",
+        "imageURL": "/images/boxes/Box16/bluesneakers.jpg",
+        "link": "/images/boxes/Box16/bluesneakers.webloc"
+    }
+    ]
+},
+{
+    "box": "Backpacking In Style",
+    "genders": ["M"],
+    "imageURL": "/images/boxes/Box17/box17cover.png",
+    "user": "james_the_man",
+    "tags": ["GOTHIC", "ROCKER", "WESTERN", "POPULAR"],
+    "boxitems": [
+    {
+        "name": "Black Shirt with Leather Pocket",
+        "imageURL": "/images/boxes/Box17/blackpocketshirt.jpg",
+        "link": "/images/boxes/Box17/blackpocketshirt.webloc"
+    },
+    {
+        "name": "Grey Sweatpants",
+        "imageURL": "/images/boxes/Box17/greysweats.jpg",
+        "link": "/images/boxes/Box17/greysweats.webloc"
+    },
+    {
+        "name": "Brown Boots",
+        "imageURL": "/images/boxes/Box17/brownboots.jpg",
+        "link": "/images/boxes/Box17/brownboots.webloc"
+    }
+    ]
+},
+{
+    "box": "Got A Lot On My Mind",
+    "genders": ["M"],
+    "imageURL": "/images/boxes/Box18/box18cover.png",
+    "user": "james_the_man",
+    "tags": ["WESTERN", "TRENDING"],
+    "boxitems": [
+    {
+        "name": "Black Plaid Shirt",
+        "imageURL": "/images/boxes/Box18/blackplaidshirt.jpg",
+        "link": "/images/boxes/Box18/blackplaidshirt.webloc"
+    },
+    {
+        "name": "Wool Coat",
+        "imageURL": "/images/boxes/Box18/woolcoat.jpg",
+        "link": "/images/boxes/Box18/woolcoat.webloc"
+    },
+    {
+        "name": "Brown Chukkas",
+        "imageURL": "/images/boxes/Box18/chukka.jpg",
+        "link": "/images/boxes/Box18/chukka.webloc"
+    }
+    ]
+},
+{
+    "box": "European Style",
+    "genders": ["M"],
+    "imageURL": "/images/boxes/Box19/box19cover.png",
+    "user": "james_the_man",
+    "tags": ["HIPSTER", "GOTHIC", "WESTERN", "FEATURED"],
+    "boxitems": [
+    {
+        "name": "5-Panel Design Cap",
+        "imageURL": "/images/boxes/Box19/5panelcap.jpg",
+        "link": "/images/boxes/Box19/5panelcap.webloc"
+    },
+    {
+        "name": "Long Green jacket",
+        "imageURL": "/images/boxes/Box19/longgreenjacket.jpg",
+        "link": "/images/boxes/Box19/longgreenjacket.webloc"
+    },
+    {
+        "name": "Black Chukkas",
+        "imageURL": "/images/boxes/Box19/blackchukka.jpg",
+        "link": "/images/boxes/Box19/blackchukka.webloc"
+    }
+    ]
+},
+{
+    "box": "In The Simplest Way",
+    "genders": ["M"],
+    "imageURL": "/images/boxes/Box20/box20cover.png",
+    "user": "james_the_man",
+    "tags": ["WESTERN", "DENIM", "HIPSTER", "NEW"],
+    "boxitems": [
+    {
+        "name": "Eagle Necklace",
+        "imageURL": "/images/boxes/Box20/eaglenecklace.jpg",
+        "link": "/images/boxes/Box20/eaglenecklace.webloc"
+    },
+    {
+        "name": "Grey Shirt with Floral Pocket Design",
+        "imageURL": "/images/boxes/Box20/floralpocketshirt.jpg",
+        "link": "/images/boxes/Box20/floralpocketshirt.webloc"
+    },
+    {
+        "name": "Skinny Ripped Jeans",
+        "imageURL": "/images/boxes/Box20/skinnyrippedjeans.jpg",
+        "link": "/images/boxes/Box20/skinnyrippedjeans.webloc"
     }
     ]
 }

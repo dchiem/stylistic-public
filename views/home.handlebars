@@ -66,10 +66,10 @@
         </div>
         <div class="home-buttons">
             <form method="get" action="/browse">
-                <button type="submit" class="btn btn-default btn-md" id="homeBrowseBtn">Browse Boxes</button>
+                <button type="submit" class="btn btn-default btn-md" id="homeBrowseBtn">BROWSE BOXES</button>
             </form>
             <form method="get" action="/recommended">
-                <button type="submit" class="btn btn-default btn-md" id="homeRecBtn">Recommended Boxes</button>
+                <button type="submit" class="btn btn-default btn-md" id="homeRecBtn">RECOMMENDED BOXES</button>
             </form>
 
             {{#if loggedIn}}
@@ -77,16 +77,16 @@
             {{else}}
             <form method="get" action="/login">
             {{/if}}
-                <button type="submit" class="btn btn-default btn-md" id="homeMyBoxBtn">My Boxes</button>
-            </form>
 
             {{#if loggedIn}}
+                <button type="submit" class="btn btn-default btn-md" id="homeMyBoxBtn">MY BOXES</button>
+            </form>
             <form method="get" action="/logout">
-                <button type="submit" class="btn btn-default btn-md" id="homeLoginBtn">Log Out</button>
+                <button type="submit" class="btn btn-default btn-md" id="homeLoginBtn">LOGOUT</button>
             </form>
             {{else}}
             <form method="get" action="/login">
-                <button type="submit" class="btn btn-default btn-md" id="homeLoginBtn">Log In</button>
+                <button type="submit" class="btn btn-default btn-md" id="homeLoginBtn">LOGIN</button>
             </form>
             {{/if}}
         </div>
