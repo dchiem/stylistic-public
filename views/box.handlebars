@@ -88,12 +88,16 @@
                 <div class="add">
                     <img id="{{this}}" src="images/icons/whiteplus.png" height="25px">
                     <img id="{{this}}" src="images/icons/greenplus.png" style="display:none" height="25px">
-                    <div class="dropdown" id="{{this}}">
+                    <div class="dropdown" id="{{this._id}}">
                         <ul>
-                            <li><a href="#">Box1</a></li>
-                            <li><a href="#">Box2</a></li>
-                            <li><a href="#">Box3</a></li>
-                            <li><a href="/createbox" style="color: #D6D271;">CREATE BOX</a></li>
+                            {{#if ../sessionUser}}
+                            {{#each ../../myboxes}}
+                            <li><a href="#" class="mybox" id={{id}}>{{box}}</a></li>
+                            {{/each}}
+                            <li><a href="/createbox" style="color: #D6D271;">NEW BOX</a></li>
+                            {{else}}
+                            <li><a href="/login" style="color: #D6D271;">Login to add this to your own box</a></li>
+                                {{/if}}
                         </ul>
                     </div>
                 </div>
