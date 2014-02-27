@@ -2,6 +2,10 @@
     height: 100%;
 }
 
+.dropdown .green {
+    color: #66FF33;
+}
+
 .errorMessage h5 {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -559,6 +563,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-bottom: 5px;
     margin-top: 5px;
     padding-left: 6px;
+    padding-right: 6px;
 }
 
 .dropdown a {

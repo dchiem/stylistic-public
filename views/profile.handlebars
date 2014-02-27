@@ -153,8 +153,8 @@
     </div>
     <div class="liked-boxes" style="display:none;">
         {{#each likes}}
-        <form name="tagForm" id="tagForm" class="liked-boxes" role="form" method="get" action="/box">
-            <div class="row" id="list_row" onClick="document.forms.tagForm.submit()">
+        <form name="tagForm" id="tagForm{{_id}}" class="liked-boxes" role="form" method="get" action="/box">
+            <div class="row" id="list_row" onClick="document.forms.tagForm{{_id}}.submit()">
                 <div class="col-xs-4">
                     <input type="hidden" value={{box}} name="boxname"/>
                     <input type="hidden" value={{user}} name="user"/>
