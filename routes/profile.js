@@ -23,7 +23,8 @@ exports.myProfile = function(req, res){
 
     function renderLikes(err, likedBoxes) {
         if (err) console.log(err);
-	    res.render('profile', {'user': user, 'boxes': boxes, 'likes': likedBoxes, 'myProfile': true, 'sessionUser': true});
+	    res.render('profile', {'user': user, 'boxes': boxes, 'likes': likedBoxes,
+         'myProfile': true, 'sessionUser': true, 'tiles': false});
     }
 };
 
@@ -65,6 +66,36 @@ exports.view = function(req, res){
     }
 
     function renderLikes(err, likedBoxes) {
-	    res.render('profile', {'user': user, 'boxes': boxes, 'likes': likedBoxes, 'myProfile': "", 'sessionUser': sessionUser});
+	    res.render('profile', {'user': user, 'boxes': boxes, 'likes': likedBoxes,
+         'myProfile': "", 'sessionUser': sessionUser});
+    }
+}
+
+
+exports.viewClean = function(req, res){
+    if (!req.user) {
+        console.log("Attempting to view profile when not logged in");
+        res.redirect('login');
+        return;
+    }
+    var user = req.user;
+    var boxes;
+
+    models.Boxes
+        .find({"user": user.username})
+        .exec(renderBoxes);
+
+    function renderBoxes(err, boxlist) {
+        if (err) console.log(err);
+        boxes = boxlist;
+        models.Boxes
+            .find({"_id": { $in: user.likes}})
+            .exec(renderLikes);
+    }
+
+    function renderLikes(err, likedBoxes) {
+        if (err) console.log(err);
+        res.render('profile', {'user': user, 'boxes': boxes, 'likes': likedBoxes,
+         'myProfile': true, 'sessionUser': true, 'tiles': true});
     }
 }

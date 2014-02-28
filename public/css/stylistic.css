@@ -257,6 +257,8 @@
 #createBoxBtn {
     display: block;
     margin: 0 auto;
+    margin-bottom: 20px;
+
 }
 
 #getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #newItemBtn, #createBoxBtn,
@@ -496,7 +498,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .add {
     float: left;
-    background-color: black;
     padding: 3px;
 
     border-radius: 6px;
@@ -526,9 +527,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .main-half-title {
-    box-shadow: 0 0 15px gray;
-    background-color: rgba(0,0,0,0.8);
-    color:white;
+    box-shadow: 0 0 20px gray;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
 }
 
 .sub-half-title {
@@ -589,7 +590,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .info-icon {
-    background-color: black;
     border-radius: 6px;
     padding-left: 5px;
     padding-right: 5px;
@@ -602,7 +602,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .star {
-    background-color: black;
     margin-top: 10px;
     margin-left: 10px;
     padding: 3px;
@@ -759,4 +758,37 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .profile-card h4 {
     text-align: center;
+}
+
+.your-boxes .row, .liked-boxes{
+    margin-top: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: #D6D0D5;
+    border-width: 1px;
+}
+
+.altdesign .row h4 {
+    text-align: left;
+}
+
+.altdesign h5 {
+    text-align: center;
+}
+
+.altyours .row .img-responsive {
+    margin-bottom: 15px;
+    border-left: 6px solid #74AFFC;
+    border-top-right-radius: 10px;
+}
+
+.altstarred .row .img-responsive {
+    margin-bottom: 15px;
+    border-left: 6px solid #FCC174;
+    border-top-right-radius: 10px;
+}
+
+.altdesign .main-half-title {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }

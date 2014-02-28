@@ -103,8 +103,12 @@ app.get('/item', item.view);
 app.get('/signup', signup.view);
 app.get('/alreadyExists', signup.alreadyExists);
 app.get('/forgot', forgot.view);
+
 app.get('/profile', profile.view);
+app.get('/myprofileclean', profile.viewClean);
 app.get('/myprofile', profile.myProfile);
+
+
 app.get('/makeprofile', makeprofile.view);
 app.get('/home', home.view);
 app.get('/like', like.like);
