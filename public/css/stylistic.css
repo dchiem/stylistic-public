@@ -528,6 +528,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .main-half-title {
     box-shadow: 0 0 20px gray;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.altdesign .main-half-title {
+    box-shadow: 0 0 20px gray;
     background-color: rgba(0,0,0,0.6);
     color: white;
 }
@@ -760,7 +766,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     text-align: center;
 }
 
-.your-boxes .row, .liked-boxes{
+.your-boxes .row, .altstarred .liked-boxes{
     margin-top: 15px;
     border-bottom-style: solid;
     border-bottom-color: #D6D0D5;

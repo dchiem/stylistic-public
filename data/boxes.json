@@ -34,7 +34,7 @@
     "imageURL": "/images/boxes/Box2/box2cover.png",
     "user": "XxAlexX",
     "genders": ["M"],
-    "tags": ["SPORTY", "TRENDING"],
+    "tags": ["SPORTY", "TRENDING", "SUMMER", "SIMPLE"],
     "boxitems": [
     {
         "name": "Nike Hoodie",
@@ -62,8 +62,8 @@
     "box": "Rock 'n Roll",
     "imageURL": "/images/boxes/Box3/box3cover.png",
     "user": "james_the_man",
-    "genders": ["M" , "F"],
-    "tags": ["ROCKER", "GOTHIC", "NEW"],
+    "genders": ["M"],
+    "tags": ["ROCKER", "GOTHIC", "NEW", "LEATHER"],
     "boxitems": [
     {
         "name": "Black Boots",
@@ -121,7 +121,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box5/box5cover.jpg",
     "user": "emmazing",
-    "tags": ["DENIM", "ROCKER", "HIPSTER", "POPULAR"],
+    "tags": ["DENIM", "ROCKER", "HIPSTER", "POPULAR", "COZY", "LEATHER", "SIMPLE"],
     "boxitems": [
     {
         "name": "Green Beanie",
@@ -150,7 +150,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box6/box6cover.jpg",
     "user": "emmazing",
-    "tags": ["CLASSY", "SPRING", "HIPSTER", "TRENDING"],
+    "tags": ["CLASSY", "SPRING", "HIPSTER", "TRENDING", "SUMMER", "COZY"],
     "boxitems": [
     {
         "name": "Brown Hat",
@@ -179,7 +179,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box7/box7cover.jpg",
     "user": "XxAlexX",
-    "tags": ["GOTHIC", "ROCKER", "NEW"],
+    "tags": ["GOTHIC", "ROCKER", "NEW", "SIMPLE"],
     "boxitems": [
     {
         "name": "Round Sunglasses",
@@ -208,7 +208,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box8/box8cover.jpg",
     "user": "emmazing",
-    "tags": ["SPORTY", "FEATURED"],
+    "tags": ["SPORTY", "FEATURED", "SUMMER"],
     "boxitems": [
     {
         "name": "Nike Running Shoes",
@@ -237,7 +237,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box9/box9cover.png",
     "user": "emmazing",
-    "tags": ["WESTERN", "SPRING", "DENIM", "POPULAR"],
+    "tags": ["WESTERN", "SPRING", "DENIM", "POPULAR", "SIMPLE"],
     "boxitems": [
     {
         "name": "Black Sunglasses",
@@ -261,7 +261,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box10/box10cover.png",
     "user": "emmazing",
-    "tags": ["GOTHIC", "SPRING", "FEATURED"],
+    "tags": ["GOTHIC", "SPRING", "FEATURED", "RAINY"],
     "boxitems": [
     {
         "name": "Black Fedora",
@@ -285,7 +285,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box11/box11cover.png",
     "user": "emmazing",
-    "tags": ["DENIM", "HIPSTER", "TRENDING"],
+    "tags": ["DENIM", "HIPSTER", "TRENDING", "COZY", "SIMPLE"],
     "boxitems": [
     {
         "name": "Blue Plaid Shirt",
@@ -309,7 +309,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box12/box12cover.png",
     "user": "emmazing",
-    "tags": ["ROCKER", "GOTHIC", "NEW"],
+    "tags": ["ROCKER", "GOTHIC", "NEW", "LEATHER", "SIMPLE"],
     "boxitems": [
     {
         "name": "Auburn Beanie",
@@ -333,7 +333,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box13/box13cover.png",
     "user": "emmazing",
-    "tags": ["HIPSTER", "SPRING", "CLASSY", "POPULAR"],
+    "tags": ["HIPSTER", "SPRING", "CLASSY", "POPULAR", "SUMMER", "LEATHER", "COZY"],
     "boxitems": [
     {
         "name": "Sleeveless Blue Shirt",
@@ -357,7 +357,7 @@
     "genders": ["F"],
     "imageURL": "/images/boxes/Box14/box14cover.png",
     "user": "emmazing",
-    "tags": ["CLASSY", "PREPPY", "FEATURED"],
+    "tags": ["CLASSY", "PREPPY", "FEATURED", "LEATHER"],
     "boxitems": [
     {
         "name": "Black Blazer",
@@ -381,7 +381,7 @@
     "genders": ["M"],
     "imageURL": "/images/boxes/Box15/box15cover.png",
     "user": "james_the_man",
-    "tags": ["HIPSTER", "SPRING", "DENIM", "TRENDING"],
+    "tags": ["HIPSTER", "SUMMER", "DENIM", "TRENDING"],
     "boxitems": [
     {
         "name": "Fish Necklace",
@@ -405,7 +405,7 @@
     "genders": ["M"],
     "imageURL": "/images/boxes/Box16/box16cover.png",
     "user": "james_the_man",
-    "tags": ["HISPTER", "SPRING", "DENIM", "NEW"],
+    "tags": ["HISPTER", "SUMMER", "DENIM", "NEW"],
     "boxitems": [
     {
         "name": "Paradise Tank",
@@ -429,7 +429,7 @@
     "genders": ["M"],
     "imageURL": "/images/boxes/Box17/box17cover.png",
     "user": "james_the_man",
-    "tags": ["GOTHIC", "ROCKER", "WESTERN", "POPULAR"],
+    "tags": ["GOTHIC", "ROCKER", "WESTERN", "POPULAR", "LEATHER", "COZY"],
     "boxitems": [
     {
         "name": "Black Shirt with Leather Pocket",
@@ -453,7 +453,7 @@
     "genders": ["M"],
     "imageURL": "/images/boxes/Box18/box18cover.png",
     "user": "james_the_man",
-    "tags": ["WESTERN", "TRENDING"],
+    "tags": ["WESTERN", "TRENDING", "RAINY", "COZY"],
     "boxitems": [
     {
         "name": "Black Plaid Shirt",
@@ -477,7 +477,7 @@
     "genders": ["M"],
     "imageURL": "/images/boxes/Box19/box19cover.png",
     "user": "james_the_man",
-    "tags": ["HIPSTER", "GOTHIC", "WESTERN", "FEATURED"],
+    "tags": ["HIPSTER", "GOTHIC", "WESTERN", "FEATURED", "RAINY"],
     "boxitems": [
     {
         "name": "5-Panel Design Cap",
@@ -501,7 +501,7 @@
     "genders": ["M"],
     "imageURL": "/images/boxes/Box20/box20cover.png",
     "user": "james_the_man",
-    "tags": ["WESTERN", "DENIM", "HIPSTER", "NEW"],
+    "tags": ["WESTERN", "DENIM", "HIPSTER", "NEW", "COZY", "SUMMER"],
     "boxitems": [
     {
         "name": "Eagle Necklace",
