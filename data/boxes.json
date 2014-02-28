@@ -146,7 +146,7 @@
     ]
 },
 {
-    "box": "50's Housewife",
+    "box": "One of Those 50's Housewives",
     "genders": ["F"],
     "imageURL": "/images/boxes/Box6/box6cover.jpg",
     "user": "emmazing",
@@ -175,7 +175,7 @@
     ]
 },
 {
-    "box": "Bring Black Back",
+    "box": "Bringing Back Black",
     "genders": ["F"],
     "imageURL": "/images/boxes/Box7/box7cover.jpg",
     "user": "XxAlexX",
@@ -204,7 +204,7 @@
     ]
 },
 {
-    "box": "Get In Shape",
+    "box": "Getting In Shape",
     "genders": ["F"],
     "imageURL": "/images/boxes/Box8/box8cover.jpg",
     "user": "emmazing",
@@ -233,7 +233,7 @@
     ]
 },
 {
-    "box": "Going Casual",
+    "box": "Feeling Casual Today",
     "genders": ["F"],
     "imageURL": "/images/boxes/Box9/box9cover.png",
     "user": "emmazing",
@@ -257,7 +257,7 @@
     ]
 },
 {
-    "box": "Rainy Days",
+    "box": "Uplifted During Rainy Days",
     "genders": ["F"],
     "imageURL": "/images/boxes/Box10/box10cover.png",
     "user": "emmazing",
@@ -305,7 +305,7 @@
     ]
 },
 {
-    "box": "At the Pool Hall",
+    "box": "Hustling At the Pool Hall",
     "genders": ["F"],
     "imageURL": "/images/boxes/Box12/box12cover.png",
     "user": "emmazing",
@@ -329,7 +329,7 @@
     ]
 },
 {
-    "box": "It's A Beautiful Day",
+    "box": "It's A Beautiful Beach Day",
     "genders": ["F"],
     "imageURL": "/images/boxes/Box13/box13cover.png",
     "user": "emmazing",
@@ -353,7 +353,7 @@
     ]
 },
 {
-    "box": "Looking Professional",
+    "box": "That Professional Look",
     "genders": ["F"],
     "imageURL": "/images/boxes/Box14/box14cover.png",
     "user": "emmazing",
@@ -377,7 +377,7 @@
     ]
 },
 {
-    "box": "A Day In Nature",
+    "box": "A Day Exploring Nature",
     "genders": ["M"],
     "imageURL": "/images/boxes/Box15/box15cover.png",
     "user": "james_the_man",
@@ -425,7 +425,7 @@
     ]
 },
 {
-    "box": "Backpacking In Style",
+    "box": "Backpacking Across Europe In Style",
     "genders": ["M"],
     "imageURL": "/images/boxes/Box17/box17cover.png",
     "user": "james_the_man",
@@ -473,7 +473,7 @@
     ]
 },
 {
-    "box": "European Style",
+    "box": "Us Fashion-Forward Brits",
     "genders": ["M"],
     "imageURL": "/images/boxes/Box19/box19cover.png",
     "user": "james_the_man",

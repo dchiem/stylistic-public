@@ -41,6 +41,12 @@
     vertical-align: middle;
 }
 
+.altdesign .glyphicon-pencil {
+    color: black;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
 .photo-edit .glyphicon-pencil {
     font-size: 1.1em;
 }
@@ -130,7 +136,7 @@
 
 .profile-card h4 {
     padding-top:10px;
-    text-align:left;
+    float:left;
 }
 
 .tagline {
