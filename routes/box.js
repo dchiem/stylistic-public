@@ -90,3 +90,22 @@ exports.removeFromBox = function(req, res) {
         if (err) console.log(err);
     }
 }
+
+exports.addBox = function(req, res) {
+    var box = req.body.title;
+    console.log("box : " + box);
+    var imageURL = req.body.image;
+    console.log("imageURL : " + imageURL);
+    var genders = req.body.genders;
+    console.log("genders : " + genders);
+    var user = req.user.username;
+    console.log("user : " + user);
+    var tags = req.body.tags;
+    console.log("tags : " + tags);
+    var boxitems = req.body.items;
+    console.log("boxitems : " + boxitems);
+    models.Boxes
+        .create({"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags, "boxitems": boxitems});
+
+    res.redirect('/myprofile');
+}

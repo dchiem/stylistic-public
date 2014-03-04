@@ -61,12 +61,12 @@
                         <h4> Upload a picture for this box</h4>
                         <div class="dotted">
                             <input type="file" id="boxImageLoader" name="image"/>
-                            <img id="thisImage" src="/images/icons/import.png" width="150px"/>
+                            <img id="boxThisImage" src="/images/icons/import.png" width="150px"/>
                         </div>
                         <input type="submit" class="btn btn-default btn-md form-control" id="newBoxBtn" value="Use as box image">
                     </form>
             <div class="col-xs-4 box-image">
-                <img class="img img-responsive" src="images/default-box.jpg" width="200px">
+                <img class="img img-responsive" src="{{image}}" width="200px">
                 <button type="submit" class="photo-edit btn btn-xs btn-default">
                     <i class="glyphicon glyphicon-pencil"></i>
                 </button>
@@ -75,9 +75,9 @@
                 <!-- Title of the new box -->
                 <div class="transparent_box">
                     <form class="enter-title">
-                        <textarea type="text" placeholder="Title of box" onfocus="this.placeholder = ''" 
+                        <textarea type="text" placeholder="Title of box" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = 'Title of box'" class="create-title" name="title" id="title"
-                            rows="1" cols="20" style="border:none; resize:none; width:100%; padding-left:15px;"></textarea>
+                            rows="1" cols="20" style="border:none; resize:none; width:100%; padding-left:15px;">{{title}}</textarea>
                     </form>
                 </div>
 
@@ -87,10 +87,34 @@
                     <form class="enter-title">
                         <textarea type="text" placeholder="Related tags&#13;&#10; (e.g. hipster, western)" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = 'Related tags\n (e.g. hipster, western)'" class="create-tags" name="tags" id="tags"
-                             style="border:none; resize:none; width:100%; padding-left:15px;"></textarea>
+                            style="border:none; resize:none; width:100%; padding-left:15px;">{{tags}}</textarea>
+                    </form>
+                </div>
+
+                <div class="col-xs-4">  </div>
+                <div class="col-xs-7 transparent_box gender-box">
+                    <form class="enter-gender">
+                        {{#if male}}
+                            <input type="checkbox" name="gender" id="M-check" value="M" checked>Male&nbsp;</input>
+                        {{else}}
+                            <input type="checkbox" name="gender" id="M-check" value="M">Male&nbsp;</input>
+                        {{/if}}
+                        {{#if female}}
+                            <input type="checkbox" name="gender" id="F-check" value="F" checked>Female</input>
+                        {{else}}
+                            <input type="checkbox" name="gender" id="F-check" value="F">Female</input>
+                        {{/if}}
                     </form>
                 </div>
             </div>
+        </div>
+        
+        <div class="container box_items" id="clothes">
+            {{#each items}}
+            <div class="col-xs-6">
+                <a href="{{imageURL}}" data-lightbox="clothes" title="{{name}}"><img src="{{imageURL}}" class="img-responsive"></a> 
+            </div>
+            {{/each}}
         </div>
 
         <!-- Click to bring up form -->
@@ -113,9 +137,8 @@
         </form>
 
         <!-- Publish your box -->
-        <form class="add-box" method="get" action="/profile">
+        <form class="add-box" method="get" action="/myprofile">
                 <button type="submit" class="btn btn-default btn-md" id="confirmAddBtn">Publish Box</button>
         </form>
-
     </body>
 </html>
