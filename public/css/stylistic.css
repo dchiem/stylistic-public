@@ -208,11 +208,12 @@
 
 .overlay{
     position: absolute;
-    top: 50px;
+    top: 100px;
     width: 100%;
     height: 200px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0);
 }
+
 
 .container .overlay .text{
     padding-top: 15px;
@@ -220,6 +221,8 @@
     padding-right: 30px;
     text-align: center;
     color:white;
+    text-shadow:5px 5px 10px black;
+
 }
  
 .steps {
@@ -490,27 +493,27 @@ h1, h2, h3, h4, h5, h6, p, a {
 .transparent_box {
     background-color: rgba(0, 0, 0, 0.7);
     margin: 10px;
-    margin-left: 0px;
+    margin-left: 10px;
     border-radius: 5px;
 }
 
 .box_items {
     background-color: rgba(0, 0, 0, 0.6);
-    margin-right: 10px auto;
-    margin-left: 10px auto;
+    margin-right: 10px;
+    margin-left: 10px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .box_items a img {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .box_items .col-xs-6 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .add {
@@ -536,27 +539,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 .tag-stuff {
     visibility:hidden;
-}
-
-.half-title {
-    padding-left:0px;
-    padding-right:0px;
-}
-
-.main-half-title {
-    box-shadow: 0 0 20px gray;
-    background-color: rgba(0,0,0,0.8);
-    color: white;
-}
-
-.altdesign .main-half-title {
-    box-shadow: 0 0 20px gray;
-    background-color: rgba(0,0,0,0.6);
-    color: white;
-}
-
-.sub-half-title {
-    background-color: #f6f6f6;
 }
 
 .motto {
@@ -810,8 +792,58 @@ h1, h2, h3, h4, h5, h6, p, a {
     border-top-right-radius: 10px;
 }
 
+.half-title {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.current .main-half-title {
+    box-shadow: 0 0 20px gray;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border-bottom: 1px ;
+}
+
 .altdesign .main-half-title {
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+    background-image: url("/images/blackfadewhite.png");
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 -3px 10px 1px gray;
+    text-shadow:0 5px 10px black;
+    color: white;
+}
+
+.sub-half-title {
+    background-color: #f6f6f6;
+}
+
+/*.altdesign .main-half-title {
+    border-bottom: 2px solid #74AFFC;
+    box-shadow: 0 -3px 10px 1px gray;
+}*/
+
+#cycler{
+    position: relative;
+}
+#cycler img{
+    position: absolute;
+    z-index:1 ;
+    width: 100%; 
+    height: 700px;
+}
+#cycler img.active{
+    z-index: 3;
+}
+.filler {
+    width: 100%;
+    height: 700px;
+}
+#circle-down{
+    background-color: rgba(255,255,255,0.4);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
 }

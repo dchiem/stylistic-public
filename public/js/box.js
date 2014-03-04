@@ -56,6 +56,18 @@ function initializePage() {
         event.stopPropagation();
         $(this).parent().find(".dropdown").toggle(200);
     });
+
+    $(".fancybox").fancybox({
+        helpers: { 
+                title: { 
+                    type :'inside'
+                }/*,
+                thumbs: {
+                    width: 50,
+                    height: 50
+                }*/
+        }
+    });
 }
 
 function addToBox(boxId, itemId) {

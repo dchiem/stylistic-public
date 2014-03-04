@@ -54,5 +54,61 @@
     {
         "name": "LEATHER",
         "imageURL": "images/browsepictures/Leather2.png"
+    },
+    {
+        "name": "RAINY",
+        "imageURL": "images/browsepictures/Rainy.png"
+    },
+    {
+        "name": "GOTHIC",
+        "imageURL": "images/browsepictures/Gothic.png"
+    },
+    {
+        "name": "HIPSTER",
+        "imageURL": "images/browsepictures/Hipster1.png"
+    },
+    {
+        "name": "SUMMER",
+        "imageURL": "images/browsepictures/Summer.png"
+    },
+    {
+        "name": "COZY",
+        "imageURL": "images/browsepictures/Cozy.png"
+    },
+    {
+        "name": "PREPPY",
+        "imageURL": "images/browsepictures/Preppy.png"
+    },
+    {
+        "name": "SPRING",
+        "imageURL": "images/browsepictures/Spring1.png"
+    },
+    {
+        "name": "WESTERN",
+        "imageURL": "images/browsepictures/Western3.png"
+    },
+    {
+        "name": "ROCKER",
+        "imageURL": "images/browsepictures/Rocker3.jpg"
+    },
+    {
+        "name": "SPORTY",
+        "imageURL": "images/browsepictures/Sporty.png"
+    },
+    {
+        "name": "CLASSY",
+        "imageURL": "images/browsepictures/Classy2.png"
+    },
+    {
+        "name": "DENIM",
+        "imageURL": "images/browsepictures/Denim.png"
+    },
+    {
+        "name": "SIMPLE",
+        "imageURL": "images/browsepictures/Simple2.png"
+    },
+    {
+        "name": "LEATHER",
+        "imageURL": "images/browsepictures/Leather2.png"
     }
 ]
