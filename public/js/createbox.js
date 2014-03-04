@@ -102,8 +102,9 @@ function initializePage() {
         console.log("data.tags = " + data.tags);
         console.log("data.image = " + data.image);
         console.log("data.items = " + data.items);
-        $.post('/addBox', data);
-        $(".add-box").submit();
+        $.post('/addBox', data, function() {
+            $(".add-box").submit();
+        });
     });
 }
 

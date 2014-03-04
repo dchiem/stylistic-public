@@ -107,5 +107,5 @@ exports.addBox = function(req, res) {
     models.Boxes
         .create({"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags, "boxitems": boxitems});
 
-    res.redirect('/myprofile');
+    //res.redirect('/myprofile');
 }
