@@ -11,7 +11,26 @@
         <link href="css/bootstrap-theme.css" rel="stylesheet"></link>
         <link href="css/stylistic.css" rel="stylesheet"></link>
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+        <script>
+            function cycleImages(){
+                  var $active = $('#cycler .active');
+                  var $next = ($active.next().length > 0) ? $active.next() : $('#cycler img:first');
+                  $next.css('z-index',2);//move the next image up the pile
+                  $active.fadeOut(1500,function(){//fade out the top image
+                  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
+                      $next.css('z-index',3).addClass('active');//make the next image the top one
+                  });
+                }
+            $(document).ready(function(){
+                setInterval('cycleImages()', 5000);
 
+                $('#circle-down').on('click',function(event) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $('#stepsBackground').offset().top}, 800);
+                });
+            })
+        </script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,7 +40,7 @@
         <![endif]-->        
     </head>
 
-    <body>
+    <body style="height:100%;">
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -42,19 +61,30 @@
             </div>
         </div>
         <div class="container getStarted">
-            <img src="images/stylistichome.jpg" class="img-responsive" id="home-img">
-            <div class="overlay">
+
+            <!--<img src="images/stylistichome.jpg" class="img-responsive" id="home-img">-->
+
+            <div id="cycler">
+                <img class="active" src="/images/home/home1.png" alt="My image" />
+                <img src="/images/home/home2.png" alt="My image" /> 
+                <img src="/images/home/home3.png" alt="My image" />
+            </div>
+            <div class="filler"></div>
+
+            <div class="overlay" style="z-index:5;">
                 <div class="text">
-                    <h4>Explore, share, and evolve your style</h4>
+                    <h2>Explore, share, and evolve your style</h2>
                     <br>
-                    <p>The best source for style discovery</p>
+                    <h4>The best source for style discovery</h4>
                     <br>
                     <form method="get" action="/home">
                         <button type="submit" class="btn btn-default btn-md" id="getStartedBtn">Get Started</button>
                     </form>
+                    <img id="circle-down" src="/images/icons/down2.png">
                 </div>
             </div>
         </div>
+
         <div class="container" id="stepsBackground">
             <div class="steps">
                 <div class="step" id="step1">
