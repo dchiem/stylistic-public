@@ -102,9 +102,10 @@
 
 
         <div class="container box_items">
-            {{#each thebox.boxitems}}
-
             <div class="col-xs-6">
+            {{#each thebox.boxitems}}
+            {{#even @index}}
+            <div class="item">
                 <a class="fancybox" rel="group" href="{{imageURL}}" title="{{name}}"><img src="{{imageURL}}" alt="" width="100%"/></a>
                 <div class="add" data-lightbox="add">
                     <img id="{{this}}" src="images/icons/whiteplus.png" height="25px">
@@ -123,9 +124,36 @@
                     </div>
                 </div>
             </div>
+            {{/even}}
+            {{/each}}
+            </div>
+            <div class="col-xs-6">
+            {{#each thebox.boxitems}}
+            {{#odd @index}}
+            <div class="item">
+                <a class="fancybox" rel="group" href="{{imageURL}}" title="{{name}}"><img src="{{imageURL}}" alt="" width="100%"/></a>
+                <div class="add" data-lightbox="add">
+                    <img id="{{this}}" src="images/icons/whiteplus.png" height="25px">
+                    <img id="{{this}}" src="images/icons/greenplus.png" style="display:none" height="25px">
+                    <div class="dropdown" id="{{this._id}}">
+                        <ul>
+                            {{#if ../sessionUser}}
+                            {{#each ../../myboxes}}
+                            <li><a href="#" class="mybox" id={{id}}>{{box}}</a></li>
+                            {{/each}}
+                            <li><a href="/createbox" style="color: #D6D271;">NEW BOX</a></li>
+                            {{else}}
+                            <li><a href="/login" style="color: #D6D271;">Login to add this to your own box</a></li>
+                                {{/if}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{/odd}}
+            {{/each}}
+            </div>
 
             </script>
-            {{/each}}
         </div>
 
 <script>

@@ -17,7 +17,26 @@ exports.view = function(req, res){
     } else {
         getBox("","");
     }
-
+    var helpers =
+        {
+            even: function(index, options) {
+                        if ((index)%2 == 0) {
+                            return options.fn(this);
+                        }
+                        else {
+                            return options.inverse(this);
+                        }
+            },
+            odd: function(index, options) {
+                        if ((index)%2 == 1) {
+                            return options.fn(this);
+                        }
+                        else {
+                            return options.inverse(this);
+                        }
+            }
+        };
+ 
     function getBox(err, boxes) {
         if (err) console.log(err);
         myboxes = boxes;
@@ -30,7 +49,7 @@ exports.view = function(req, res){
     function renderBox(err, boxes) {
         if (err) console.log(err);
         console.log("myboxes : " + myboxes);
-        res.render('box', {"myboxes": myboxes, "thebox":boxes[0], "sessionUser":sessionUser, "isLiked":isLiked});
+        res.render('box', {"helpers": helpers, "myboxes": myboxes, "thebox":boxes[0], "sessionUser":sessionUser, "isLiked":isLiked});
     }
 
     function contains(array, element) {
