@@ -25,6 +25,7 @@ function initializePage() {
 	})
     $(".boxes-title").click(function(e) {
         e.preventDefault();
+        ga('send','event','enterbox','click');
         setToBoxes();
     });
     $(".liked-title").click(function(e) {
