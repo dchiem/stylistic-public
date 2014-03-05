@@ -1,4 +1,5 @@
 .makeprofile-body {
+
     height: 100%;
 }
 
@@ -14,7 +15,6 @@
 .box-image img {
     padding-left: 17px;
     padding-top: 10px;
-    padding-bottom: 10px;
     padding-right: 0px;
 }
 
@@ -56,10 +56,6 @@
 
 .photo-edit .glyphicon-pencil {
     font-size: 1.1em;
-}
-
-.photo-edit {
-    margin-bottom: 10px;
 }
 
 .photo .glyphicon-plus {
@@ -121,6 +117,9 @@
     margin-top: 15px;
 }
 
+#edit-box {
+    margin-top: 85px;
+}
 
 #stepsBackground, .makeprofile {
     background-color: #f6f6f6;
@@ -129,6 +128,7 @@
 
 .profile-back {
     background-color: #f6f6f6;
+    padding-bottom: 20px;
 }
 
 .profile {
@@ -254,6 +254,7 @@
 
 .add-box, .save-box {
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .male img , .female img {
@@ -282,7 +283,8 @@
 }
 
 #getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #newItemBtn, #createBoxBtn,
- #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn, #saveBtn, #newBoxBtn {
+ #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn, #confirmEditBtn,
+ #saveBtn, #newBoxBtn {
     background-image: url('../images/stylisticbutton.jpg');
     -webkit-border-radius: 0;
     -moz-border-radius: 0;

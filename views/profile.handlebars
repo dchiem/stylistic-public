@@ -57,7 +57,7 @@
                         <button type="submit" class="photo-edit btn btn-xs btn-default">
                             <i class="glyphicon glyphicon-pencil "></i>
                         </button>
-                                                {{else}}
+                        {{else}}
                         <img src="{{user.imageURL}}" class="img-responsive">
                         {{/if}}
                     </a>
@@ -128,7 +128,7 @@
                 </form>
                 <div class="col-xs-2 container">
                     {{#if ../myProfile}}
-                    <form name="edit-box" action="editbox" method="post">
+                    <form id="edit-box" name="edit-box" action="editbox" method="post">
                         <input type="hidden" name="id" value={{_id}}>
                         <button type="submit" class="btn btn-sm btn-default">
                             <i class="glyphicon glyphicon-pencil"></i>

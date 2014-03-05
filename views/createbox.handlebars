@@ -72,12 +72,13 @@
                 </button>
             </div>
             <div class="col-xs-8 box-titles">
+                <div id="boxid" value="{{box._id}}"></div>
                 <!-- Title of the new box -->
                 <div class="transparent_box">
                     <form class="enter-title">
                         <textarea type="text" placeholder="Title of box" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = 'Title of box'" class="create-title" name="title" id="title"
-                            rows="1" cols="20" style="border:none; resize:none; width:100%; padding-left:15px;">{{title}}</textarea>
+                            rows="1" cols="20" style="border:none; resize:none; width:100%; padding-left:15px;">{{box.box}}</textarea>
                     </form>
                 </div>
 
@@ -87,7 +88,7 @@
                     <form class="enter-title">
                         <textarea type="text" placeholder="Related tags&#13;&#10; (e.g. hipster, western)" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = 'Related tags\n (e.g. hipster, western)'" class="create-tags" name="tags" id="tags"
-                            style="border:none; resize:none; width:100%; padding-left:15px;">{{tags}}</textarea>
+                            style="border:none; resize:none; width:100%; padding-left:15px;">{{box.tags}}</textarea>
                     </form>
                 </div>
 
@@ -110,7 +111,7 @@
         </div>
         
         <div class="container box_items" id="clothes">
-            {{#each items}}
+            {{#each box.boxitems}}
             <div class="col-xs-6">
                 <a href="{{imageURL}}" data-lightbox="clothes" title="{{name}}"><img src="{{imageURL}}" class="img-responsive"></a> 
             </div>
@@ -137,8 +138,14 @@
         </form>
 
         <!-- Publish your box -->
+        {{#if create}}
         <form class="add-box" method="get" action="/myprofile">
                 <button type="submit" class="btn btn-default btn-md" id="confirmAddBtn">Publish Box</button>
         </form>
+        {{else}}
+        <form class="save-box" method="get" action="/myprofile">
+                <button type="submit" class="btn btn-default btn-md" id="confirmEditBtn">Save Box</button>
+        </form>
+        {{/if}}
     </body>
 </html>

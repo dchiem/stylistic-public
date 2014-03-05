@@ -100,6 +100,7 @@ app.get('/box', box.view);
 app.get('/addToBox', box.addToBox);
 app.get('/removeFromBox', box.removeFromBox);
 app.post('/addBox', box.addBox);
+app.post('/updateBox', box.updateBox);
 app.get('/item', item.view);
 app.get('/signup', signup.view);
 app.get('/alreadyExists', signup.alreadyExists);

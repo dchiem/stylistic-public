@@ -92,10 +92,7 @@ function initializePage() {
 
     $(".add-box button").click(function(e) {
         e.preventDefault();
-        parseTags();
-        data.title = $("#title").val();
-        if ($("#M-check").prop("checked")) data.genders.push("M");
-        if ($("#F-check").prop("checked")) data.genders.push("F");
+        updateData();
         console.log("data.title = " + data.title);
         console.log("data.genders = " + data.genders);
         console.log("data.tags[0] = " + data.tags[0]);
@@ -106,6 +103,24 @@ function initializePage() {
             $(".add-box").submit();
         });
     });
+
+    $(".save-box button").click(function(e) {
+        e.preventDefault();
+        updateData();  
+        $.post('/updateBox', data, function() {
+            console.log("about to submit");
+            $(".save-box").submit();
+        });
+    });
+}
+
+function updateData() {
+    parseTags();
+    data.title = $("#title").val();
+    data.id = $("#boxid").attr("value");
+    data.genders = [];
+    if ($("#M-check").prop("checked")) data.genders.push("M");
+    if ($("#F-check").prop("checked")) data.genders.push("F");
 }
 
 function parseTags() {
