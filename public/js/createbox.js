@@ -108,8 +108,15 @@ function initializePage() {
         e.preventDefault();
         updateData();  
         $.post('/updateBox', data, function() {
-            console.log("about to submit");
             $(".save-box").submit();
+        });
+    });
+
+    $(".delete-box button").click(function(e) {
+        e.preventDefault();
+        updateData();  
+        $.post('/deleteBox', data, function() {
+            $(".delete-box").submit();
         });
     });
 }

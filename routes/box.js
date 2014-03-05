@@ -146,7 +146,18 @@ exports.updateBox = function(req, res) {
 
     function returnResult(err) {
         if (err) console.log(err);
-        console.log("done updating");
+        res.end();
+    }
+}
+
+exports.deleteBox = function(req, res) {
+    var id = req.body.id;
+    models.Boxes
+        .remove({"_id" : id})
+        .exec(returnResult);
+
+    function returnResult(err) {
+        if (err) console.log(err);
         res.end();
     }
 }
