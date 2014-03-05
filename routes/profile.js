@@ -10,14 +10,14 @@ exports.myProfile = function(req, res){
     var boxes;
 
     models.Boxes
-        .find({"user": user.username})
+        .find({"user": user.username}).sort({"box":1})
         .exec(renderBoxes);
 
     function renderBoxes(err, boxlist) {
         if (err) console.log(err);
         boxes = boxlist;
         models.Boxes
-            .find({"_id": { $in: user.likes}})
+            .find({"_id": { $in: user.likes}}).sort({"lastModifiedDate":1})
             .exec(renderLikes);
     }
 
@@ -53,7 +53,7 @@ exports.view = function(req, res){
         }
         user = users[0];
         models.Boxes
-            .find({"user": user.username})
+            .find({"user": user.username}).sort({"box" : 1})
             .exec(renderBoxes);
     }
 
@@ -61,7 +61,7 @@ exports.view = function(req, res){
         if (err) console.log(err);
         boxes = boxlist;
         models.Boxes
-            .find({"box": { $in: user.likes}})
+            .find({"box": { $in: user.likes}}).sort({"box": 1}) 
             .exec(renderLikes);
     }
 

@@ -57,7 +57,7 @@
                         <button type="submit" class="photo-edit btn btn-xs btn-default">
                             <i class="glyphicon glyphicon-pencil "></i>
                         </button>
-                                                {{else}}
+                        {{else}}
                         <img src="{{user.imageURL}}" class="img-responsive">
                         {{/if}}
                     </a>
@@ -128,7 +128,7 @@
                 </form>
                 <div class="col-xs-2 container">
                     {{#if ../myProfile}}
-                    <form name="edit-box" action="editbox" method="post">
+                    <form id="edit-box" name="edit-box" action="editbox" method="post">
                         <input type="hidden" name="id" value={{_id}}>
                         <button type="submit" class="btn btn-sm btn-default">
                             <i class="glyphicon glyphicon-pencil"></i>
@@ -265,5 +265,15 @@
     {{/if}}
 
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48641014-1', 'stylistic.herokuapp.com');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

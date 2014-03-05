@@ -1,7 +1,8 @@
 var models = require('../models');
 
 exports.view = function(req, res){
-    res.render('createbox', {'sessionUser': true, 'male': true, 'female': true, 'image': 'images/default-box.jpg'});
+    res.render('createbox', {'sessionUser': true, 'male': true, 'female': true,
+        'create': true, 'image': 'images/default-box.jpg'});
 };
 
 exports.editbox = function(req, res){
@@ -22,6 +23,7 @@ exports.editbox = function(req, res){
             data['items'] = box.boxitems;
             data['tags'] = box.tags;
             data['title'] = box.box;
+            data['box'] = box;
             var genders = box.genders;
             if (genders.length == 0) {
                 data['male'] = false;

@@ -105,7 +105,59 @@ exports.addBox = function(req, res) {
     var boxitems = req.body.items;
     console.log("boxitems : " + boxitems);
     models.Boxes
-        .create({"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags, "boxitems": boxitems});
+        .create({"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags, "boxitems": boxitems})
+        .exec(returnResult);
 
-    //res.redirect('/myprofile');
+    function returnResult(err) {
+        if (err) console.log(err);
+        res.end();
+    }
+}
+
+exports.updateBox = function(req, res) {
+    var id = req.body.id;
+    console.log("id : " + id);
+    var box = req.body.title;
+    console.log("box : " + box);
+    var imageURL = req.body.image;
+    console.log("imageURL : " + imageURL);
+    var genders = req.body.genders;
+    console.log("genders : " + genders);
+    var user = req.user.username;
+    console.log("user : " + user);
+    var tags = req.body.tags;
+    console.log("tags : " + tags);
+    var boxitems = req.body.items;
+    console.log("boxitems : " + boxitems);
+    if (boxitems && boxitems.length > 0) {
+        models.Boxes
+            .update({"_id" : id}, 
+                    {   
+                        $set: {"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags},
+                        $push: { "boxitems" : { $each : boxitems}}
+                    })
+            .exec(returnResult);
+    } else {
+        models.Boxes
+            .update({"_id" : id}, 
+                    {"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags})
+            .exec(returnResult);
+    }
+
+    function returnResult(err) {
+        if (err) console.log(err);
+        res.end();
+    }
+}
+
+exports.deleteBox = function(req, res) {
+    var id = req.body.id;
+    models.Boxes
+        .remove({"_id" : id})
+        .exec(returnResult);
+
+    function returnResult(err) {
+        if (err) console.log(err);
+        res.end();
+    }
 }
