@@ -2,19 +2,12 @@
     height: 100%;
 }
 
-.gender-box.transparent_box {
-    margin-top: 0;
-    margin-right: 0;
-}
-
-.enter-gender {
-    color: white;
+.box-image {
 }
 
 .box-image img {
     padding-left: 17px;
     padding-top: 10px;
-    padding-bottom: 10px;
     padding-right: 0px;
 }
 
@@ -56,10 +49,6 @@
 
 .photo-edit .glyphicon-pencil {
     font-size: 1.1em;
-}
-
-.photo-edit {
-    margin-bottom: 10px;
 }
 
 .photo .glyphicon-plus {
