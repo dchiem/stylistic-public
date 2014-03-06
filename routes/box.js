@@ -122,8 +122,9 @@ exports.addBox = function(req, res) {
     var boxitems = req.body.items;
     console.log("boxitems : " + boxitems);
     models.Boxes
-        .create({"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags, "boxitems": boxitems})
-        .exec(returnResult);
+        .create({"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags, "boxitems": boxitems});
+        //.exec(returnResult);
+    res.end();
 
     function returnResult(err) {
         if (err) console.log(err);
