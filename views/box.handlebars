@@ -112,8 +112,8 @@
                     <img id="{{this}}" src="images/icons/greenplus.png" style="display:none" height="25px">
                     <div class="dropdown" id="{{this._id}}">
                         <ul>
-                            {{#if ../sessionUser}}
-                            {{#each ../../myboxes}}
+                            {{#if ../../sessionUser}}
+                            {{#each ../../../myboxes}}
                             <li><a href="#" class="mybox" id={{id}}>{{box}}</a></li>
                             {{/each}}
                             <li><a href="/createbox" style="color: #D6D271;">NEW BOX</a></li>
@@ -123,7 +123,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+           </div>
             {{/even}}
             {{/each}}
             </div>
@@ -137,8 +137,8 @@
                     <img id="{{this}}" src="images/icons/greenplus.png" style="display:none" height="25px">
                     <div class="dropdown" id="{{this._id}}">
                         <ul>
-                            {{#if ../sessionUser}}
-                            {{#each ../../myboxes}}
+                            {{#if ../../sessionUser}}
+                            {{#each ../../../myboxes}}
                             <li><a href="#" class="mybox" id={{id}}>{{box}}</a></li>
                             {{/each}}
                             <li><a href="/createbox" style="color: #D6D271;">NEW BOX</a></li>

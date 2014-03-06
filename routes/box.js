@@ -7,7 +7,6 @@ exports.view = function(req, res){
     var id = req.query.id;
     if (req.user) {
         sessionUser = req.user.username;    
-        console.log("session user: " + req.user);
         if (contains(req.user.likes, id)) {
             isLiked = true;
         }
@@ -40,7 +39,6 @@ exports.view = function(req, res){
     function getBox(err, boxes) {
         if (err) console.log(err);
         myboxes = boxes;
-        console.log(boxes);
         models.Boxes
             .find({_id: id})
             .exec(renderBox);
@@ -148,18 +146,27 @@ exports.updateBox = function(req, res) {
     console.log("tags : " + tags);
     var boxitems = req.body.items;
     console.log("boxitems : " + boxitems);
+    var deleted = req.body.deleted;
+    console.log("deleted : " + deleted);
     if (boxitems && boxitems.length > 0) {
         models.Boxes
             .update({"_id" : id}, 
                     {   
                         $set: {"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags},
-                        $push: { "boxitems" : { $each : boxitems}}
+                        $push: { "boxitems" : { $each : boxitems}},
                     })
-            .exec(returnResult);
+            .exec(deleteDeleted);
     } else {
         models.Boxes
             .update({"_id" : id}, 
                     {"box": box, "imageURL": imageURL, "genders": genders, "user": user, "tags": tags})
+            .exec(deleteDeleted);
+    }
+
+    function deleteDeleted(err) {
+        if (err) console.log(err);
+        models.Boxes
+            .update({"_id" : id}, {$pull: { "boxitems" : { "name" : { $in : deleted}}}})
             .exec(returnResult);
     }
 

@@ -1,11 +1,52 @@
 var models = require('../models');
 
 exports.view = function(req, res){
+    var helpers =
+        {
+            even: function(index, options) {
+                        if ((index)%2 == 0) {
+                            return options.fn(this);
+                        }
+                        else {
+                            return options.inverse(this);
+                        }
+            },
+            odd: function(index, options) {
+                        if ((index)%2 == 1) {
+                            return options.fn(this);
+                        }
+                        else {
+                            return options.inverse(this);
+                        }
+            }
+        };
+
     res.render('createbox', {'sessionUser': true, 'male': true, 'female': true,
-        'create': true, 'image': 'images/default-box.jpg'});
+        'create': true, 'helpers': helpers, 'image': 'images/default-box.jpg'});
 };
 
 exports.editbox = function(req, res){
+    var helpers =
+        {
+            even: function(index, options) {
+                        if ((index)%2 == 0) {
+                            return options.fn(this);
+                        }
+                        else {
+                            return options.inverse(this);
+                        }
+            },
+            odd: function(index, options) {
+                        if ((index)%2 == 1) {
+                            return options.fn(this);
+                        }
+                        else {
+                            return options.inverse(this);
+                        }
+            }
+        };
+
+
     var id = req.body.id;
     models.Boxes
         .find({"_id" : id})
@@ -20,10 +61,8 @@ exports.editbox = function(req, res){
             var data =  {};
             data['sessionUser'] = true;
             data['image'] = box.imageURL;
-            data['items'] = box.boxitems;
-            data['tags'] = box.tags;
-            data['title'] = box.box;
             data['box'] = box;
+            data['helpers'] = helpers;
             var genders = box.genders;
             if (genders.length == 0) {
                 data['male'] = false;

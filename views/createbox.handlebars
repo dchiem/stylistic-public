@@ -78,7 +78,7 @@
                     <form class="enter-title">
                         <textarea type="text" placeholder="Title of box" onfocus="this.placeholder = ''"
                             onblur="this.placeholder = 'Title of box'" class="create-title" name="title" id="title"
-                            rows="1" cols="20" style="border:none; resize:none; width:100%; padding-left:15px;">{{box.box}}</textarea>
+                            rows="2" cols="20" style="border:none; resize:none; width:100%; padding-left:15px;">{{box.box}}</textarea>
                     </form>
                 </div>
 
@@ -111,12 +111,56 @@
         </div>
         
         <div class="container box_items" id="clothes">
+            <div class="col-xs-6">
+            {{#each box.boxitems}}
+            {{#even @index}}
+            <div class="item">
+                <a class="fancybox" rel="group" href="{{imageURL}}" title="{{name}}"><img src="{{imageURL}}" alt="" width="100%"/></a>
+                <div class="col-xs-9 item-title">
+                    <div class="add" data-lightbox="add">
+                    <textarea type="text" placeholder="Name of this item" onfocus="this.placeholder = ''"
+                            class="item-title" name="item-title" id="item-title" rows="2">{{name}}</textarea>
+                    </div>
+                </div>
+                <div class="col-xs-3 delete-symbol">
+                    <button class="delete-item" id={{_id}}>
+                        <i class="glyphicon glyphicon-remove-sign"></i>
+                    </button>
+                </div>
+            </div>
+            {{/even}}
+            {{/each}}
+            </div>
+            <div class="col-xs-6">
+            {{#each box.boxitems}}
+            {{#odd @index}}
+            <div class="item">
+                <a class="fancybox" rel="group" href="{{imageURL}}" title="{{name}}"><img src="{{imageURL}}" alt="" width="100%"/></a>
+                <div class="col-xs-9 item-title">
+                    <div class="add" data-lightbox="add">
+                    <textarea type="text" placeholder="Name of this item" onfocus="this.placeholder = ''"
+                            class="item-title" name="item-title" id="item-title" rows="2">{{name}}</textarea>
+                    </div>
+                </div>
+                <div class="col-xs-3 delete-symbol">
+                    <button class="delete-item" id={{_id}}>
+                        <i class="glyphicon glyphicon-remove-sign"></i>
+                    </button>
+                </div>
+            </div>
+            {{/odd}}
+            {{/each}}
+            </div>
+            <div class="butt"></div>
+        </div>
+        <!--
             {{#each box.boxitems}}
             <div class="col-xs-6">
                 <a href="{{imageURL}}" data-lightbox="clothes" title="{{name}}"><img src="{{imageURL}}" class="img-responsive"></a> 
             </div>
             {{/each}}
         </div>
+        -->
 
         <!-- Click to bring up form -->
         <div class="import">

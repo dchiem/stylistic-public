@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 var data = {};
 data.items = [];
+data.deleted = [];
 data.genders = [];
 
 function initializePage() {
@@ -14,11 +15,15 @@ function initializePage() {
 	$("#import-item").click(function(){
 		$("html, body").animate({ scrollTop: 0 }, 500);
 		$("#import-form").slideDown(200);
-	})
+	});
 
 	$(".photo-edit").click(function(){
 		$("#box-import-form").slideDown(200);
-	})
+	});
+
+    $(".fancybox").click(function(e){
+        e.preventDefault();
+    });
 
 	var imageLoader = document.getElementById('imageLoader');
 	var boxImageLoader = document.getElementById('boxImageLoader');
@@ -79,6 +84,26 @@ function initializePage() {
 		$("#thisBoxImage").attr("src", "/images/icons/import.png")
 	});
 
+    $(".delete-item").on("click", function(){
+        console.log("click!");
+        var id = this.id;
+        if (id) {
+            // deleting an item in the DB
+            var itemSrc = $(this).parent().parent().children(".fancybox").attr("href");
+            var itemName = $(this).parent().parent().children(".fancybox").attr("title");
+            $(this).parent().parent().remove();
+            console.log("src: " + itemSrc + " - name : " +itemName);
+            data.deleted.push(itemName);
+        } else {
+            var itemSrc = $(this).parent().fancybox.attr("href");
+            var itemName = $(this).parent().fancybox.attr("title");
+            removeItem(itemSrc, itemName);
+            this.parent().remove();
+        }
+        console.log(data.deleted.length + " deleted items");
+        console.log(data.items.length + " added items");
+    });
+
 	$(function(){
 		$(".add-box :submit").click(function(e){
 			$("textarea").each(function() {
@@ -130,6 +155,16 @@ function updateData() {
     if ($("#F-check").prop("checked")) data.genders.push("F");
 }
 
+function removeItem(itemSrc, itemName) {
+    for (var i=0; i < data.items.length; i++) {
+        var item = data.items[i];
+        if (item.itemSrc == itemSrc && item.itemName == itemName) {
+            data.items.splice(i, 1);
+            return;
+        }
+    }
+}
+
 function parseTags() {
     tagsString = $("#tags").val();
     data.tags = tagsString.split(',');
@@ -137,8 +172,18 @@ function parseTags() {
 
 function addToItems(itemSrc, itemName){
     var html = "<div class=\"col-xs-6\">\n" +
-        "<a href=" + itemSrc + " data-lightbox=\"clothes\" title=" + itemName + "><img src=" + itemSrc + " class=\"img-responsive\"></a>\n" + 
-    "</div>";
+        "<a class=\"fancybox\" href=" + itemSrc + " data-lightbox=\"clothes\" title=" + itemName + "><img src=" + itemSrc + " class=\"img-responsive\"></a>\n" + 
+                "<div class=\"col-xs-9 item-title\">" + 
+                    "<div class=\"add\" data-lightbox=\"add\">" +
+                    "<textarea type=\"text\" placeholder=\"Name this item\" onfocus=\"this.placeholder = ''\" " +
+                            "class=\"item-title\" name=\"item-title\" id=\"item-title\" rows=\"2\">" + itemName + "</textarea>" +
+                    "</div>" + 
+                "</div>" +
+                "<div class=\"col-xs-3 delete-symbol\">" +
+                    "<button class=\"delete-item\">" +
+                        "<i class=\"glyphicon glyphicon-remove-sign\"></i>" +
+                    "</button>" +
+                "</div>"
     $("#clothes").append(html);
 }
 
