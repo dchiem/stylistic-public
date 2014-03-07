@@ -29,6 +29,7 @@ var gender = require('./routes/gender');
 var tags = require('./routes/tags');
 var edit = require('./routes/edit');
 var createbox = require('./routes/createbox');
+var refresh = require('./routes/cookies');
 // Example route
 // var user = require('./routes/user');
 var local_database_name = 'stylisticdb';
@@ -106,6 +107,9 @@ app.get('/item', item.view);
 app.get('/signup', signup.view);
 app.get('/alreadyExists', signup.alreadyExists);
 app.get('/forgot', forgot.view);
+app.get('/getRefreshCookie', refresh.getRefreshCookie);
+app.get('/createRefreshCookie', refresh.createRefreshCookie);
+app.get('/deleteRefreshCookie', refresh.deleteRefreshCookie);
 
 app.get('/profile', profile.view);
 app.get('/myprofileclean', profile.viewClean);
