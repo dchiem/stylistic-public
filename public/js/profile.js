@@ -23,11 +23,13 @@ function initializePage() {
 		document.getElementById("import-form").reset();
 		$("#thisImage").attr("src", "/images/icons/import.png")
 	})
+
     $(".boxes-title").click(function(e) {
         e.preventDefault();
         ga('send','event','enterbox','click');
         setToBoxes();
     });
+
     $(".liked-title").click(function(e) {
         e.preventDefault();
         setToLiked();
