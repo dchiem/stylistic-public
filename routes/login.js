@@ -12,5 +12,7 @@ exports.view = function(req, res){
 
 exports.logout = function(req, res){
     req.logout();
+    req.session.male = "";
+    req.session.female = "";
     res.redirect('home');
 }

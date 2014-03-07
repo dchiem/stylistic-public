@@ -166,9 +166,14 @@ exports.updateBox = function(req, res) {
 
     function deleteDeleted(err) {
         if (err) console.log(err);
-        models.Boxes
-            .update({"_id" : id}, {$pull: { "boxitems" : { "name" : { $in : deleted}}}})
-            .exec(returnResult);
+        if (deleted && deleted.length > 0) {
+            models.Boxes
+                .update({"_id" : id}, {$pull: { "boxitems" : { "name" : { $in : deleted}}}})
+                .exec(returnResult);
+        } else {
+            var err = false
+            returnResult(err);
+        }
     }
 
     function returnResult(err) {
