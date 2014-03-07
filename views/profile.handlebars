@@ -300,11 +300,17 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
       ga('create', 'UA-48458822-2', { 'cookieDomain': 'none' });
       ga('send', 'pageview');
 
-      $('.thisbox').click(boxClicked);
+      $('.thisbox').on('click', boxClicked);
       function boxClicked(event) {
         ga("send", "event", "box", "click");
       }
     </script>
+    <script src="jquery.scrolldepth.min.js"></script>
+    <script>
+        $(function() {
+              $.scrollDepth();
+          });
+      </script>
 
     </body>
 </html>
