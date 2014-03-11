@@ -112,7 +112,6 @@ app.get('/createRefreshCookie', refresh.createRefreshCookie);
 app.get('/deleteRefreshCookie', refresh.deleteRefreshCookie);
 
 app.get('/profile', profile.view);
-app.get('/myprofileclean', profile.viewClean);
 app.get('/myprofile', profile.myProfile);
 
 

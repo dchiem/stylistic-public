@@ -2,20 +2,6 @@
 
 <html class="makeprofile-body">
     <head>
-        <!-- Google Analytics Content Experiment code -->
-        <script>function utmx_section(){}function utmx(){}(function(){var
-            k='83124465-2',d=document,l=d.location,c=d.cookie;
-            if(l.search.indexOf('utm_expid='+k)>0)return;
-            function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-                        indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-                        length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-            '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-            '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-            '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-            valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-            '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-    </script><script>utmx('url','A/B');</script>
-        
         <title>Stylistic</title>	
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,9 +86,6 @@
         </div>
     </div>
 
-
-    <!--- ALTERNATE PROFILE LAYOUT -->
-    {{#if tiles}}
     <div class="container altdesign alttitle">
         <div class="row altdesign">
             <div class="col-xs-6 tile half-title boxes-title" >
@@ -135,9 +118,6 @@
                     </div>
                     <div class="col-xs-5 thisbox" onClick="document.forms.tagForm{{_id}}.submit()">
                         <h4>{{box}}</h4>
-                        <!--{{#each boxitems}}
-                            <img src="{{imageURL}}" width="20px">
-                        {{/each}}-->
                     </div>
                 </form>
                 <div class="col-xs-2 container">
@@ -185,136 +165,6 @@
             {{/if}}
         </div>
     </div>
-
-   
-
-<!--- CURRENT PROFILE LAYOUT -->
-    {{else}}
-
-    <div class="row current">
-        <div class="col-xs-6 tile half-title boxes-title" >
-            <div class="container main-half-title">
-                {{#if myProfile}}
-                <h4>YOUR BOXES</h4>
-                {{else}}
-                <h4>THEIR BOXES</h4>
-                {{/if}}
-            </div>
-        </div>
-        <div class="col-xs-6 title half-title liked-title">
-            <div class="container sub-half-title">
-                <h4>STARRED BOXES</h4>
-            </div>
-        </div>
-    </div>
-
-    <div class="container makeprofile">
-        <div class="your-boxes">
-            {{#each boxes}}
-            <div class="row" id="list_row">
-                <form name="tagForm" id="tagForm{{_id}}" role="form" method="get" action="/box">
-                    <div class="col-xs-3 thisbox" onClick="document.forms.tagForm{{_id}}.submit()">
-                        <input type="hidden" value={{box}} name="boxname"/>
-                        <input type="hidden" value={{user}} name="user"/>
-                        <input type="hidden" value={{_id}} name="id"/>
-                        <input type="image" src={{imageURL}} class="img-responsive"/>
-                    </div>
-                    <div class="col-xs-7" onClick="document.forms.tagForm{{_id}}.submit()">
-                        <h5>{{box}}</h5>
-                        <p>Tags: 
-                        {{#each tags}}
-                        {{this}}
-                        {{/each}}
-                        </p>
-                    </div>
-                </form>
-                <div class="col-xs-2">
-                    {{#if ../myProfile}}
-                    <form name="edit-box" action="editbox" method="post">
-                        <input type="hidden" name="id" value={{_id}}>
-                        <button type="submit" class="edit-btn btn btn-sm btn-default">
-                            <i class="glyphicon glyphicon-pencil"></i>
-                        </button>
-                    </form>
-                    {{/if}}
-                </div>
-            </div>
-            {{/each}}
-
-            {{#if myProfile}}
-            <form method="get" action="/createbox">
-                <button type="submit" class="btn btn-default btn-md" id="createBoxBtn">CREATE A BOX</button>
-            </form>
-            {{/if}}
-        </div>
-
-        <div class="liked-boxes" style="display:none;">
-            {{#each likes}}
-            <form name="tagForm" id="tagForm{{_id}}" class="liked-boxes" role="form" method="get" action="/box">
-                <div class="row thisbox" id="list_row" onClick="document.forms.tagForm{{_id}}.submit()">
-                    <div class="col-xs-4">
-                        <input type="hidden" value={{box}} name="boxname"/>
-                        <input type="hidden" value={{user}} name="user"/>
-                        <input type="hidden" value={{_id}} name="id"/>
-                        <input type="image" src={{imageURL}} class="img-responsive"/>
-                    </div>
-                    <div class="col-xs-8">
-                        <h5>{{box}}<span> by: {{user}}</span></h5>
-                        <p>Tags: 
-                        {{#each tags}}
-                        {{this}}
-                        {{/each}}
-                        </p>
-                    </div>
-                </div>
-            </form>
-            {{/each}}
-            {{#if myProfile}}
-            <form method="get" action="/browse">
-                <button type="submit" class="btn btn-default btn-md" id="createBoxBtn">FIND MORE BOXES</button>
-            </form>
-            {{/if}}
-        </div>
-    </div>
-    {{/if}}
-
-    <!-- Allison's GA
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-48641014-1', 'stylistic.herokuapp.com');
-      ga('send', 'pageview');
-    </script>-->
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-48458822-2', 'stylistic.herokuapp.com');
-      ga('send', 'pageview');
-
-      $('.thisbox').on('click', boxClicked);
-      function boxClicked(event) {
-        ga("send", "event", "box", "click");
-      }
-      $('.edit-btn').on('click', editClicked);
-      function editClicked(event) {
-        ga("send", "event", "edit", "click");
-      }
-    </script>
-    <script>
-      !function(e,t,n){"use strict";var r,a,l,i={minHeight:0,elements:[],percentage:!0,userTiming:!0,pixelDepth:!0},o=e(t),c=[],u=0;e.scrollDepth=function(h){function p(e,t,n,i){l?(dataLayer.push({event:"ScrollDistance",eventCategory:"Scroll Depth",eventAction:e,eventLabel:t,eventValue:1,eventNonInteraction:!0}),h.pixelDepth&&arguments.length>2&&n>u&&(u=n,dataLayer.push({event:"ScrollDistance",eventCategory:"Scroll Depth",eventAction:"Pixel Depth",eventLabel:f(n),eventValue:1,eventNonInteraction:!0})),h.userTiming&&arguments.length>3&&dataLayer.push({event:"ScrollTiming",eventCategory:"Scroll Depth",eventAction:e,eventLabel:t,eventTiming:i})):(r&&(ga("send","event","Scroll Depth",e,t,1,{nonInteraction:1}),h.pixelDepth&&arguments.length>2&&n>u&&(u=n,ga("send","event","Scroll Depth","Pixel Depth",f(n),1,{nonInteraction:1})),h.userTiming&&arguments.length>3&&ga("send","timing","Scroll Depth",e,i,t)),a&&(_gaq.push(["_trackEvent","Scroll Depth",e,t,1,!0]),h.pixelDepth&&arguments.length>2&&n>u&&(u=n,_gaq.push(["_trackEvent","Scroll Depth","Pixel Depth",f(n),1,!0])),h.userTiming&&arguments.length>3&&_gaq.push(["_trackTiming","Scroll Depth",e,i,t,100])))}function g(e){return{"25%":parseInt(.25*e,10),"50%":parseInt(.5*e,10),"75%":parseInt(.75*e,10),"100%":e-5}}function s(t,n,r){e.each(t,function(t,a){-1===e.inArray(t,c)&&n>=a&&(p("Percentage",t,n,r),c.push(t))})}function v(t,n,r){e.each(t,function(t,a){-1===e.inArray(a,c)&&e(a).length&&n>=e(a).offset().top&&(p("Elements",a,n,r),c.push(a))})}function f(e){return(250*Math.floor(e/250)).toString()}function m(e,t){var n,r,a,l=null,i=0,o=function(){i=new Date,l=null,a=e.apply(n,r)};return function(){var c=new Date;i||(i=c);var u=t-(c-i);return n=this,r=arguments,0>=u?(clearTimeout(l),l=null,i=c,a=e.apply(n,r)):l||(l=setTimeout(o,u)),a}}var D=+new Date;h=e.extend({},i,h),e(n).height()<h.minHeight||("function"==typeof ga&&(r=!0),"undefined"!=typeof _gaq&&"function"==typeof _gaq.push&&(a=!0),"undefined"!=typeof dataLayer&&"function"==typeof dataLayer.push&&(l=!0),p("Percentage","Baseline"),o.on("scroll.scrollDepth",m(function(){var r=e(n).height(),a=t.innerHeight?t.innerHeight:o.height(),l=o.scrollTop()+a,i=g(r),u=+new Date-D;return c.length>=4+h.elements.length?void o.off("scroll.scrollDepth"):(h.elements&&v(h.elements,l,u),void(h.percentage&&s(i,l,u)))},500)))}}(jQuery,window,document);
-    </script>
-    <script>
-        $(function() {
-            $.scrollDepth();
-        });
-    </script>
 
     </body>
 </html>

@@ -1,32 +1,32 @@
 [
 {
     "box": "Valentines Date Night",
-        "imageURL": "/images/boxes/Box1/box1cover.png",
-        "genders": ["M"],
-        "user": "james_the_man",
-        "genders": ["M", "F"],
-        "tags": ["CLASSY", "PREPPY", "HIPSTER", "POPULAR"],
-        "boxitems": [
-        {
-            "name": "Black Tie",
-            "imageURL": "/images/boxes/Box1/blacktie.png",
-            "link": "/images/boxes/boxes/Box1/blacktie.webloc"
-        },
-        {
-            "name": "Grey Blazer",
-            "imageURL": "/images/boxes/Box1/greyblazer.png",
-            "link": "/images/boxes/Box1/greyblazer.webloc"
-        },
-        {
-            "name": "Dress Shoes",
-            "imageURL": "/images/boxes/Box1/dressshoes.png",
-            "link": "/images/boxes/Box1/dressshoes.webloc"
-        },
-        {
-            "name": "Grey Pants",
-            "imageURL": "/images/boxes/Box1/greypants.png",
-            "link": "/images/boxes/Box1/greypants.webloc"
-        }
+    "imageURL": "/images/boxes/Box1/box1cover.png",
+    "genders": ["M"],
+    "user": "james_the_man",
+    "genders": ["M", "F"],
+    "tags": ["CLASSY", "PREPPY", "HIPSTER", "POPULAR"],
+    "boxitems": [
+    {
+        "name": "Black Tie",
+        "imageURL": "/images/boxes/Box1/blacktie.png",
+        "link": "/images/boxes/boxes/Box1/blacktie.webloc"
+    },
+    {
+        "name": "Grey Blazer",
+        "imageURL": "/images/boxes/Box1/greyblazer.png",
+        "link": "/images/boxes/Box1/greyblazer.webloc"
+    },
+    {
+        "name": "Dress Shoes",
+        "imageURL": "/images/boxes/Box1/dressshoes.png",
+        "link": "/images/boxes/Box1/dressshoes.webloc"
+    },
+    {
+        "name": "Grey Pants",
+        "imageURL": "/images/boxes/Box1/greypants.png",
+        "link": "/images/boxes/Box1/greypants.webloc"
+    }
     ]
 },
 {

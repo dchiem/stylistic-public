@@ -329,7 +329,7 @@ textarea {
 
 #getStartedBtn, #loginBtn, #signupBtn, #sendBtn, #contBtn, #newItemBtn, #createBoxBtn,
  #homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn ,#confirmAddBtn, #confirmEditBtn,
- #saveBtn, #newBoxBtn, #deleteBoxBtn {
+ #saveBtn, #newBoxBtn, #deleteBoxBtn, #homeSignUpBtn {
     background-image: url('../images/stylisticbutton.jpg');
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -348,7 +348,7 @@ textarea {
     width: 120px;
 }
 
-#homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn, #createBoxBtn {
+#homeLoginBtn, #homeBrowseBtn, #homeMyBoxBtn, #homeRecBtn, #createBoxBtn, #homeSignUpBtn {
     width: 200px;
     margin-top: 20px;
 }
@@ -522,14 +522,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 #list_row {
-    background-color: rgba(0, 0, 0, 0.8);
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    padding: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #D6D0D5;
+    border-width: 1px;
 }
 
 #list_row p {
-    color: #fff;
+    color: #000;
 }
 
 #list_row h3 {
@@ -537,8 +538,17 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 #list_row h5 {
-    color: #fff;
+    color: #000;
     font-size: 18px;
+}
+
+#list_row .img-responsive{
+    margin-bottom: 15px;
+    border-left: 6px solid #000;
+    border-top-right-radius: 10px;
+}
+
+.list span {
     font-style: italic;
 }
 
