@@ -3,5 +3,9 @@ exports.view = function(req, res){
         res.redirect('home');
         return;
     }
+    req.logout();
+    req.session.male = "";
+    req.session.female = "";
+    res.redirect('home');
 	res.render('index');
 };
