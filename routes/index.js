@@ -3,5 +3,7 @@ exports.view = function(req, res){
         res.redirect('home');
         return;
     }
+    req.session.male = "";
+    req.session.female = "";
 	res.render('index');
 };
